@@ -28,7 +28,16 @@ async function checkLinks(urls, site, concurrency = 8) {
 }
 
 async function collectHrefs(page, selector, base) {
-  const hrefs = await page.locator(selector).evaluateAll((els) => els.map((a) => a.getAttribute('href')));
+  // Only links a visitor can actually see; consent dialogs carry unrendered template links.
+  const hrefs = await page.locator(selector).evaluateAll((els) =>
+    els
+      .filter((a) => {
+        if (a.closest('#CybotCookiebotDialog, #onetrust-consent-sdk, #hs-eu-cookie-confirmation, [id*="cookie" i], [class*="cookie" i]')) return false;
+        const r = a.getBoundingClientRect();
+        return r.width > 0 && r.height > 0;
+      })
+      .map((a) => a.getAttribute('href'))
+  );
   const out = new Set();
   for (const h of hrefs) {
     if (!h || /^(#|mailto:|tel:|javascript:|sms:)/i.test(h)) continue;

@@ -10,7 +10,9 @@ Daily website monitoring and visual regression for **perhaps.com**, **flexoffers
 | Hourly uptime | every hour | `npm run run:uptime` | Homepage HTTP 200 per site; Critical card while down, resolved card when back; re-checks open Critical alerts from the daily run |
 | Weekly roll-up | Monday (from daily run) | `npm run run:weekly` | 7-day uptime % and response-time trend per site |
 
-Scenario IDs (AV-01 … VR-08), pass conditions and severities follow the plan. Defaults live in `src/lib/severity.js`.
+Scenario IDs (AV-01 … VR-08), pass conditions and severities follow the plan. Defaults live in `src/lib/severity.js`. One addition beyond the plan: **AV-08 Sitemap URLs respond** fetches every URL listed in each site's sitemap(s) (HTTP only, 12 in parallel, `SITEMAP_MAX` default 6000) and lists broken ones, so blog posts and affiliate program pages are covered without a browser.
+
+**Watch it run.** `npm run test:ui` opens Playwright's UI mode (test list, step timeline, DOM snapshots, network and console per step, watch mode). `npm run test:headed -- --grep "\[FN-"` runs with a visible browser; add `SLOWMO=250` to slow each action down.
 
 ## Setup
 

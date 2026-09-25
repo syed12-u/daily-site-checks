@@ -10,6 +10,7 @@ const SEVERITY = {
   'AV-05': 'critical',
   'AV-06': 'low',
   'AV-07': 'medium',
+  'AV-08': 'medium', // high if 10+ or >1 % of sitemap URLs broken (set in test)
   // Critical functionality
   'FN-01': 'high',
   'FN-02': 'medium',
@@ -60,6 +61,7 @@ const NAMES = {
   'AV-05': 'DNS resolves',
   'AV-06': 'Custom 404 page',
   'AV-07': 'robots.txt and sitemap.xml',
+  'AV-08': 'Sitemap URLs respond',
   'FN-01': 'Primary navigation',
   'FN-02': 'No broken images',
   'FN-03': 'Contact form loads',
