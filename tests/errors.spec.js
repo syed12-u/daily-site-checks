@@ -8,7 +8,7 @@ const { tag, metric, note, url: setUrl } = require('../src/lib/results');
 const pageUrl = (site, p) => new URL(p.path, site.baseUrl).toString();
 
 // Console noise that is not a real JS error on our side.
-const IGNORED_CONSOLE = /Failed to load resource|net::ERR_BLOCKED_BY_CLIENT|third-party cookie|deprecat|\[Report Only\]|preload/i;
+const IGNORED_CONSOLE = /Failed to load resource|net::ERR_BLOCKED_BY_CLIENT|third-party cookie|deprecat|\[Report Only\]|preload|requestStorageAccess/i;
 
 // Text that should never be visible to a visitor.
 const BAD_TEXT = [

@@ -3,5 +3,7 @@ node_modules/
 logs/
 runs/*/artifacts/
 runs/*/html/
+runs/*/html-retry-*/
+runs/_*/
 state/.last-run.json
 *.log
