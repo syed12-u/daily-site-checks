@@ -158,17 +158,36 @@ function visible(root, sel) {
  * HubSpot forms iframe. Returns a Locator (possibly inside a frame).
  */
 async function contactForm(page, c) {
-  const onPage = visible(page, c.form || 'form');
-  if (await onPage.count()) return onPage;
-  const hs = 'iframe[src*="hsforms"], iframe[id^="hs-form-iframe"]';
-  for (let i = 0; i < 5; i++) {
-    if (await page.locator(hs).count()) {
-      const inFrame = page.frameLocator(hs).first().locator('form').first();
-      if (await inFrame.count()) return inFrame;
+  const fieldSelectors = Object.keys(c.fields || {});
+  const score = async (form) => {
+    let n = 0;
+    for (const sel of fieldSelectors) if (await form.locator(sel).count()) n++;
+    return n;
+  };
+  // Pages often carry several forms (search, newsletter, the real contact
+  // form, HubSpot embeds in iframes). Pick the one with the most expected fields.
+  let best = null;
+  let bestScore = -1;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    const candidates = [];
+    const onPage = page.locator(c.form || 'form').filter({ visible: true });
+    for (let i = 0; i < (await onPage.count()); i++) candidates.push(onPage.nth(i));
+    const frames = page.locator('iframe[src*="hsforms"], iframe[id^="hs-form-iframe"], iframe[src*="forms"]');
+    for (let i = 0; i < (await frames.count()); i++) {
+      const f = page.frameLocator('iframe[src*="hsforms"], iframe[id^="hs-form-iframe"], iframe[src*="forms"]').nth(i).locator('form');
+      for (let j = 0; j < (await f.count().catch(() => 0)); j++) candidates.push(f.nth(j));
     }
-    await page.waitForTimeout(800);
+    for (const cand of candidates) {
+      const s = await score(cand);
+      if (s > bestScore) {
+        best = cand;
+        bestScore = s;
+      }
+    }
+    if (bestScore >= Math.max(1, fieldSelectors.length - 1)) break;
+    await page.waitForTimeout(800); // embeds may still be loading
   }
-  return onPage;
+  return best || page.locator(c.form || 'form').first();
 }
 
 /**

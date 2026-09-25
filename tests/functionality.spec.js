@@ -47,7 +47,8 @@ async function collectHrefs(page, selector, base) {
 async function fillForm(page, form, fields) {
   const missing = [];
   for (const [sel, value] of Object.entries(fields)) {
-    const loc = form.locator(sel).first();
+    // Visible only: Gravity Forms and others add hidden honeypot inputs.
+    const loc = form.locator(sel).filter({ visible: true }).first();
     if ((await loc.count()) === 0) {
       missing.push(sel);
       continue;
@@ -62,10 +63,14 @@ for (const site of activeSites()) {
     test(tag('FN-01', site), async ({ page }, testInfo) => {
       setUrl(testInfo, site.baseUrl);
       await gotoStable(page, site.baseUrl);
-      const links = (await collectHrefs(page, site.nav.links, site.baseUrl)).slice(0, 80);
-      expect(links.length, `no links matched "${site.nav.links}"`).toBeGreaterThan(0);
+      // Every clickable link on the homepage (nav, footer and content), internal first, capped at 150.
+      const all = await collectHrefs(page, 'a[href]', site.baseUrl);
+      const internal = all.filter((u) => isFirstParty(u, site));
+      const external = all.filter((u) => !isFirstParty(u, site));
+      const links = [...internal, ...external].slice(0, 150);
+      expect(links.length, 'no links found on the homepage').toBeGreaterThan(0);
       const failures = await checkLinks(links, site);
-      metric(testInfo, { linksChecked: links.length, linksBroken: failures.length });
+      metric(testInfo, { linksChecked: links.length, internal: internal.length, external: external.length, linksBroken: failures.length });
       expect(failures, `${failures.length} broken navigation link(s): ${failures.slice(0, 5).join('; ')}${failures.length > 5 ? ` (+${failures.length - 5} more)` : ''}`).toEqual([]);
     });
 
@@ -98,10 +103,10 @@ for (const site of activeSites()) {
       await expect(form, 'contact form not visible').toBeVisible();
       const missing = [];
       for (const sel of Object.keys(site.contact.fields)) {
-        if ((await form.locator(sel).count()) === 0) missing.push(sel);
+        if ((await form.locator(sel).filter({ visible: true }).count()) === 0) missing.push(sel);
       }
       expect(missing, `form fields missing: ${missing.join(' | ')}`).toEqual([]);
-      await expect(form.locator(site.contact.submit).first(), 'submit button not visible').toBeVisible();
+      await expect(form.locator(site.contact.submit).filter({ visible: true }).first(), 'submit button not visible').toBeVisible();
     });
 
     test(tag('FN-04', site), async ({ page }, testInfo) => {
@@ -149,7 +154,8 @@ for (const site of activeSites()) {
       const serverErrors = [];
       page.on('response', (r) => r.status() >= 500 && serverErrors.push(`${r.status()} ${r.url()}`));
       const data = collect(page, site);
-      const res = await gotoStable(page, l.url);
+      // Portal is a single-page app whose "load" event can lag; DOM ready is enough.
+      const res = await gotoStable(page, l.url, { waitUntil: 'domcontentloaded' });
       expect(res && res.status(), `login page returned ${res && res.status()}`).toBeLessThan(400);
       await dismissBanners(page, site);
       await expect(visible(page, l.user), 'username field not visible').toBeVisible();

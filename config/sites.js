@@ -52,13 +52,18 @@ const WP = {
   hubspot: { name: 'HubSpot', urlPattern: /hs-scripts\.com|hubspot\.com|hsforms\.net|hs-analytics\.net/ },
 };
 
-// Generic contact-form fields (WPForms / Gravity / CF7 / HubSpot-native). TODO confirm per site.
+// Generic contact-form fields (WPForms / Gravity Forms / CF7 / HubSpot). TODO confirm per site.
+// Gravity Forms names the first-name input "input_N.3" inside .name_first.
+const NAME_FIELD =
+  'input[name*="name" i]:not([name*="last" i]):not([name*="company" i]), input[id*="firstname" i], input[placeholder*="name" i], ' +
+  'input[autocomplete="given-name"], .name_first input, input[aria-label*="first" i], input[name^="input_"][name$=".3"], input[name^="input_"][type="text"]';
 const contactFields = {
-  'input[name*="name" i]:not([name*="last" i]):not([name*="company" i]), input[id*="firstname" i], input[placeholder*="name" i]': 'Site Sentinel',
+  [NAME_FIELD]: 'Site Sentinel',
   'input[type="email"], input[name*="email" i]': TEST_EMAIL,
   'textarea': 'Automated daily monitoring check. Please ignore.',
 };
-const contactSubmit = 'form button[type="submit"], form input[type="submit"]';
+// Relative to the form root (no "form " prefix: the root may itself be the form).
+const contactSubmit = 'button[type="submit"], input[type="submit"], button:has-text("Submit"), button:has-text("Send")';
 const contactSuccess = /thank|received|success|we.ll be in touch|get back to you/i;
 
 const sites = {
@@ -139,10 +144,10 @@ const sites = {
       resultLink: 'article a, .result a, .program a, .elementor-post a',
     },
     login: {
-      url: 'https://publisherpro.flexoffers.com/', // TODO confirm login URL (publisher portal)
+      url: 'https://publisherpro.flexoffers.com/', // publisher portal login (verified 25 Sep: Email Address / Password / LOGIN)
       user: 'input[type="email"], input[name*="user" i], input[name*="email" i], input[id*="user" i]',
       password: 'input[type="password"]',
-      submit: 'button[type="submit"], input[type="submit"]',
+      submit: 'button[type="submit"], input[type="submit"], button:has-text("Login"), button:has-text("Log in"), button:has-text("Sign in")',
       errorText: /invalid|incorrect|not (found|recogni)|wrong|error|failed|unable/i,
     },
     signup: {

@@ -47,10 +47,12 @@ for (const site of activeSites()) {
       const form = await contactForm(page, c);
       await expect(form, 'contact form not visible after navigating').toBeVisible();
       for (const [sel, value] of Object.entries(c.fields)) {
-        const loc = form.locator(sel).first();
+        const loc = form.locator(sel).filter({ visible: true }).first(); // skip hidden honeypots
         await expect(loc, `field ${sel} missing`).toHaveCount(1);
         await loc.fill(value);
       }
+      const submit = form.locator(c.submit).filter({ visible: true }).first();
+      await expect(submit, 'submit button not visible').toBeVisible();
       if (!FORM_SUBMIT) {
         note(testInfo, 'form filled but not submitted: ENABLE_FORM_SUBMIT is not true');
         return;
@@ -58,7 +60,7 @@ for (const site of activeSites()) {
       if (c.testMode && c.testMode.hiddenField) {
         await form.locator(c.testMode.hiddenField).evaluate((el, v) => (el.value = v), c.testMode.value || '1');
       }
-      await form.locator(c.submit).first().click();
+      await submit.click();
       await expect(page.locator('body'), 'no success message after submit').toContainText(c.successText, { timeout: 20000 });
     });
 
@@ -120,7 +122,7 @@ for (const site of activeSites()) {
       const data = collect(page, site);
       const serverErrors = [];
       page.on('response', (r) => r.status() >= 500 && serverErrors.push(`${r.status()} ${r.url()}`));
-      await gotoStable(page, l.url);
+      await gotoStable(page, l.url, { waitUntil: 'domcontentloaded' }); // SPA: load event can lag
       await dismissBanners(page, site);
       await visible(page, l.user).fill('sentinel-invalid-user@example.com');
       await visible(page, l.password).fill('definitely-wrong-password-123');
