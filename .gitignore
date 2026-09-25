@@ -1,0 +1,7 @@
+node_modules/
+.env
+logs/
+runs/*/artifacts/
+runs/*/html/
+state/.last-run.json
+*.log

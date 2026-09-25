@@ -1,0 +1,33 @@
+{
+  "name": "daily-site-checks",
+  "repository": "https://github.com/syed12-u/daily-site-checks.git",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Daily website monitoring and visual regression for perhaps.com, flexoffers.com, fusetwo.com and incubators.com. Posts results to Microsoft Teams.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed --project=desktop --workers=1",
+    "test:av": "playwright test --grep \"\\[AV-\"",
+    "test:fn": "playwright test --grep \"\\[FN-\"",
+    "test:er": "playwright test --grep \"\\[ER-\"",
+    "test:pf": "playwright test --grep \"\\[PF-\"",
+    "test:uf": "playwright test --grep \"\\[UF-\"",
+    "test:vr": "playwright test --grep \"\\[VR-\"",
+    "run:daily": "node src/run.js",
+    "run:uptime": "node src/uptime.js",
+    "run:weekly": "node src/weekly.js",
+    "approve": "node src/approve.js",
+    "baselines:capture": "node src/approve.js all all",
+    "report": "playwright show-report",
+    "teams:test": "node src/teams.js --test",
+    "check:config": "node src/check-config.js"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.55.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
