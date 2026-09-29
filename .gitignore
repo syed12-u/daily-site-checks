@@ -7,3 +7,4 @@ runs/*/html-retry-*/
 runs/_*/
 state/.last-run.json
 *.log
+videos/

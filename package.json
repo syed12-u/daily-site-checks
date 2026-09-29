@@ -8,6 +8,7 @@
     "test": "playwright test",
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed --project=desktop --workers=1",
+    "test:video": "node scripts/record-videos.js",
     "test:av": "playwright test --grep \"\\[AV-\"",
     "test:fn": "playwright test --grep \"\\[FN-\"",
     "test:er": "playwright test --grep \"\\[ER-\"",

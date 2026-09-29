@@ -41,16 +41,20 @@ for (const site of activeSites()) {
       test.skip(!site.contact, 'no contact form configured');
       const c = site.contact;
       setUrl(testInfo, site.baseUrl);
-      await gotoStable(page, site.baseUrl);
-      await dismissBanners(page, site);
-      await clickNav(page, site, c.navText, new URL(c.path, site.baseUrl).toString(), testInfo);
-      const form = await contactForm(page, c);
+      await test.step('Open homepage', async () => {
+        await gotoStable(page, site.baseUrl);
+        await dismissBanners(page, site);
+      });
+      await test.step('Click "Contact" in the navigation', () => clickNav(page, site, c.navText, new URL(c.path, site.baseUrl).toString(), testInfo));
+      const form = await test.step('Find the contact form', () => contactForm(page, c));
       await expect(form, 'contact form not visible after navigating').toBeVisible();
-      for (const [sel, value] of Object.entries(c.fields)) {
-        const loc = form.locator(sel).filter({ visible: true }).first(); // skip hidden honeypots
-        await expect(loc, `field ${sel} missing`).toHaveCount(1);
-        await loc.fill(value);
-      }
+      await test.step('Fill name, email and message', async () => {
+        for (const [sel, value] of Object.entries(c.fields)) {
+          const loc = form.locator(sel).filter({ visible: true }).first(); // skip hidden honeypots
+          await expect(loc, `field ${sel} missing`).toHaveCount(1);
+          await loc.fill(value);
+        }
+      });
       const submit = form.locator(c.submit).filter({ visible: true }).first();
       await expect(submit, 'submit button not visible').toBeVisible();
       if (!FORM_SUBMIT) {
@@ -67,25 +71,30 @@ for (const site of activeSites()) {
     test(tag('UF-02', site), async ({ page }, testInfo) => {
       test.skip(testInfo.project.name !== 'desktop', 'desktop only');
       setUrl(testInfo, site.baseUrl);
-      await gotoStable(page, site.baseUrl);
-      await dismissBanners(page, site);
+      await test.step('Open homepage', async () => {
+        await gotoStable(page, site.baseUrl);
+        await dismissBanners(page, site);
+      });
       const cta = page.locator(site.ctas).filter({ visible: true }).first();
       await expect(cta, `no visible primary CTA matched "${site.ctas}"`).toBeVisible();
       const href = await cta.getAttribute('href');
       const target = href ? new URL(href, site.baseUrl).toString() : null;
       expect(target, 'primary CTA has no href').not.toBeNull();
+      await test.step(`Primary CTA "${((await cta.innerText().catch(() => '')) || '').trim().slice(0, 40)}" points to ${target}`, async () => {});
       if (!isFirstParty(target, site)) {
         const res = await timedFetch(target, { redirect: 'follow' });
         note(testInfo, `CTA points off-site to ${target} (${res.status})`);
         expect(res.status, `external landing page returned ${res.status || res.error}`).toBeLessThan(400);
         return;
       }
-      const res = await gotoStable(page, target);
+      const res = await test.step(`Open landing page ${target}`, () => gotoStable(page, target));
       metric(testInfo, { landing: target, status: res && res.status() });
       expect(res && res.status(), `landing page returned ${res && res.status()}`).toBe(200);
-      await expect(page.locator('h1').first(), 'landing page has no visible H1').toBeVisible();
-      const landingCta = page.locator(`${site.ctas}, button[type="submit"], form button, form input[type="submit"]`).filter({ visible: true }).first();
-      await expect(landingCta, 'landing page has no visible CTA').toBeVisible();
+      await test.step('Landing page shows an H1 and a CTA', async () => {
+        await expect(page.locator('h1').first(), 'landing page has no visible H1').toBeVisible();
+        const landingCta = page.locator(`${site.ctas}, button[type="submit"], form button, form input[type="submit"]`).filter({ visible: true }).first();
+        await expect(landingCta, 'landing page has no visible CTA').toBeVisible();
+      });
     });
 
     for (const kind of ['publisher', 'advertiser']) {
@@ -122,17 +131,23 @@ for (const site of activeSites()) {
       const data = collect(page, site);
       const serverErrors = [];
       page.on('response', (r) => r.status() >= 500 && serverErrors.push(`${r.status()} ${r.url()}`));
-      await gotoStable(page, l.url, { waitUntil: 'domcontentloaded' }); // SPA: load event can lag
-      await dismissBanners(page, site);
-      await visible(page, l.user).fill('sentinel-invalid-user@example.com');
-      await visible(page, l.password).fill('definitely-wrong-password-123');
-      await visible(page, l.submit).click();
-      await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
-      await expect(page.locator('body'), 'no error shown for invalid credentials').toContainText(l.errorText, { timeout: 15000 });
-      // Page stable: form still usable, no 5xx, no uncaught errors.
-      await expect(visible(page, l.user), 'login form disappeared after failed attempt').toBeVisible();
-      expect(serverErrors, `5xx during login attempt: ${serverErrors.join(', ')}`).toEqual([]);
-      expect(data.pageErrors, `JS errors during login attempt: ${data.pageErrors.join(' | ')}`).toEqual([]);
+      await test.step(`Open login page ${l.url}`, async () => {
+        await gotoStable(page, l.url, { waitUntil: 'domcontentloaded' }); // SPA: load event can lag
+        await dismissBanners(page, site);
+      });
+      await test.step('Type a wrong email and password, press Login', async () => {
+        await visible(page, l.user).fill('sentinel-invalid-user@example.com');
+        await visible(page, l.password).fill('definitely-wrong-password-123');
+        await visible(page, l.submit).click();
+        await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+      });
+      await test.step('Expect an error message and a still-usable form', async () => {
+        await expect(page.locator('body'), 'no error shown for invalid credentials').toContainText(l.errorText, { timeout: 15000 });
+        // Page stable: form still usable, no 5xx, no uncaught errors.
+        await expect(visible(page, l.user), 'login form disappeared after failed attempt').toBeVisible();
+        expect(serverErrors, `5xx during login attempt: ${serverErrors.join(', ')}`).toEqual([]);
+        expect(data.pageErrors, `JS errors during login attempt: ${data.pageErrors.join(' | ')}`).toEqual([]);
+      });
     });
 
     test(tag('UF-06', site), async ({ page }, testInfo) => {

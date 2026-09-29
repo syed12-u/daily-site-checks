@@ -106,16 +106,22 @@ for (const site of activeSites()) {
       test.skip(!site.contact, 'no contact form configured');
       const u = new URL(site.contact.path, site.baseUrl).toString();
       setUrl(testInfo, u);
-      await gotoStable(page, u);
-      await dismissBanners(page, site);
-      const form = await contactForm(page, site.contact);
+      await test.step(`Open contact page ${u}`, async () => {
+        await gotoStable(page, u);
+        await dismissBanners(page, site);
+      });
+      const form = await test.step('Find the contact form (page form or HubSpot iframe)', () => contactForm(page, site.contact));
       await expect(form, 'contact form not visible').toBeVisible();
-      const missing = [];
-      for (const sel of Object.keys(site.contact.fields)) {
-        if ((await form.locator(sel).filter({ visible: true }).count()) === 0) missing.push(sel);
-      }
-      expect(missing, `form fields missing: ${missing.join(' | ')}`).toEqual([]);
-      await expect(form.locator(site.contact.submit).filter({ visible: true }).first(), 'submit button not visible').toBeVisible();
+      await test.step('Check name, email and message fields exist', async () => {
+        const missing = [];
+        for (const sel of Object.keys(site.contact.fields)) {
+          if ((await form.locator(sel).filter({ visible: true }).count()) === 0) missing.push(sel);
+        }
+        expect(missing, `form fields missing: ${missing.join(' | ')}`).toEqual([]);
+      });
+      await test.step('Check submit button is visible', async () => {
+        await expect(form.locator(site.contact.submit).filter({ visible: true }).first(), 'submit button not visible').toBeVisible();
+      });
     });
 
     test(tag('FN-04', site), async ({ page }, testInfo) => {
@@ -144,15 +150,21 @@ for (const site of activeSites()) {
       const s = site.search;
       const u = new URL(s.path, site.baseUrl).toString();
       setUrl(testInfo, u);
-      await gotoStable(page, u);
-      await dismissBanners(page, site);
-      const input = await revealSearch(page, s);
+      await test.step(`Open ${u}`, async () => {
+        await gotoStable(page, u);
+        await dismissBanners(page, site);
+      });
+      const input = await test.step('Reveal the search box', () => revealSearch(page, s));
       await expect(input, 'search input not visible (no search toggle found either)').toBeVisible();
-      await input.fill(s.term);
-      await input.press('Enter');
-      await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+      await test.step(`Search for "${s.term}"`, async () => {
+        await input.fill(s.term);
+        await input.press('Enter');
+        await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+      });
       const results = page.locator(s.results).filter({ visible: true });
-      await expect.poll(() => results.count(), { timeout: 15000, message: `no results for "${s.term}" at ${page.url()}` }).toBeGreaterThan(0);
+      await test.step('Expect at least one result', async () => {
+        await expect.poll(() => results.count(), { timeout: 15000, message: `no results for "${s.term}" at ${page.url()}` }).toBeGreaterThan(0);
+      });
       metric(testInfo, { results: await results.count(), resultsUrl: page.url() });
     });
 
@@ -164,18 +176,26 @@ for (const site of activeSites()) {
       page.on('response', (r) => r.status() >= 500 && serverErrors.push(`${r.status()} ${r.url()}`));
       const data = collect(page, site);
       // Portal is a single-page app whose "load" event can lag; DOM ready is enough.
-      const res = await gotoStable(page, l.url, { waitUntil: 'domcontentloaded' });
-      expect(res && res.status(), `login page returned ${res && res.status()}`).toBeLessThan(400);
-      await dismissBanners(page, site);
-      await expect(visible(page, l.user), 'username field not visible').toBeVisible();
-      await expect(visible(page, l.password), 'password field not visible').toBeVisible();
-      await visible(page, l.user).fill('sentinel-invalid-user@example.com');
-      await visible(page, l.password).fill('definitely-wrong-password-123');
-      await visible(page, l.submit).click();
-      await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
-      await expect(page.locator('body'), 'no error message shown for invalid credentials').toContainText(l.errorText, { timeout: 15000 });
-      expect(serverErrors, `5xx during login attempt: ${serverErrors.join(', ')}`).toEqual([]);
-      expect(data.pageErrors, `JS errors on login page: ${data.pageErrors.join(' | ')}`).toEqual([]);
+      await test.step(`Open login page ${l.url}`, async () => {
+        const res = await gotoStable(page, l.url, { waitUntil: 'domcontentloaded' });
+        expect(res && res.status(), `login page returned ${res && res.status()}`).toBeLessThan(400);
+        await dismissBanners(page, site);
+      });
+      await test.step('Check email and password fields render', async () => {
+        await expect(visible(page, l.user), 'username field not visible').toBeVisible();
+        await expect(visible(page, l.password), 'password field not visible').toBeVisible();
+      });
+      await test.step('Submit invalid credentials', async () => {
+        await visible(page, l.user).fill('sentinel-invalid-user@example.com');
+        await visible(page, l.password).fill('definitely-wrong-password-123');
+        await visible(page, l.submit).click();
+        await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+      });
+      await test.step('Expect an error message, no 500, no JS crash', async () => {
+        await expect(page.locator('body'), 'no error message shown for invalid credentials').toContainText(l.errorText, { timeout: 15000 });
+        expect(serverErrors, `5xx during login attempt: ${serverErrors.join(', ')}`).toEqual([]);
+        expect(data.pageErrors, `JS errors on login page: ${data.pageErrors.join(' | ')}`).toEqual([]);
+      });
     });
 
     test(tag('FN-07', site), async ({ page }, testInfo) => {

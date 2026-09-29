@@ -39,8 +39,10 @@ module.exports = defineConfig({
     userAgent: UA,
     ignoreHTTPSErrors: false,
     screenshot: 'only-on-failure',
-    trace: 'retain-on-failure',
-    video: 'off',
+    // TRACE=on keeps a full trace (every step, screenshots, DOM, network, console) for every test.
+    trace: process.env.TRACE === 'on' ? 'on' : 'retain-on-failure',
+    // VIDEO=on records a .webm per test under runs/<date>/artifacts/<test>/
+    video: process.env.VIDEO === 'on' ? { mode: 'on', size: { width: 1440, height: 900 } } : 'off',
     actionTimeout: 15_000,
     navigationTimeout: 45_000,
     locale: 'en-US',

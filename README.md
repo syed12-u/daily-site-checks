@@ -90,3 +90,12 @@ state/                 alerts.json, dns.json, approvals.json, run.json
 
 ## Exit codes
 `run:daily` exits 0 (green), 1 (amber: medium/low failures), 2 (red: critical/high), 3 (runner error). `run:uptime` exits 2 when any site is down.
+
+## Videos and step-by-step traces
+
+`npm run test:video` records every test in the run (default: flexoffers.com functionality and user flows) and saves under `videos/<date>/`:
+
+- `<ID>-<site>-<name>-<project>-<status>.webm` – screen recording (plays in Chrome, Edge, Windows Media Player).
+- `<ID>-<site>-<name>-<project>-<status>.zip` – Playwright trace: every step with its command and selector, a screenshot film strip, DOM snapshot, network and console. Open with `npx playwright show-trace videos/<date>/<file>.zip`.
+
+`npm run test:ui` shows the same step timeline live while a test runs. Any run can add these with `VIDEO=on` and `TRACE=on` in the environment.
