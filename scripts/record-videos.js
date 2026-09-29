@@ -20,7 +20,7 @@ const ROOT = path.resolve(__dirname, '..');
 const argv = process.argv.slice(2);
 const opt = (n, d) => (argv.indexOf(n) >= 0 ? argv[argv.indexOf(n) + 1] : d);
 const sites = opt('--sites', 'flexoffers');
-const grep = opt('--grep', '\[(FN|UF)-\d\d\]');
+const grep = opt('--grep', '(FN|UF)-[0-9][0-9]'); // no backslashes: they do not survive Node spawn on Windows
 const project = opt('--project', 'desktop');
 const date = new Date().toISOString().slice(0, 10);
 const runDir = path.join(ROOT, 'runs', '_videos');
