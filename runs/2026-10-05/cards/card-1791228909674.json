@@ -1,0 +1,87 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentUrl": null,
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": [
+          {
+            "type": "Container",
+            "style": "warning",
+            "bleed": true,
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "🟠 HIGH: incubators.com - UF-02 Visitor to key landing page",
+                "wrap": true,
+                "size": "Large",
+                "weight": "Bolder"
+              }
+            ]
+          },
+          {
+            "type": "FactSet",
+            "facts": [
+              {
+                "title": "Site",
+                "value": "incubators.com"
+              },
+              {
+                "title": "Scenario",
+                "value": "UF-02 Visitor to key landing page"
+              },
+              {
+                "title": "Severity",
+                "value": "high"
+              },
+              {
+                "title": "First seen",
+                "value": "2026-10-05T19:35:09.557Z"
+              },
+              {
+                "title": "Last seen",
+                "value": "2026-10-05T19:35:09.557Z"
+              },
+              {
+                "title": "Occurrences",
+                "value": "1"
+              },
+              {
+                "title": "URL",
+                "value": "https://incubators.com"
+              },
+              {
+                "title": "Retries",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "type": "TextBlock",
+            "text": "**What failed**",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "```\nError: no visible primary CTA matched \"a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a\"\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a').visible().first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - no visible primary CTA matched \"a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a\" locator('a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a').visible().first() with timeout 10000ms\n  - waiting for locator('a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a').visible().first()\n\n```",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "Screenshot: C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-05\\artifacts\\flows-incubators-UF-02-inc-c01e5-Visitor-to-key-landing-page-desktop\\test-failed-1.png",
+            "wrap": true,
+            "size": "Small",
+            "isSubtle": true
+          }
+        ],
+        "msteams": {
+          "width": "Full"
+        }
+      }
+    }
+  ]
+}

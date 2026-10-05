@@ -1,0 +1,20 @@
+{
+  "capturedAt": "2026-10-05T18:54:24.106Z",
+  "data": {
+    "font": {
+      "fontFamily": "\"Josefin Sans\"",
+      "fontSize": "18px"
+    },
+    "primary": {
+      "color": "rgb(0, 0, 102)",
+      "fontFamily": "\"Nunito Sans\"",
+      "fontWeight": "700"
+    },
+    "button": {
+      "backgroundColor": "rgb(77, 2, 185)",
+      "color": "rgb(255, 255, 255)",
+      "borderRadius": "20px",
+      "fontFamily": "\"Nunito Sans\""
+    }
+  }
+}

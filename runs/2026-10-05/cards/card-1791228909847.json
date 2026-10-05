@@ -1,0 +1,371 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentUrl": null,
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": [
+          {
+            "type": "Container",
+            "style": "attention",
+            "bleed": true,
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "🔴 Daily site check - 2026-10-05",
+                "wrap": true,
+                "size": "Large",
+                "weight": "Bolder"
+              },
+              {
+                "type": "TextBlock",
+                "text": "136 of 158 checks passed across 4 sites (after 2 retry rounds)",
+                "wrap": true
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Site",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Status",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "3",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Failed",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Response vs 7d",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Diffs",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "perhaps.com",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "🟡 medium",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "3",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "ER-06, UF-07 (m)",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "1110 ms / 518 ms",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "0",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "flexoffers.com",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "🟠 high",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "3",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "ER-01, ER-06, ER-05, VR-04, VR-01, VR-05, VR-06, UF-07 (m), AV-08",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "1258 ms / 398 ms",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "4",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "fusetwo.com",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "🟠 high",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "3",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "ER-01, ER-06, UF-02",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "1433 ms / 505 ms",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "0",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "incubators.com",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "🟠 high",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "3",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "ER-06, ER-05, UF-02, UF-01, UF-06, FN-03, FN-09, FN-05",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "1215 ms / 774 ms",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "0",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TextBlock",
+            "text": "**Issues found**",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "- **perhaps.com ER-06** Security headers (low): missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff | - Expected  - 1 | + Received  + 4\n- **perhaps.com UF-07** Mobile navigation (medium, mobile): URL did not change after tapping a menu link\n- **flexoffers.com ER-01** Console errors (medium): 10 page(s) affected: home, publishers, advertisers, signup, directory, ranking, about, contact, support, blog | \"home\": [ | \"wp is not defined\"\n- **flexoffers.com ER-06** Security headers (low): missing security headers: Strict-Transport-Security | - Expected  - 1 | + Received  + 3\n- **flexoffers.com ER-05** Expected content present (high): advertisers: no <h1> | - Expected  - 1 | + Received  + 3\n- **flexoffers.com VR-04** Header and footer components (high): Snapshot: flexoffers\\home-footer.png | - Expect \"soft toHaveScreenshot(flexoffers\\\\home-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms | - verifying given screenshot expectation\n- **flexoffers.com VR-01** Full-page screenshot, desktop (high): Snapshot: flexoffers\\home.png | - Expect \"soft toHaveScreenshot(flexoffers\\\\home.png)\" with timeout 30000ms | - verifying given screenshot expectation\n- **flexoffers.com VR-05** Layout shift (medium): home: footer: moved 0px horizontally, 31px vertically (was 0,5403 now 0,5434) | directory: footer: moved 0px horizontally, 24px vertically (was 0,7959 now 0,7983) | ranking: footer: moved 0px horizontally, 42px verticall\n- **flexoffers.com VR-06** Text content diff (low): text changed: | \"home\": [ | \"- Entertainment and Lifestyle Affiliate Programs to Promote This Fall\",\n- **flexoffers.com UF-07** Mobile navigation (medium, mobile): - waiting for locator('nav, [role=\"navigation\"], .elementor-nav-menu--dropdown, [class*=\"menu\" i], [id*=\"menu\" i] a[href]').visible().nth(10) | - locator resolved to <a href=\"https://www.flexoffers.com/publishers/\">Publi\n- **flexoffers.com AV-08** Sitemap URLs respond (medium): 3 of 6000 sitemap URLs broken (0.05%): 400 https://www.flexoffers.com/affiliate-programs/100%-pure-affiliate-program/; 404 https://www.flexoffers.com/affiliate-programs/linksys-affiliate-program/; fetch failed https://ww\n- **fusetwo.com ER-01** Console errors (medium): 9 page(s) affected: home, platform, brands, brand-services, industries, publishers, about, support, help | \"home\": [ | \"Cannot read properties of null (reading 'offsetHeight')\"\n- **fusetwo.com ER-06** Security headers (low): missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors | - Expected  - 1 | + Received  + 5\n- **fusetwo.com UF-02** Visitor to key landing page (high): landing page has no visible H1 | element(s) not found | - landing page has no visible H1 locator('h1').first() with timeout 10000ms\n- **incubators.com ER-06** Security headers (low): missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors | - Expected  - 1 | + Received  + 5\n- **incubators.com ER-05** Expected content present (high): contact: no <h1> | - Expected  - 1 | + Received  + 3\n- **incubators.com UF-02** Visitor to key landing page (high): no visible primary CTA matched \"a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a\" | element(s) not f\n- **incubators.com UF-01** Visitor to contact (high): contact form not visible after navigating | element(s) not found | - contact form not visible after navigating locator('form').first() with timeout 10000ms\n- **incubators.com UF-06** Browse / search (high): search input not visible (no search toggle found either) | element(s) not found | - search input not visible (no search toggle found either) locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]'\n- **incubators.com FN-03** Contact form loads (high): contact form not visible | element(s) not found | - contact form not visible locator('form').first() with timeout 10000ms\n- **incubators.com FN-09** Key CTA buttons (high): no visible CTAs matched \"a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a\" on the homepage\n- **incubators.com FN-05** Search (high): search input not visible (no search toggle found either) | element(s) not found | - search input not visible (no search toggle found either) locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]'",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "- 94 check(s) skipped (not configured yet: login, search, signup or form submit)\n- TEAMS_WEBHOOK_URL not set: cards were not posted",
+            "wrap": true,
+            "size": "Small",
+            "isSubtle": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "Full report: C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-05\\html\\index.html",
+            "wrap": true,
+            "size": "Small",
+            "isSubtle": true
+          }
+        ],
+        "msteams": {
+          "width": "Full"
+        }
+      }
+    }
+  ]
+}

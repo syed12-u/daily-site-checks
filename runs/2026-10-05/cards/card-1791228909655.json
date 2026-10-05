@@ -1,0 +1,87 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentUrl": null,
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": [
+          {
+            "type": "Container",
+            "style": "warning",
+            "bleed": true,
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "🟠 HIGH: fusetwo.com - UF-02 Visitor to key landing page",
+                "wrap": true,
+                "size": "Large",
+                "weight": "Bolder"
+              }
+            ]
+          },
+          {
+            "type": "FactSet",
+            "facts": [
+              {
+                "title": "Site",
+                "value": "fusetwo.com"
+              },
+              {
+                "title": "Scenario",
+                "value": "UF-02 Visitor to key landing page"
+              },
+              {
+                "title": "Severity",
+                "value": "high"
+              },
+              {
+                "title": "First seen",
+                "value": "2026-10-05T19:35:09.557Z"
+              },
+              {
+                "title": "Last seen",
+                "value": "2026-10-05T19:35:09.557Z"
+              },
+              {
+                "title": "Occurrences",
+                "value": "1"
+              },
+              {
+                "title": "URL",
+                "value": "https://www.fusetwo.com"
+              },
+              {
+                "title": "Retries",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "type": "TextBlock",
+            "text": "**What failed**",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "```\nError: landing page has no visible H1\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('h1').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - landing page has no visible H1 locator('h1').first() with timeout 10000ms\n  - waiting for locator('h1').first()\n\n```",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "Screenshot: C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-05\\artifacts\\flows-fusetwo-UF-02-fusetwo-Visitor-to-key-landing-page-desktop\\test-failed-1.png",
+            "wrap": true,
+            "size": "Small",
+            "isSubtle": true
+          }
+        ],
+        "msteams": {
+          "width": "Full"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-10-05T19:03:46.916Z",
+  "data": {
+    "font": {
+      "fontFamily": "-apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "17px"
+    },
+    "primary": {
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "Helvetica, sans-serif",
+      "fontWeight": "600"
+    },
+    "button": null
+  }
+}

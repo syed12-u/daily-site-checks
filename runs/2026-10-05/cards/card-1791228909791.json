@@ -1,0 +1,87 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentUrl": null,
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": [
+          {
+            "type": "Container",
+            "style": "warning",
+            "bleed": true,
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "🟠 HIGH: incubators.com - FN-05 Search",
+                "wrap": true,
+                "size": "Large",
+                "weight": "Bolder"
+              }
+            ]
+          },
+          {
+            "type": "FactSet",
+            "facts": [
+              {
+                "title": "Site",
+                "value": "incubators.com"
+              },
+              {
+                "title": "Scenario",
+                "value": "FN-05 Search"
+              },
+              {
+                "title": "Severity",
+                "value": "high"
+              },
+              {
+                "title": "First seen",
+                "value": "2026-10-05T19:35:09.557Z"
+              },
+              {
+                "title": "Last seen",
+                "value": "2026-10-05T19:35:09.557Z"
+              },
+              {
+                "title": "Occurrences",
+                "value": "1"
+              },
+              {
+                "title": "URL",
+                "value": "https://incubators.com/"
+              },
+              {
+                "title": "Retries",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "type": "TextBlock",
+            "text": "**What failed**",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "```\nError: search input not visible (no search toggle found either)\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - search input not visible (no search toggle found either) locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]').first() with timeout 10000ms\n  - waiting for locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]').first()\n\n```",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "Screenshot: C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-05\\artifacts\\functionality-incubators-FN-05-incubators-Search-desktop\\test-failed-1.png",
+            "wrap": true,
+            "size": "Small",
+            "isSubtle": true
+          }
+        ],
+        "msteams": {
+          "width": "Full"
+        }
+      }
+    }
+  ]
+}

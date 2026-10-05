@@ -1,0 +1,62 @@
+{
+  "weekEnding": "2026-10-05",
+  "rows": [
+    {
+      "site": "perhaps.com",
+      "key": "perhaps",
+      "uptimePct": 100,
+      "avgMs": 518,
+      "spark": "",
+      "series": [
+        518
+      ],
+      "failedChecks": 1,
+      "samples": 0,
+      "days": 2
+    },
+    {
+      "site": "flexoffers.com",
+      "key": "flexoffers",
+      "uptimePct": 100,
+      "avgMs": 398,
+      "spark": "",
+      "series": [
+        398
+      ],
+      "failedChecks": 3,
+      "samples": 0,
+      "days": 2
+    },
+    {
+      "site": "fusetwo.com",
+      "key": "fusetwo",
+      "uptimePct": 100,
+      "avgMs": 505,
+      "spark": "",
+      "series": [
+        505
+      ],
+      "failedChecks": 4,
+      "samples": 0,
+      "days": 2
+    },
+    {
+      "site": "incubators.com",
+      "key": "incubators",
+      "uptimePct": 100,
+      "avgMs": 774,
+      "spark": "",
+      "series": [
+        774
+      ],
+      "failedChecks": 1,
+      "samples": 0,
+      "days": 2
+    }
+  ],
+  "notes": [
+    "No hourly uptime data yet; uptime is derived from the daily homepage check.",
+    "2 daily run(s) in the window."
+  ],
+  "reportUrl": null
+}

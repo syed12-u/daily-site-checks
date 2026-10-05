@@ -1,0 +1,83 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentUrl": null,
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": [
+          {
+            "type": "Container",
+            "style": "warning",
+            "bleed": true,
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "🟠 HIGH: flexoffers.com - VR-01 Full-page screenshot, desktop",
+                "wrap": true,
+                "size": "Large",
+                "weight": "Bolder"
+              }
+            ]
+          },
+          {
+            "type": "FactSet",
+            "facts": [
+              {
+                "title": "Site",
+                "value": "flexoffers.com"
+              },
+              {
+                "title": "Scenario",
+                "value": "VR-01 Full-page screenshot, desktop"
+              },
+              {
+                "title": "Severity",
+                "value": "high"
+              },
+              {
+                "title": "First seen",
+                "value": "2026-10-05T19:35:09.557Z"
+              },
+              {
+                "title": "Last seen",
+                "value": "2026-10-05T19:35:09.557Z"
+              },
+              {
+                "title": "Occurrences",
+                "value": "1"
+              },
+              {
+                "title": "Retries",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "type": "TextBlock",
+            "text": "**What failed**",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "```\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 6219px, received 1440px by 6251px. 451399 pixels (ratio 0.06 of all image pixels) are different.\n\n  Snapshot: flexoffers\\home.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\home.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 6219px, received 1440px by 6251px. 451399 pixels (ratio 0.06 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 6219px, received 1440px by 6251px. 451399 pixels (ratio 0.06 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 8775px, received 1440px by 8799px. 562609 pixels (ratio 0.05 of all image pixels) are different.\n\n  Snapshot: flexoffers\\directory.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\directory.png\n```",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "Screenshot: C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\home.png",
+            "wrap": true,
+            "size": "Small",
+            "isSubtle": true
+          }
+        ],
+        "msteams": {
+          "width": "Full"
+        }
+      }
+    }
+  ]
+}

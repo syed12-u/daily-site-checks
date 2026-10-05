@@ -1,0 +1,1064 @@
+{
+  "startedAt": "2026-09-30T09:46:02.060Z",
+  "finishedAt": "2026-09-30T10:00:55.489Z",
+  "durationMs": 893429,
+  "results": [
+    {
+      "key": "desktop::[AV-01][perhaps] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "perhaps",
+      "name": "Homepage responds",
+      "title": "[AV-01][perhaps] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 518,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 549,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][perhaps] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "perhaps",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][perhaps] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 46,
+        "validTo": "2026-11-16T03:26:54.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 191,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][perhaps] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "perhaps",
+      "name": "DNS resolves",
+      "title": "[AV-05][perhaps] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [
+        "DNS baseline captured: 104.18.18.154, 104.18.19.154, 2606:4700::6812:129a, 2606:4700::6812:139a",
+        "DNS baseline captured: 104.18.18.154, 104.18.19.154, 2606:4700::6812:129a, 2606:4700::6812:139a"
+      ],
+      "metrics": {
+        "a": [
+          "104.18.18.154",
+          "104.18.19.154"
+        ],
+        "aaaa": [
+          "2606:4700::6812:129a",
+          "2606:4700::6812:139a"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 154,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][perhaps] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "perhaps",
+      "name": "Custom 404 page",
+      "title": "[AV-06][perhaps] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.perhaps.com/sentinel-404-check-1790761563704",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 148548
+      },
+      "attachments": [],
+      "durationMs": 761,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][perhaps] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "perhaps",
+      "name": "www / http redirects",
+      "title": "[AV-03][perhaps] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://www.perhaps.com/": "301 -> https://www.perhaps.com/ | 200",
+          "http://perhaps.com/": "301 -> https://perhaps.com/ | 301 -> https://www.perhaps.com/ | 200",
+          "https://perhaps.com/": "301 -> https://www.perhaps.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 2033,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][perhaps] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "perhaps",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][perhaps] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://www.perhaps.com/sitemap_index.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 707,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-01][flexoffers] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "flexoffers",
+      "name": "Homepage responds",
+      "title": "[AV-01][flexoffers] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 398,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 452,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][flexoffers] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "flexoffers",
+      "name": "www / http redirects",
+      "title": "[AV-03][flexoffers] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://www.flexoffers.com/": "301 -> https://www.flexoffers.com/ | 200",
+          "http://flexoffers.com/": "301 -> https://www.flexoffers.com | 200",
+          "https://flexoffers.com/": "301 -> https://www.flexoffers.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 1302,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][flexoffers] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "flexoffers",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][flexoffers] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 88,
+        "validTo": "2026-12-27T15:37:20.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 197,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][flexoffers] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "flexoffers",
+      "name": "DNS resolves",
+      "title": "[AV-05][flexoffers] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "a": [
+          "104.17.130.236",
+          "104.17.131.236"
+        ],
+        "aaaa": [
+          "2606:4700::6811:82ec",
+          "2606:4700::6811:83ec"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 134,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][flexoffers] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "flexoffers",
+      "name": "Key pages respond",
+      "title": "[AV-02][flexoffers] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 10,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "publishers": 200,
+          "advertisers": 200,
+          "signup": 200,
+          "directory": 200,
+          "ranking": 200,
+          "about": 200,
+          "contact": 200,
+          "support": 200,
+          "blog": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 2082,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][flexoffers] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "flexoffers",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][flexoffers] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://www.flexoffers.com/sitemap_index.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 262,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][flexoffers] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "flexoffers",
+      "name": "Custom 404 page",
+      "title": "[AV-06][flexoffers] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.flexoffers.com/sentinel-404-check-1790761567135",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 191890
+      },
+      "attachments": [],
+      "durationMs": 866,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-01][fusetwo] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "fusetwo",
+      "name": "Homepage responds",
+      "title": "[AV-01][fusetwo] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 505,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 531,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][perhaps] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "perhaps",
+      "name": "Key pages respond",
+      "title": "[AV-02][perhaps] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 9,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "services": 200,
+          "about": 200,
+          "careers": 200,
+          "news": 200,
+          "faqs": 200,
+          "blog": 200,
+          "contact": 200,
+          "advertiser-signup": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 6480,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][fusetwo] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "fusetwo",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][fusetwo] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 71,
+        "validTo": "2026-12-11T04:41:49.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 301,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][fusetwo] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "fusetwo",
+      "name": "DNS resolves",
+      "title": "[AV-05][fusetwo] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [
+        "DNS baseline captured: 104.18.6.247, 104.18.7.247, 2606:4700::6812:6f7, 2606:4700::6812:7f7",
+        "DNS baseline captured: 104.18.6.247, 104.18.7.247, 2606:4700::6812:6f7, 2606:4700::6812:7f7"
+      ],
+      "metrics": {
+        "a": [
+          "104.18.6.247",
+          "104.18.7.247"
+        ],
+        "aaaa": [
+          "2606:4700::6812:6f7",
+          "2606:4700::6812:7f7"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 125,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][fusetwo] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "fusetwo",
+      "name": "www / http redirects",
+      "title": "[AV-03][fusetwo] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://www.fusetwo.com/": "301 -> https://www.fusetwo.com/ | 200",
+          "http://fusetwo.com/": "301 -> https://fusetwo.com/ | 301 -> https://www.fusetwo.com/ | 200",
+          "https://fusetwo.com/": "301 -> https://www.fusetwo.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 1662,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][fusetwo] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "fusetwo",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][fusetwo] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://www.fusetwo.com/sitemap_index.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 286,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-01][incubators] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "incubators",
+      "name": "Homepage responds",
+      "title": "[AV-01][incubators] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 774,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 793,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][fusetwo] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "fusetwo",
+      "name": "Custom 404 page",
+      "title": "[AV-06][fusetwo] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.fusetwo.com/sentinel-404-check-1790761569990",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 183151
+      },
+      "attachments": [],
+      "durationMs": 2283,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][incubators] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "incubators",
+      "name": "Key pages respond",
+      "title": "[AV-02][incubators] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 5,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "founder": 200,
+          "what-we-do": 200,
+          "companies": 200,
+          "contact": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 1650,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][incubators] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "incubators",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][incubators] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 56,
+        "validTo": "2026-11-25T14:14:15.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 207,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][incubators] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "incubators",
+      "name": "DNS resolves",
+      "title": "[AV-05][incubators] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [
+        "DNS baseline captured: 104.21.80.7, 172.67.172.142, 2606:4700:3032::ac43:ac8e, 2606:4700:3033::6815:5007",
+        "DNS baseline captured: 104.21.80.7, 172.67.172.142, 2606:4700:3032::ac43:ac8e, 2606:4700:3033::6815:5007"
+      ],
+      "metrics": {
+        "a": [
+          "104.21.80.7",
+          "172.67.172.142"
+        ],
+        "aaaa": [
+          "2606:4700:3032::ac43:ac8e",
+          "2606:4700:3033::6815:5007"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 159,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][incubators] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "incubators",
+      "name": "Custom 404 page",
+      "title": "[AV-06][incubators] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://incubators.com/sentinel-404-check-1790761573517",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 105534
+      },
+      "attachments": [],
+      "durationMs": 369,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][incubators] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "incubators",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][incubators] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://incubators.com/wp-sitemap.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 418,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][incubators] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "incubators",
+      "name": "www / http redirects",
+      "title": "[AV-03][incubators] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://incubators.com/": "301 -> https://incubators.com/ | 200",
+          "http://www.incubators.com/": "301 -> https://incubators.com/ | 200",
+          "https://www.incubators.com/": "301 -> https://incubators.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 2684,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][fusetwo] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "fusetwo",
+      "name": "Key pages respond",
+      "title": "[AV-02][fusetwo] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 9,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "platform": 200,
+          "brands": 200,
+          "brand-services": 200,
+          "industries": 200,
+          "publishers": 200,
+          "about": 200,
+          "support": 200,
+          "help": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 10964,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-03][perhaps] Mixed content",
+      "project": "desktop",
+      "scenario": "ER-03",
+      "site": "perhaps",
+      "name": "Mixed content",
+      "title": "[ER-03][perhaps] Mixed content",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithMixedContent": 0
+      },
+      "attachments": [],
+      "durationMs": 72301,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-02][perhaps] Failed network requests",
+      "project": "desktop",
+      "scenario": "ER-02",
+      "site": "perhaps",
+      "name": "Failed network requests",
+      "title": "[ER-02][perhaps] Failed network requests",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithFailedRequests": 0
+      },
+      "attachments": [],
+      "durationMs": 81171,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][perhaps] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "perhaps",
+      "name": "Console errors",
+      "title": "[ER-01][perhaps] Console errors",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 0
+      },
+      "attachments": [],
+      "durationMs": 96926,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][perhaps] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "perhaps",
+      "name": "Expected content present",
+      "title": "[ER-05][perhaps] Expected content present",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 0
+      },
+      "attachments": [],
+      "durationMs": 77493,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-04][perhaps] Unexpected text",
+      "project": "desktop",
+      "scenario": "ER-04",
+      "site": "perhaps",
+      "name": "Unexpected text",
+      "title": "[ER-04][perhaps] Unexpected text",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithBadText": 0
+      },
+      "attachments": [],
+      "durationMs": 86876,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][perhaps] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "perhaps",
+      "name": "Security headers",
+      "title": "[ER-06][perhaps] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 4\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+ ]",
+      "url": "https://www.perhaps.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 953,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-02][flexoffers] Failed network requests",
+      "project": "desktop",
+      "scenario": "ER-02",
+      "site": "flexoffers",
+      "name": "Failed network requests",
+      "title": "[ER-02][flexoffers] Failed network requests",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithFailedRequests": 0
+      },
+      "attachments": [],
+      "durationMs": 174576,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-03][flexoffers] Mixed content",
+      "project": "desktop",
+      "scenario": "ER-03",
+      "site": "flexoffers",
+      "name": "Mixed content",
+      "title": "[ER-03][flexoffers] Mixed content",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithMixedContent": 0
+      },
+      "attachments": [],
+      "durationMs": 140617,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][flexoffers] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "flexoffers",
+      "name": "Console errors",
+      "title": "[ER-01][flexoffers] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 10 page(s) affected: home, publishers, advertisers, signup, directory, ranking, about, contact, support, blog\n{\n  \"home\": [\n    \"wp is not defined\"\n  ],\n  \"publishers\": [\n    \"wp is not defined\"\n  ],\n  \"advertisers\": [\n    \"wp is not defined\"\n  ],\n  \"signup\": [\n    \"wp is not defined\"\n  ],\n  \"directory\": [\n    \"wp is not defined\"\n  ],\n  \"ranking\": [\n    \"Cannot read properties of null (reading 'appendChild')\",\n    \"wp is not defined\"\n  ],\n  \"about\": [\n    \"wp is not defined\"\n  ],\n  \"contact\": [\n    \"wp is not defined\"\n  ],\n  \"support\": [\n    \"wp is not defined\",\n    \"Timed out.\"\n  ],\n  \"blog\": [\n    \"wp is not defined\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 12\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"publishers\",\n+   \"advertisers\",\n+   \"signup\",\n+   \"directory\",\n+   \"ranking\",\n+   \"about\",\n+   \"contact\",\n+   \"support\",\n+   \"blog\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 10
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-09-30\\artifacts\\errors-flexoffers-ER-01-flexoffers-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 233458,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][flexoffers] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "flexoffers",
+      "name": "Security headers",
+      "title": "[ER-06][flexoffers] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+ ]",
+      "url": "https://www.flexoffers.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": true,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 481,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-04][flexoffers] Unexpected text",
+      "project": "desktop",
+      "scenario": "ER-04",
+      "site": "flexoffers",
+      "name": "Unexpected text",
+      "title": "[ER-04][flexoffers] Unexpected text",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithBadText": 0
+      },
+      "attachments": [],
+      "durationMs": 152860,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-02][fusetwo] Failed network requests",
+      "project": "desktop",
+      "scenario": "ER-02",
+      "site": "fusetwo",
+      "name": "Failed network requests",
+      "title": "[ER-02][fusetwo] Failed network requests",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithFailedRequests": 0
+      },
+      "attachments": [],
+      "durationMs": 106395,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][flexoffers] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "flexoffers",
+      "name": "Expected content present",
+      "title": "[ER-05][flexoffers] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: advertisers: no <h1>\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"advertisers: no <h1>\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-09-30\\artifacts\\errors-flexoffers-ER-05-flexoffers-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 147093,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-03][fusetwo] Mixed content",
+      "project": "desktop",
+      "scenario": "ER-03",
+      "site": "fusetwo",
+      "name": "Mixed content",
+      "title": "[ER-03][fusetwo] Mixed content",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithMixedContent": 0
+      },
+      "attachments": [],
+      "durationMs": 61817,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][fusetwo] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "fusetwo",
+      "name": "Console errors",
+      "title": "[ER-01][fusetwo] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 9 page(s) affected: home, platform, brands, brand-services, industries, publishers, about, support, help\n{\n  \"home\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"platform\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brands\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brand-services\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"industries\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"publishers\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"about\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"support\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"help\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 11\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"platform\",\n+   \"brands\",\n+   \"brand-services\",\n+   \"industries\",\n+   \"publishers\",\n+   \"about\",\n+   \"support\",\n+   \"help\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 9
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-09-30\\artifacts\\errors-fusetwo-ER-01-fusetwo-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 121252,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][fusetwo] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "fusetwo",
+      "name": "Security headers",
+      "title": "[ER-06][fusetwo] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 5\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+   \"X-Frame-Options or CSP frame-ancestors\",\n+ ]",
+      "url": "https://www.fusetwo.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": false,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 1923,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][fusetwo] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "fusetwo",
+      "name": "Expected content present",
+      "title": "[ER-05][fusetwo] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: browserContext.close: Target page, context or browser has been closed",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 0
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-09-30\\artifacts\\errors-fusetwo-ER-05-fusetwo-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 92703,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-04][fusetwo] Unexpected text",
+      "project": "desktop",
+      "scenario": "ER-04",
+      "site": "fusetwo",
+      "name": "Unexpected text",
+      "title": "[ER-04][fusetwo] Unexpected text",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: browserContext.close: Target page, context or browser has been closed",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithBadText": 0
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-09-30\\artifacts\\errors-fusetwo-ER-04-fusetwo-Unexpected-text-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 94801,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][incubators] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "incubators",
+      "name": "Console errors",
+      "title": "[ER-01][incubators] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: page.waitForTimeout: Test ended.",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-09-30\\artifacts\\errors-incubators-ER-01-incubators-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 15150,
+      "retry": 0
+    }
+  ]
+}
