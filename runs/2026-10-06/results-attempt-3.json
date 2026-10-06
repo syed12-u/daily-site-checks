@@ -1,0 +1,1017 @@
+{
+  "startedAt": "2026-10-06T16:10:38.620Z",
+  "finishedAt": "2026-10-06T16:18:59.063Z",
+  "durationMs": 500443,
+  "results": [
+    {
+      "key": "desktop::[ER-06][perhaps] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "perhaps",
+      "name": "Security headers",
+      "title": "[ER-06][perhaps] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 4\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+ ]",
+      "url": "https://www.perhaps.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 673,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][flexoffers] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "flexoffers",
+      "name": "Security headers",
+      "title": "[ER-06][flexoffers] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+ ]",
+      "url": "https://www.flexoffers.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": true,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 500,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][fusetwo] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "fusetwo",
+      "name": "Console errors",
+      "title": "[ER-01][fusetwo] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 9 page(s) affected: home, platform, brands, brand-services, industries, publishers, about, support, help\n{\n  \"home\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"platform\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brands\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brand-services\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"industries\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"publishers\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"about\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"support\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"help\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 11\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"platform\",\n+   \"brands\",\n+   \"brand-services\",\n+   \"industries\",\n+   \"publishers\",\n+   \"about\",\n+   \"support\",\n+   \"help\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 9
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\errors-fusetwo-ER-01-fusetwo-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 39869,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][flexoffers] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "flexoffers",
+      "name": "Expected content present",
+      "title": "[ER-05][flexoffers] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: advertisers: no <h1>\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"advertisers: no <h1>\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\errors-flexoffers-ER-05-flexoffers-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 42943,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][fusetwo] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "fusetwo",
+      "name": "Security headers",
+      "title": "[ER-06][fusetwo] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 5\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+   \"X-Frame-Options or CSP frame-ancestors\",\n+ ]",
+      "url": "https://www.fusetwo.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": false,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 425,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][incubators] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "incubators",
+      "name": "Security headers",
+      "title": "[ER-06][incubators] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 5\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+   \"X-Frame-Options or CSP frame-ancestors\",\n+ ]",
+      "url": "https://incubators.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": false,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 698,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][incubators] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "incubators",
+      "name": "Expected content present",
+      "title": "[ER-05][incubators] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: contact: no <h1>\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"contact: no <h1>\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\errors-incubators-ER-05-incubators-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 9301,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][flexoffers] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "flexoffers",
+      "name": "Console errors",
+      "title": "[ER-01][flexoffers] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 10 page(s) affected: home, publishers, advertisers, signup, directory, ranking, about, contact, support, blog\n{\n  \"home\": [\n    \"wp is not defined\"\n  ],\n  \"publishers\": [\n    \"wp is not defined\"\n  ],\n  \"advertisers\": [\n    \"wp is not defined\"\n  ],\n  \"signup\": [\n    \"wp is not defined\"\n  ],\n  \"directory\": [\n    \"wp is not defined\"\n  ],\n  \"ranking\": [\n    \"wp is not defined\"\n  ],\n  \"about\": [\n    \"wp is not defined\"\n  ],\n  \"contact\": [\n    \"wp is not defined\"\n  ],\n  \"support\": [\n    \"wp is not defined\"\n  ],\n  \"blog\": [\n    \"wp is not defined\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 12\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"publishers\",\n+   \"advertisers\",\n+   \"signup\",\n+   \"directory\",\n+   \"ranking\",\n+   \"about\",\n+   \"contact\",\n+   \"support\",\n+   \"blog\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 10
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\errors-flexoffers-ER-01-flexoffers-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 59640,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-02][fusetwo] Visitor to key landing page",
+      "project": "desktop",
+      "scenario": "UF-02",
+      "site": "fusetwo",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][fusetwo] Visitor to key landing page",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: landing page has no visible H1\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('h1').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - landing page has no visible H1 locator('h1').first() with timeout 10000ms\n  - waiting for locator('h1').first()\n",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "landing": "https://advertiser.fusetwo.com/signin",
+        "status": 200
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\flows-fusetwo-UF-02-fusetwo-Visitor-to-key-landing-page-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 20448,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-01][incubators] Visitor to contact",
+      "project": "desktop",
+      "scenario": "UF-01",
+      "site": "incubators",
+      "name": "Visitor to contact",
+      "title": "[UF-01][incubators] Visitor to contact",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: contact form not visible after navigating\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('form').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - contact form not visible after navigating locator('form').first() with timeout 10000ms\n  - waiting for locator('form').first()\n",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\flows-incubators-UF-01-incubators-Visitor-to-contact-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 18394,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-02][incubators] Visitor to key landing page",
+      "project": "desktop",
+      "scenario": "UF-02",
+      "site": "incubators",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][incubators] Visitor to key landing page",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: no visible primary CTA matched \"a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a\"\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a').visible().first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - no visible primary CTA matched \"a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a\" locator('a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a').visible().first() with timeout 10000ms\n  - waiting for locator('a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a').visible().first()\n",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\flows-incubators-UF-02-inc-c01e5-Visitor-to-key-landing-page-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 13133,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-06][incubators] Browse / search",
+      "project": "desktop",
+      "scenario": "UF-06",
+      "site": "incubators",
+      "name": "Browse / search",
+      "title": "[UF-06][incubators] Browse / search",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: search input not visible (no search toggle found either)\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - search input not visible (no search toggle found either) locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]').first() with timeout 10000ms\n  - waiting for locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]').first()\n",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\flows-incubators-UF-06-incubators-Browse-search-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 13043,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-09][incubators] Key CTA buttons",
+      "project": "desktop",
+      "scenario": "FN-09",
+      "site": "incubators",
+      "name": "Key CTA buttons",
+      "title": "[FN-09][incubators] Key CTA buttons",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: no visible CTAs matched \"a.elementor-button, a.elementor-button-link, a.btn, a.button, a[class*=\"btn\" i], a[class*=\"button\" i], a[class*=\"cta\" i], a[role=\"button\"], .hero a, [class*=\"hero\" i] a\" on the homepage\n\nexpect(received).toBeGreaterThan(expected)\n\nExpected: > 0\nReceived:   0",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\functionality-incubators-FN-09-incubators-Key-CTA-buttons-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 2800,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-05][incubators] Search",
+      "project": "desktop",
+      "scenario": "FN-05",
+      "site": "incubators",
+      "name": "Search",
+      "title": "[FN-05][incubators] Search",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: search input not visible (no search toggle found either)\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - search input not visible (no search toggle found either) locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]').first() with timeout 10000ms\n  - waiting for locator('input[type=\"search\"], input[name=\"s\"], input[placeholder*=\"search\" i]').first()\n",
+      "url": "https://incubators.com/",
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\functionality-incubators-FN-05-incubators-Search-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 13021,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-03][incubators] Contact form loads",
+      "project": "desktop",
+      "scenario": "FN-03",
+      "site": "incubators",
+      "name": "Contact form loads",
+      "title": "[FN-03][incubators] Contact form loads",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: contact form not visible\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('form').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - contact form not visible locator('form').first() with timeout 10000ms\n  - waiting for locator('form').first()\n",
+      "url": "https://incubators.com/contact-us/",
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\functionality-incubators-FN-03-incubators-Contact-form-loads-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 16897,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-01][perhaps] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "perhaps",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][perhaps] Full-page screenshot, desktop",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  26119 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\news.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\news.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 26119 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 26119 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 1,
+        "outcome": {
+          "home": "pass",
+          "services": "pass",
+          "about": "pass",
+          "careers": "pass",
+          "news": "fail",
+          "faqs": "pass",
+          "blog": "pass",
+          "contact": "pass",
+          "advertiser-signup": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\news-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\news.png"
+        },
+        {
+          "name": "perhaps\\news-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\news-actual.png"
+        },
+        {
+          "name": "perhaps\\news-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\news-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 59582,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-01][flexoffers] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "flexoffers",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][flexoffers] Full-page screenshot, desktop",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 6219px, received 1440px by 6251px. 451399 pixels (ratio 0.06 of all image pixels) are different.\n\n  Snapshot: flexoffers\\home.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\home.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 6219px, received 1440px by 6251px. 451399 pixels (ratio 0.06 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 6219px, received 1440px by 6251px. 451399 pixels (ratio 0.06 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 8775px, received 1440px by 8799px. 562609 pixels (ratio 0.05 of all image pixels) are different.\n\n  Snapshot: flexoffers\\directory.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\directory.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 8775px, received 1440px by 8799px. 562609 pixels (ratio 0.05 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 8775px, received 1440px by 8799px. 562609 pixels (ratio 0.05 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 3401px, received 1440px by 3359px. 208029 pixels (ratio 0.05 of all image pixels) are different.\n\n  Snapshot: flexoffers\\ranking.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\ranking.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 3401px, received 1440px by 3359px. 208027 pixels (ratio 0.05 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 3401px, received 1440px by 3359px. 208029 pixels (ratio 0.05 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 5358px, received 1440px by 5076px. 2129937 pixels (ratio 0.28 of all image pixels) are different.\n\n  Snapshot: flexoffers\\blog.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\blog.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 5358px, received 1440px by 5076px. 2129937 pixels (ratio 0.28 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 5358px, received 1440px by 5076px. 2129937 pixels (ratio 0.28 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 10,
+        "diffs": 4,
+        "outcome": {
+          "home": "fail",
+          "publishers": "pass",
+          "advertisers": "pass",
+          "signup": "pass",
+          "directory": "fail",
+          "ranking": "fail",
+          "about": "pass",
+          "contact": "pass",
+          "support": "pass",
+          "blog": "fail"
+        }
+      },
+      "attachments": [
+        {
+          "name": "flexoffers\\home-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\home.png"
+        },
+        {
+          "name": "flexoffers\\home-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\home-actual.png"
+        },
+        {
+          "name": "flexoffers\\home-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\home-diff.png"
+        },
+        {
+          "name": "flexoffers\\directory-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\directory.png"
+        },
+        {
+          "name": "flexoffers\\directory-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\directory-actual.png"
+        },
+        {
+          "name": "flexoffers\\directory-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\directory-diff.png"
+        },
+        {
+          "name": "flexoffers\\ranking-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\ranking.png"
+        },
+        {
+          "name": "flexoffers\\ranking-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\ranking-actual.png"
+        },
+        {
+          "name": "flexoffers\\ranking-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\ranking-diff.png"
+        },
+        {
+          "name": "flexoffers\\blog-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\blog.png"
+        },
+        {
+          "name": "flexoffers\\blog-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\blog-actual.png"
+        },
+        {
+          "name": "flexoffers\\blog-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\blog-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 115584,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][flexoffers] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "flexoffers",
+      "name": "Header and footer components",
+      "title": "[VR-04][flexoffers] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  Expected an image 1440px by 818px, received 1440px by 817px. 9317 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: flexoffers\\home-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\home-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - Expected an image 1440px by 818px, received 1440px by 817px. 9317 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - Expected an image 1440px by 818px, received 1440px by 817px. 9317 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 20,
+        "diffs": 1,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "flexoffers\\home-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\home-footer.png"
+        },
+        {
+          "name": "flexoffers\\home-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\home-footer-actual.png"
+        },
+        {
+          "name": "flexoffers\\home-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\home-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 72697,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-08][flexoffers] Sitemap URLs respond",
+      "project": "desktop",
+      "scenario": "AV-08",
+      "site": "flexoffers",
+      "name": "Sitemap URLs respond",
+      "title": "[AV-08][flexoffers] Sitemap URLs respond",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 3 of 6000 sitemap URLs broken (0.05%): 400 https://www.flexoffers.com/affiliate-programs/100%-pure-affiliate-program/; 404 https://www.flexoffers.com/affiliate-programs/linksys-affiliate-program/; fetch failed https://www.flexoffers.com/affiliate-programs/bionatrol-llc-affiliate-program/\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 3",
+      "url": "https://www.flexoffers.com/robots.txt",
+      "notes": [
+        "6000 sitemap URLs checked in 164 s (8 sitemap files)",
+        "6000 sitemap URLs checked in 164 s (8 sitemap files)"
+      ],
+      "metrics": {
+        "sitemaps": 8,
+        "urlsChecked": 6000,
+        "broken": 3,
+        "brokenPct": 0.05,
+        "slow": 0,
+        "seconds": 164
+      },
+      "attachments": [],
+      "durationMs": 165827,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-06][flexoffers] Text content diff",
+      "project": "desktop",
+      "scenario": "VR-06",
+      "site": "flexoffers",
+      "name": "Text content diff",
+      "title": "[VR-06][flexoffers] Text content diff",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: text changed:\n{\n  \"home\": [\n    \"- Entertainment and Lifestyle Affiliate Programs to Promote This Fall\",\n    \"- September bridges late-summer activities and fall entertainment. As more consumers establish new routines, plan fall gat\",\n    \"- September 22, 2026\",\n    \"+ Kickoff to Q4 Earnings: Top-Performing Affiliate Programs Worth Promoting\",\n    \"+ Kickoff to Q4 Earnings: Top-Performing Affiliate Programs Worth Promoting Kick off Q4 earnings with nine affiliate progr\",\n    \"+ October 1, 2026\"\n  ],\n  \"directory\": [\n    \"- OPPO DE Affiliate Program\",\n    \"- OPPO TH Affiliate Program\",\n    \"- QuickSigner Affiliate Program\",\n    \"- Casey’s Toys Affiliate Program\",\n    \"- eat2explore Affiliate Program\",\n    \"- Mr.Gorbar Affiliate Program\",\n    \"- NICEPEOPLE Affiliate Program\",\n    \"- Sensi CBD EUROPE Affiliate Program\",\n    \"- Noble Panacea ROW Affiliate Program\",\n    \"- EviDenS Affiliate Program\",\n    \"- Made in Design Affiliate Program\",\n    \"- GOODEE Affiliate Program\",\n    \"- CPO Power Tools Affiliate Program\",\n    \"- Boesma Affiliate Program\",\n    \"- NPLUX Affiliate Program\",\n    \"- Wirsh LLC Affiliate Program\",\n    \"- iToolab TaiWan Affiliate Program\",\n    \"- Blokees Affiliate Program\",\n    \"- WonderArtwork Affiliate Program\",\n    \"- Callie EU Affiliate Program\",\n    \"- Sezzle Affiliate Program\",\n    \"- Ski-Doo Affiliate Program\",\n    \"- Reemo Innovation Limited Affiliate Program\",\n    \"- Skylark Travel Group Affiliate Program\",\n    \"+ 9PHX RACING Affiliate Program\",\n    \"+ TOPDONStore-FR Affiliate Program\",\n    \"+ Evolved Public Relations Course Affiliate Program\",\n    \"+ Little Bot Inc. Affiliate Program\",\n    \"+ BuLuTu Affiliate Program\",\n    \"+ The Herbalist Shop Monreale (IT) Affiliate Program\"\n  ],\n  \"ranking\": [\n    \"- 13k+\",\n    \"- 219\",\n    \"- 87\",\n    \"- $4.64\",\n    \"- Dining Rewards Cards\",\n    \"- Life Insurance\",\n    \"- $3.15 $3.83 $2.88 04/01/2026\",\n    \"- Aventon Bikes Bikes/Electric Bikes 4.5 5.0\",\n    \"- $2.3 $3.79 $3.5 01/16/2026\",\n    \"- iFLY Indoor Skydiving Travel 4.5 5.0\",\n    \"- $0.53 $0.57 $1.12 07/21/2026\",\n    \"- Brevo Marketing and Advertising 4.5 5.0\",\n    \"- $0.00 $0.72 $3.51 01/08/2025\",\n    \"- Cleo US Finance Management 4.5 5.0\",\n    \"- $2.61 $3.19 $8.22 08/14/2026\",\n    \"- Sam's Club Department Stores 4.0 5.0\",\n    \"- $0.2 $0.34 $0.25 05/18/2026\",\n    \"- $0.86 $0.74 $1.01 08/13/2026\",\n    \"- Vans Footwear 4.0 4.5\",\n    \"- $0.14 $0.14 $0.24 09/10/2026\",\n    \"- The Linux Foundation Career Education 4.0 5.0\",\n    \"- $1.17 $0.82 $0.79 02/24/2025\",\n    \"- MaxLend Installment Loans General Loan Services 4.0 5.0\",\n    \"- $0.08 $0.03 $0.05 11/07/2022\",\n    \"- Showing 1 to 10 of 13,031\",\n    \"+ 13.4k+\",\n    \"+ 149\",\n    \"+ 84\",\n    \"+ $3.31\",\n    \"+ Cards for Bad Credit\"\n  ],\n  \"blog\": [\n    \"- 11 Health and Wellness Affiliate Programs to Promote Before Summer Ends\",\n    \"- Summer Health & Wellness Programs Summer wellness demand does not disappear when back-to-school shopping begins….\",\n    \"- 11 HEALTH AND WELLNESS AFFILIATE PROGRAMS TO PROMOTE BEFORE SUMMER ENDS\",\n    \"+ Kickoff to Q4 Earnings: Top-Performing Affiliate Programs Worth Promoting\",\n    \"+ Kickoff to Q4 Earnings: Top-Performing Affiliate Programs Worth Promoting Kick off Q4 earnings with nine…\",\n    \"+ KICKOFF TO Q4 EARNINGS: TOP-PERFORMING AFFILIATE PROGRAMS WORTH PROMOTING\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 6\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"directory\",\n+   \"ranking\",\n+   \"blog\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChanged": 4
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-06-flexoffers-Text-content-diff-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 60012,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-05][flexoffers] Layout shift",
+      "project": "desktop",
+      "scenario": "VR-05",
+      "site": "flexoffers",
+      "name": "Layout shift",
+      "title": "[VR-05][flexoffers] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: home: footer: moved 0px horizontally, 31px vertically (was 0,5403 now 0,5434)\ndirectory: footer: moved 0px horizontally, 24px vertically (was 0,7959 now 0,7983)\nranking: footer: moved 0px horizontally, 42px vertically (was 0,2628 now 0,2586)\nblog: footer: moved 0px horizontally, 62px vertically (was 85,1137 now 85,1075)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 6\n\n- Array []\n+ Array [\n+   \"home: footer: moved 0px horizontally, 31px vertically (was 0,5403 now 0,5434)\",\n+   \"directory: footer: moved 0px horizontally, 24px vertically (was 0,7959 now 0,7983)\",\n+   \"ranking: footer: moved 0px horizontally, 42px vertically (was 0,2628 now 0,2586)\",\n+   \"blog: footer: moved 0px horizontally, 62px vertically (was 85,1137 now 85,1075)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 4
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-05-flexoffers-Layout-shift-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 75617,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-07][perhaps] Mobile navigation",
+      "project": "mobile",
+      "scenario": "UF-07",
+      "site": "perhaps",
+      "name": "Mobile navigation",
+      "title": "[UF-07][perhaps] Mobile navigation",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: URL did not change after tapping a menu link\n\nexpect(received).not.toBe(expected) // Object.is equality\n\nExpected: not \"https://www.perhaps.com/\"",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "opened": "https://www.perhaps.com/"
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\flows-perhaps-UF-07-perhaps-Mobile-navigation-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 9584,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-07][flexoffers] Mobile navigation",
+      "project": "mobile",
+      "scenario": "UF-07",
+      "site": "flexoffers",
+      "name": "Mobile navigation",
+      "title": "[UF-07][flexoffers] Mobile navigation",
+      "status": "failed",
+      "severity": "medium",
+      "error": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('nav, [role=\"navigation\"], .elementor-nav-menu--dropdown, [class*=\"menu\" i], [id*=\"menu\" i] a[href]').visible().nth(10)\n    - locator resolved to <a href=\"https://www.flexoffers.com/publishers/\">Publishers</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <a href=\"https://www.flexoffers.com/affiliate-program-directory-list/\">Programs</a> from <div id=\"mobile-drawer\" data-drawer-target-string=\"#mobile-drawer\" class=\"popup-drawer popup-drawer-layout-sidepanel popup-drawer-animation-fade popup-drawer-side-left show-drawer active pop-animated\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - element is outside of the viewport\n  6 × retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <a href=\"https://www.flexoffers.com/advertisers/\">Advertisers</a> from <div id=\"mobile-drawer\" data-drawer-target-string=\"#mobile-drawer\" class=\"popup-drawer popup-drawer-layout-sidepanel popup-drawer-animation-fade popup-drawer-side-left show-drawer active pop-animated\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <a href=\"https://www.flexoffers.com/affiliate-program-directory-list/\">Programs</a> from <div id=\"mobile-drawer\" data-drawer-target-string=\"#mobile-drawer\" class=\"popup-drawer popup-drawer-layout-sidepanel popup-drawer-animation-fade popup-drawer-side-left show-drawer active pop-animated\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"drawer-header\">…</div> from <div id=\"mobile-drawer\" data-drawer-target-string=\"#mobile-drawer\" class=\"popup-drawer popup-drawer-layout-sidepanel popup-drawer-animation-fade popup-drawer-side-left show-drawer active pop-animated\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"drawer-header\">…</div> from <div id=\"mobile-drawer\" data-drawer-target-string=\"#mobile-drawer\" class=\"popup-drawer popup-drawer-layout-sidepanel popup-drawer-animation-fade popup-drawer-side-left show-drawer active pop-animated\">…</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\flows-flexoffers-UF-07-flexoffers-Mobile-navigation-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 26744,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-01][fusetwo] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "fusetwo",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][fusetwo] Full-page screenshot, desktop",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 5316px, received 1440px by 5729px. 1978404 pixels (ratio 0.24 of all image pixels) are different.\n\n  Snapshot: fusetwo\\home.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\home.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 5316px, received 1440px by 5729px. 1978404 pixels (ratio 0.24 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 5316px, received 1440px by 5729px. 1978404 pixels (ratio 0.24 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  831455 pixels (ratio 0.07 of all image pixels) are different.\n\n  Snapshot: fusetwo\\platform.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\platform.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 831455 pixels (ratio 0.07 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 831455 pixels (ratio 0.07 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  299365 pixels (ratio 0.05 of all image pixels) are different.\n\n  Snapshot: fusetwo\\support.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\support.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 299365 pixels (ratio 0.05 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 299365 pixels (ratio 0.05 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 3,
+        "outcome": {
+          "home": "fail",
+          "platform": "fail",
+          "brands": "pass",
+          "brand-services": "pass",
+          "industries": "pass",
+          "publishers": "pass",
+          "about": "pass",
+          "support": "fail",
+          "help": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\home-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\fusetwo\\home.png"
+        },
+        {
+          "name": "fusetwo\\home-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\home-actual.png"
+        },
+        {
+          "name": "fusetwo\\home-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\home-diff.png"
+        },
+        {
+          "name": "fusetwo\\platform-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\fusetwo\\platform.png"
+        },
+        {
+          "name": "fusetwo\\platform-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\platform-actual.png"
+        },
+        {
+          "name": "fusetwo\\platform-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\platform-diff.png"
+        },
+        {
+          "name": "fusetwo\\support-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\fusetwo\\support.png"
+        },
+        {
+          "name": "fusetwo\\support-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\support-actual.png"
+        },
+        {
+          "name": "fusetwo\\support-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\support-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 90148,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][fusetwo] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "fusetwo",
+      "name": "Header and footer components",
+      "title": "[VR-04][fusetwo] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  1068 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: fusetwo\\industries-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\industries-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 1052 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 16 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 1068 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 1,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\industries-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\fusetwo\\industries-footer.png"
+        },
+        {
+          "name": "fusetwo\\industries-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-desktop\\fusetwo\\industries-footer-actual.png"
+        },
+        {
+          "name": "fusetwo\\industries-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-desktop\\fusetwo\\industries-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 55654,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][perhaps] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "perhaps",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][perhaps] Full-page screenshot, mobile",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  34265 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\about.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\about.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 34265 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 34265 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  2946 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\careers.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\careers.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 2946 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 2946 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  83153 pixels (ratio 0.04 of all image pixels) are different.\n\n  Snapshot: perhaps\\news.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\news.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 83153 pixels (ratio 0.04 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 83153 pixels (ratio 0.04 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  151947 pixels (ratio 0.10 of all image pixels) are different.\n\n  Snapshot: perhaps\\blog.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\blog.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 151947 pixels (ratio 0.10 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 151947 pixels (ratio 0.10 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 4,
+        "outcome": {
+          "home": "pass",
+          "services": "pass",
+          "about": "fail",
+          "careers": "fail",
+          "news": "fail",
+          "faqs": "pass",
+          "blog": "fail",
+          "contact": "pass",
+          "advertiser-signup": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\about-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\about.png"
+        },
+        {
+          "name": "perhaps\\about-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\about-actual.png"
+        },
+        {
+          "name": "perhaps\\about-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\about-diff.png"
+        },
+        {
+          "name": "perhaps\\careers-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\careers.png"
+        },
+        {
+          "name": "perhaps\\careers-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\careers-actual.png"
+        },
+        {
+          "name": "perhaps\\careers-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\careers-diff.png"
+        },
+        {
+          "name": "perhaps\\news-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\news.png"
+        },
+        {
+          "name": "perhaps\\news-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\news-actual.png"
+        },
+        {
+          "name": "perhaps\\news-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\news-diff.png"
+        },
+        {
+          "name": "perhaps\\blog-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\blog.png"
+        },
+        {
+          "name": "perhaps\\blog-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\blog-actual.png"
+        },
+        {
+          "name": "perhaps\\blog-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\blog-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 59645,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][flexoffers] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "flexoffers",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][flexoffers] Full-page screenshot, mobile",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 390px by 4277px, received 390px by 4278px. 27726 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: flexoffers\\contact.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\contact.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 390px by 4277px, received 390px by 4278px. 27726 pixels (ratio 0.02 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 390px by 4277px, received 390px by 4278px. 27726 pixels (ratio 0.02 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 10,
+        "diffs": 1,
+        "outcome": {
+          "home": "pass",
+          "publishers": "pass",
+          "advertisers": "pass",
+          "signup": "pass",
+          "directory": "pass",
+          "ranking": "pass",
+          "about": "pass",
+          "contact": "fail",
+          "support": "pass",
+          "blog": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "flexoffers\\contact-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\contact.png"
+        },
+        {
+          "name": "flexoffers\\contact-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\contact-actual.png"
+        },
+        {
+          "name": "flexoffers\\contact-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\contact-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 86183,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-04][flexoffers] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "flexoffers",
+      "name": "Header and footer components",
+      "title": "[VR-04][flexoffers] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  Expected an image 390px by 1801px, received 390px by 1802px. 6337 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: flexoffers\\contact-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\contact-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - Expected an image 390px by 1801px, received 390px by 1802px. 6337 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - Expected an image 390px by 1801px, received 390px by 1802px. 6337 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 20,
+        "diffs": 1,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "flexoffers\\contact-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\contact-footer.png"
+        },
+        {
+          "name": "flexoffers\\contact-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-mobile\\flexoffers\\contact-footer-actual.png"
+        },
+        {
+          "name": "flexoffers\\contact-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-mobile\\flexoffers\\contact-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 79244,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][fusetwo] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "fusetwo",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][fusetwo] Full-page screenshot, mobile",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  338102 pixels (ratio 0.12 of all image pixels) are different.\n\n  Snapshot: fusetwo\\home.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\home.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 338102 pixels (ratio 0.12 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 338102 pixels (ratio 0.12 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  736046 pixels (ratio 0.16 of all image pixels) are different.\n\n  Snapshot: fusetwo\\platform.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\platform.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 352570 pixels (ratio 0.08 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 507322 pixels (ratio 0.11 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 116392 pixels (ratio 0.03 of all image pixels) are different.\n  - waiting 500ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 736046 pixels (ratio 0.16 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  850423 pixels (ratio 0.18 of all image pixels) are different.\n\n  Snapshot: fusetwo\\brands.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\brands.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 720941 pixels (ratio 0.15 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 129482 pixels (ratio 0.03 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 850423 pixels (ratio 0.18 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  255184 pixels (ratio 0.10 of all image pixels) are different.\n\n  Snapshot: fusetwo\\about.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\about.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 127159 pixels (ratio 0.05 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 128025 pixels (ratio 0.05 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 255184 pixels (ratio 0.10 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 4,
+        "outcome": {
+          "home": "fail",
+          "platform": "fail",
+          "brands": "fail",
+          "brand-services": "pass",
+          "industries": "pass",
+          "publishers": "pass",
+          "about": "fail",
+          "support": "pass",
+          "help": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\home-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\home.png"
+        },
+        {
+          "name": "fusetwo\\home-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\home-actual.png"
+        },
+        {
+          "name": "fusetwo\\home-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\home-diff.png"
+        },
+        {
+          "name": "fusetwo\\platform-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\platform.png"
+        },
+        {
+          "name": "fusetwo\\platform-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\platform-actual.png"
+        },
+        {
+          "name": "fusetwo\\platform-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\platform-diff.png"
+        },
+        {
+          "name": "fusetwo\\brands-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\brands.png"
+        },
+        {
+          "name": "fusetwo\\brands-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\brands-actual.png"
+        },
+        {
+          "name": "fusetwo\\brands-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\brands-diff.png"
+        },
+        {
+          "name": "fusetwo\\about-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\about.png"
+        },
+        {
+          "name": "fusetwo\\about-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\about-actual.png"
+        },
+        {
+          "name": "fusetwo\\about-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\about-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-06\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 81626,
+      "retry": 0
+    }
+  ]
+}

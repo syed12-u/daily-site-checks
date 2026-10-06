@@ -55,9 +55,11 @@ async function postCard(content, { dryRunDir } = {}) {
     attachments: [{ contentType: 'application/vnd.microsoft.card.adaptive', contentUrl: null, content }],
   };
   if (dryRunDir) {
+    // --no-teams: save the card locally and do NOT post, even when a webhook is configured.
     fs.mkdirSync(dryRunDir, { recursive: true });
     const f = path.join(dryRunDir, `card-${Date.now()}.json`);
     fs.writeFileSync(f, JSON.stringify(payload, null, 2));
+    return { skipped: `saved to ${f} (--no-teams)` };
   }
   if (!WEBHOOK) return { skipped: 'TEAMS_WEBHOOK_URL not set' };
   const res = await fetch(WEBHOOK, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload) });
