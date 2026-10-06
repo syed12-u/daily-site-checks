@@ -17,7 +17,7 @@ require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
-const { ROOT, RUNS_DIR, STATE_DIR, todayKey, readJson, writeJson, loadHistory, metricSeries, average } = require('./lib/results');
+const { ROOT, RUNS_DIR, STATE_DIR, todayKey, readJson, writeJson, loadHistory, metricSeries, average, errorSummary } = require('./lib/results');
 const { RANK } = require('./lib/severity');
 const { reconcile } = require('./lib/alerts');
 const { staleImageBaselines } = require('./lib/baselines');
@@ -39,14 +39,7 @@ const HISTORY_DAYS = Number(process.env.HISTORY_DAYS ?? 30);
 const NO_TEAMS = flag('--no-teams');
 const RUN_STATE = path.join(STATE_DIR, 'run.json');
 
-// First few meaningful lines of a Playwright error, for one-line summaries.
-const firstLine = (s) =>
-  (s || '')
-    .split('\n')
-    .map((l) => l.replace(/^Error:\s*/, '').trim())
-    .filter((l) => l && !/^expect\(/.test(l) && !/^[{}\[\],]+$/.test(l) && !/^(Expected|Received|Call log|Locator|Timeout):?/.test(l))
-    .slice(0, 3)
-    .join(' | ');
+const firstLine = (s) => errorSummary(s, 220);
 
 function collectThumbnails(failed, runDir, date) {
   const out = [];

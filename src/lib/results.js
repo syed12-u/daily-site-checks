@@ -78,6 +78,29 @@ function average(nums) {
   return nums.reduce((a, b) => a + b, 0) / nums.length;
 }
 
+/** First few meaningful lines of a Playwright error, for one-line summaries in cards. */
+function errorSummary(s, max = 220) {
+  const text = s || '';
+  // Screenshot comparisons: name the snapshots that differ instead of quoting the matcher output.
+  const snaps = [...new Set([...text.matchAll(/Snapshot:\s*(\S+)/g)].map((m) => m[1].replace(/\\/g, '/')))];
+  if (snaps.length) return `${snaps.length} screenshot(s) differ from baseline: ${snaps.join(', ')}`.slice(0, max);
+
+  const lines = text
+    .split('\n')
+    .map((l) => l.replace(/^Error:\s*/, '').trim())
+    .filter(
+      (l) =>
+        l &&
+        !/^expect\(/.test(l) &&
+        !/^[{}\[\],]+$/.test(l) &&
+        !/^-{2,}$/.test(l) &&
+        !/^(Expected|Received|Call log|Locator|Timeout):?/.test(l) &&
+        !/^[-+] /.test(l) && // diff lines
+        !/^(\d+ × )?(waiting for|locator resolved|verifying|unexpected value|\d+ pixels|element\(s\) not found|retrying)/.test(l)
+    );
+  return [...new Set(lines)].slice(0, 3).join(' | ').slice(0, max) || text.trim().split('\n')[0].slice(0, max);
+}
+
 function readJson(file, fallback) {
   try {
     return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -104,6 +127,7 @@ module.exports = {
   loadHistory,
   metricSeries,
   average,
+  errorSummary,
   readJson,
   writeJson,
 };
