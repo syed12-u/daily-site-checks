@@ -102,6 +102,7 @@ for (const site of activeSites()) {
         const boxes = {};
         const probes = { nav: site.header, h1: 'h1', cta: site.ctas, footer: site.footer };
         for (const [name, sel] of Object.entries(probes)) {
+          if (!sel) continue; // e.g. a site without button-style CTAs
           const b = await page.locator(sel).first().boundingBox().catch(() => null);
           boxes[name] = b ? { x: Math.round(b.x), y: Math.round(b.y), w: Math.round(b.width), h: Math.round(b.height) } : null;
         }

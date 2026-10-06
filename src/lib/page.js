@@ -32,6 +32,10 @@ const FREEZE_CSS = `
   }
   html { scrollbar-width: none !important; }
   ::-webkit-scrollbar { display: none !important; }
+  /* Elementor / WOW scroll-in animations: render final state immediately */
+  .elementor-invisible, .animated, [data-settings*="animation"], .wow, [class*="aos-"] {
+    visibility: visible !important; opacity: 1 !important; transform: none !important;
+  }
 `;
 
 function isFirstParty(url, site) {
@@ -229,12 +233,30 @@ function masks(page, site) {
   return [...DEFAULT_MASKS, ...(site.masks || [])].map((sel) => page.locator(sel));
 }
 
+/** Wait until the document height stops changing (lazy content, fonts, embeds). */
+async function waitForStableHeight(page, { samples = 3, interval = 400, timeout = 8000 } = {}) {
+  const started = Date.now();
+  let last = -1;
+  let stable = 0;
+  while (Date.now() - started < timeout) {
+    const h = await page.evaluate(() => document.documentElement.scrollHeight).catch(() => -1);
+    stable = h === last ? stable + 1 : 0;
+    if (stable >= samples - 1) return h;
+    last = h;
+    await page.waitForTimeout(interval);
+  }
+  return last;
+}
+
 /** Full preparation for a screenshot or visual check of one page. */
 async function prepareForVisual(page, site, url) {
   const res = await gotoStable(page, url);
   await dismissBanners(page, site);
   await freeze(page);
   await scrollThrough(page);
+  await waitForStableHeight(page);
+  await scrollThrough(page, 1200); // second pass catches content revealed by the first
+  await waitForStableHeight(page);
   await page.waitForTimeout(250);
   return res;
 }

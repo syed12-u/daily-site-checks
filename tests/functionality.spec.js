@@ -239,6 +239,7 @@ for (const site of activeSites()) {
     });
 
     test(tag('FN-09', site), async ({ page }, testInfo) => {
+      test.skip(!site.ctas, 'site has no button-style CTAs');
       setUrl(testInfo, site.baseUrl);
       await gotoStable(page, site.baseUrl);
       await dismissBanners(page, site);

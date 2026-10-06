@@ -224,22 +224,11 @@ const sites = {
     header: WP.header,
     footer: WP.footer,
     nav: WP.nav,
-    ctas: WP.ctas,
-    contact: {
-      path: '/contact-us/', navText: /contact/i,
-      form: 'form',
-      fields: contactFields, submit: contactSubmit, successText: contactSuccess,
-    },
-    // Directory browse: the "companies built" page is the closest thing to a directory.
-    // Homepage has a WordPress search input. TODO confirm which to monitor.
-    search: {
-      path: '/',
-      input: 'input[type="search"], input[name="s"], input[placeholder*="search" i]',
-      submit: 'button[type="submit"], input[type="submit"]',
-      results: 'article, .elementor-post, .search-result, main li a',
-      term: 'company',
-      resultLink: 'article a, .elementor-post a, .search-result a',
-    },
+    // Verified 6 Oct: brand site with no button-style CTAs, no search box and a contact page
+    // that only shows an email address (no form). Those scenarios skip until the site changes.
+    ctas: null,
+    contact: null,
+    search: null,
     embeds: [], // no GTM / HubSpot detected on 24 Sep; FN-08 skips
     masks: ['[class*="testimonial" i]', '[class*="logo" i][class*="slider" i]'],
     cookieAccept: WP.cookieAccept,
