@@ -22,6 +22,7 @@
     "baselines:capture": "node src/approve.js all all",
     "report": "playwright show-report",
     "teams:test": "node src/teams.js --test",
+    "post:summary": "node src/post-summary.js",
     "check:config": "node src/check-config.js"
   },
   "dependencies": {
