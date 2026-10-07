@@ -106,7 +106,9 @@ for (const site of activeSites()) {
       expect(res && res.status(), `landing page returned ${res && res.status()}`).toBe(200);
       await test.step('Landing page shows an H1 and a CTA', async () => {
         const h1 = page.locator('h1').first();
-        await expect(h1, 'landing page has no H1').toHaveCount(1);
+        const h1Count = await page.locator('h1').count();
+        expect(h1Count, 'landing page has no H1').toBeGreaterThan(0);
+        if (h1Count > 1) note(testInfo, `landing page has ${h1Count} H1 elements (SEO: should be one)`);
         // Scroll-in animations keep the H1 at opacity 0 until it enters the viewport.
         await h1.scrollIntoViewIfNeeded().catch(() => {});
         await page.waitForTimeout(500);
