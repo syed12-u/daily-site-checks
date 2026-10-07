@@ -219,7 +219,11 @@ async function main() {
   process.exitCode = summary.overall === 'red' ? 2 : summary.overall === 'amber' ? 1 : 0;
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(3);
-});
+module.exports = { summarize, narrative, prune };
+
+if (require.main === module) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(3);
+  });
+}
