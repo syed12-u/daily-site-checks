@@ -126,7 +126,12 @@ async function main() {
   fs.mkdirSync(runDir, { recursive: true });
   const log = createLogger(path.join(runDir, 'run.log'));
   const cardsDir = NO_TEAMS ? path.join(runDir, 'cards') : undefined;
-  const extra = opt('--grep') ? ['--grep', opt('--grep')] : [];
+  // Pass-through options for demos: --headed (visible browser), --workers N, --project name.
+  const extra = [];
+  if (opt('--grep')) extra.push('--grep', opt('--grep'));
+  if (flag('--headed')) extra.push('--headed');
+  if (opt('--workers')) extra.push('--workers', opt('--workers'));
+  if (opt('--project')) extra.push('--project', opt('--project'));
   const startedAt = new Date();
   log(`daily run started; sites=${activeSites().map((s) => s.key).join(',')} retries=${RETRIES}`);
 
