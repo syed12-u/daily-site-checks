@@ -128,6 +128,8 @@ const CONSENT_ACCEPT = [
 
 // Containers of those tools, hidden as a fallback when no button matched.
 const CONSENT_HIDE_CSS = `
+  #CookiebotWidget, .CookiebotWidget, #CybotCookiebotDialogPoweredbyCybot,
+  #hubspot-messages-iframe-container, .hs-shadow-container, #hubspot-conversations-inline-parent,
   #hs-eu-cookie-confirmation, #hs-banner-parent, #onetrust-consent-sdk, #onetrust-banner-sdk,
   #CybotCookiebotDialog, #CybotCookiebotDialogBodyUnderlay, .cky-consent-container, .cky-overlay,
   #cookie-law-info-bar, .cli-modal-backdrop, .cc-window, #cookie-notice, .cmplz-cookiebanner,

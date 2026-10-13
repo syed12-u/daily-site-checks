@@ -113,7 +113,8 @@ for (const site of activeSites()) {
             const b = cur[name];
             if (!a && !b) continue;
             if (!a || !b) {
-              d.push(`${name}: ${a ? 'disappeared' : 'appeared'}`);
+              // CTAs are often injected late by page builders; only structural elements count when they come and go.
+              if (name !== 'cta') d.push(`${name}: ${a ? 'disappeared' : 'appeared'}`);
               continue;
             }
             const dx = Math.abs(a.x - b.x);
@@ -150,9 +151,10 @@ for (const site of activeSites()) {
           return text
             .split('\n')
             .map((l) => l.replace(/\s+/g, ' ').trim())
-            .filter((l) => l.length > 1);
+            .filter((l) => l.length > 1 && !/^[\d\s,.%$#+()-]+$/.test(l)); // skip counters and prices that change daily
         }, [...DEFAULT_MASKS, ...(site.masks || [])]);
-        const r = compareOrCapture(testInfo, 'text', testInfo.project.name, site.key, p.key, lines, (base, cur) => {
+        const r = compareOrCapture(testInfo, 'text', testInfo.project.name, site.key, p.key, lines, (baseAll, cur) => {
+          const base = baseAll.filter((l) => !/^[\d\s,.%$#+()-]+$/.test(l)); // older baselines may still hold counters
           const b = new Set(base);
           const c = new Set(cur);
           const removed = base.filter((l) => !c.has(l));
