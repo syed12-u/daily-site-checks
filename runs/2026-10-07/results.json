@@ -1,0 +1,81 @@
+{
+  "startedAt": "2026-10-07T16:18:24.461Z",
+  "finishedAt": "2026-10-07T16:19:30.753Z",
+  "durationMs": 66292,
+  "results": [
+    {
+      "key": "desktop::[UF-02][flexoffers] Visitor to key landing page",
+      "project": "desktop",
+      "scenario": "UF-02",
+      "site": "flexoffers",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][flexoffers] Visitor to key landing page",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [
+        "landing page has 2 H1 elements (SEO: should be one)",
+        "landing page has 2 H1 elements (SEO: should be one)"
+      ],
+      "metrics": {
+        "landing": "https://www.flexoffers.com/sign-up/",
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 23178,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-03][flexoffers] Contact form loads",
+      "project": "desktop",
+      "scenario": "FN-03",
+      "site": "flexoffers",
+      "name": "Contact form loads",
+      "title": "[FN-03][flexoffers] Contact form loads",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com/contact-us/",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 16918,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-05][flexoffers] Search",
+      "project": "desktop",
+      "scenario": "FN-05",
+      "site": "flexoffers",
+      "name": "Search",
+      "title": "[FN-05][flexoffers] Search",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://www.flexoffers.com/\", waiting until \"load\"\n",
+      "url": "https://www.flexoffers.com/",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 7790,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-06][flexoffers] Login page",
+      "project": "desktop",
+      "scenario": "FN-06",
+      "site": "flexoffers",
+      "name": "Login page",
+      "title": "[FN-06][flexoffers] Login page",
+      "status": "failed",
+      "severity": "critical",
+      "error": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://publisherpro.flexoffers.com/\", waiting until \"domcontentloaded\"\n",
+      "url": "https://publisherpro.flexoffers.com/",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 4999,
+      "retry": 0
+    }
+  ]
+}

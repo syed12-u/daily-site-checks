@@ -1,0 +1,318 @@
+{
+  "startedAt": "2026-10-13T20:04:58.597Z",
+  "finishedAt": "2026-10-13T20:10:54.328Z",
+  "durationMs": 355731,
+  "results": [
+    {
+      "key": "desktop::[ER-06][perhaps] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "perhaps",
+      "name": "Security headers",
+      "title": "[ER-06][perhaps] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 4\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+ ]",
+      "url": "https://www.perhaps.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 804,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][flexoffers] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "flexoffers",
+      "name": "Security headers",
+      "title": "[ER-06][flexoffers] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+ ]",
+      "url": "https://www.flexoffers.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": true,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 682,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][fusetwo] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "fusetwo",
+      "name": "Console errors",
+      "title": "[ER-01][fusetwo] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 9 page(s) affected: home, platform, brands, brand-services, industries, publishers, about, support, help\n{\n  \"home\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"platform\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brands\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brand-services\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"industries\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"publishers\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"about\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"support\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"help\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 11\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"platform\",\n+   \"brands\",\n+   \"brand-services\",\n+   \"industries\",\n+   \"publishers\",\n+   \"about\",\n+   \"support\",\n+   \"help\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 9
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\errors-fusetwo-ER-01-fusetwo-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 84063,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][fusetwo] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "fusetwo",
+      "name": "Security headers",
+      "title": "[ER-06][fusetwo] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 5\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+   \"X-Frame-Options or CSP frame-ancestors\",\n+ ]",
+      "url": "https://www.fusetwo.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": false,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 435,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][flexoffers] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "flexoffers",
+      "name": "Expected content present",
+      "title": "[ER-05][flexoffers] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: advertisers: no <h1>\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"advertisers: no <h1>\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\errors-flexoffers-ER-05-flexoffers-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 118957,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][incubators] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "incubators",
+      "name": "Security headers",
+      "title": "[ER-06][incubators] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 5\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+   \"X-Frame-Options or CSP frame-ancestors\",\n+ ]",
+      "url": "https://incubators.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": false,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 730,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][incubators] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "incubators",
+      "name": "Expected content present",
+      "title": "[ER-05][incubators] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: contact: no <h1>\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"contact: no <h1>\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\errors-incubators-ER-05-incubators-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 10765,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][flexoffers] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "flexoffers",
+      "name": "Console errors",
+      "title": "[ER-01][flexoffers] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 10 page(s) affected: home, publishers, advertisers, signup, directory, ranking, about, contact, support, blog\n{\n  \"home\": [\n    \"wp is not defined\"\n  ],\n  \"publishers\": [\n    \"wp is not defined\"\n  ],\n  \"advertisers\": [\n    \"wp is not defined\",\n    \"Framing 'https://www.google.com/' violates the following report-only Content Security Policy directive: \\\"frame-ancestors 'self'\\\". The violation has been logged, but no further action has been taken.\\n\"\n  ],\n  \"signup\": [\n    \"wp is not defined\"\n  ],\n  \"directory\": [\n    \"wp is not defined\"\n  ],\n  \"ranking\": [\n    \"wp is not defined\"\n  ],\n  \"about\": [\n    \"wp is not defined\"\n  ],\n  \"contact\": [\n    \"wp is not defined\"\n  ],\n  \"support\": [\n    \"wp is not defined\"\n  ],\n  \"blog\": [\n    \"wp is not defined\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 12\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"publishers\",\n+   \"advertisers\",\n+   \"signup\",\n+   \"directory\",\n+   \"ranking\",\n+   \"about\",\n+   \"contact\",\n+   \"support\",\n+   \"blog\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 10
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\errors-flexoffers-ER-01-flexoffers-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 134520,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][perhaps] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "perhaps",
+      "name": "Header and footer components",
+      "title": "[VR-04][perhaps] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  22 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\careers-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\careers-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 1,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\careers-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\careers-footer.png"
+        },
+        {
+          "name": "perhaps\\careers-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\careers-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\careers-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\careers-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 137801,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-04][perhaps] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "perhaps",
+      "name": "Header and footer components",
+      "title": "[VR-04][perhaps] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  22 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\home-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\home-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  22 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\news-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\news-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 2,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\home-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\home-footer.png"
+        },
+        {
+          "name": "perhaps\\home-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\home-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\home-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\home-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\news-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\news-footer.png"
+        },
+        {
+          "name": "perhaps\\news-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\news-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\news-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\news-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-13\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 137234,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-08][flexoffers] Sitemap URLs respond",
+      "project": "desktop",
+      "scenario": "AV-08",
+      "site": "flexoffers",
+      "name": "Sitemap URLs respond",
+      "title": "[AV-08][flexoffers] Sitemap URLs respond",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 3 of 6000 sitemap URLs broken (0.05%): 400 https://www.flexoffers.com/affiliate-programs/100%-pure-affiliate-program/; 404 https://www.flexoffers.com/affiliate-programs/linksys-affiliate-program/; fetch failed https://www.flexoffers.com/affiliate-programs/bionatrol-llc-affiliate-program/\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 3",
+      "url": "https://www.flexoffers.com/robots.txt",
+      "notes": [
+        "6000 sitemap URLs checked in 177 s (8 sitemap files)",
+        "6000 sitemap URLs checked in 177 s (8 sitemap files)"
+      ],
+      "metrics": {
+        "sitemaps": 8,
+        "urlsChecked": 6000,
+        "broken": 3,
+        "brokenPct": 0.05,
+        "slow": 0,
+        "seconds": 177
+      },
+      "attachments": [],
+      "durationMs": 205311,
+      "retry": 0
+    }
+  ]
+}
