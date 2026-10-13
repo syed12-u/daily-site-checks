@@ -158,8 +158,19 @@ for (const site of activeSites()) {
       await expect(input, 'search input not visible (no search toggle found either)').toBeVisible();
       await test.step(`Search for "${s.term}"`, async () => {
         await input.fill(s.term);
-        await input.press('Enter');
+        // Search result pages can be slow; wait for the navigation separately with a longer timeout.
+      await Promise.all([
+        page.waitForLoadState('domcontentloaded', { timeout: 30000 }).catch(() => {}),
+        input.press('Enter', { noWaitAfter: true }),
+      ]);
+      await page.waitForURL(/[?&]s=|search/i, { timeout: 30000, waitUntil: 'domcontentloaded' }).catch(() => {});
         await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+      });
+
+      // A WordPress fatal error page still renders the theme (and an <article>), so check for it explicitly.
+      await test.step('Results page is not a server error', async () => {
+        const body = await page.locator('body').innerText().catch(() => '');
+        expect(body, `results page shows a server error at ${page.url()}`).not.toMatch(/critical error on this website|Fatal error|Internal Server Error|Error establishing a database connection/i);
       });
       const results = page.locator(s.results).filter({ visible: true });
       await test.step('Expect at least one result', async () => {

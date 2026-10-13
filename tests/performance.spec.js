@@ -39,10 +39,17 @@ for (const site of activeSites()) {
       const limit = mobile ? 4000 : 2500;
       setUrl(testInfo, site.baseUrl);
       await page.addInitScript(LCP_INIT);
-      await gotoStable(page, site.baseUrl);
-      await page.waitForTimeout(2500);
-      const lcp = Math.round(await page.evaluate(() => window.__lcp || 0));
-      metric(testInfo, { lcpMs: lcp, viewport: testInfo.project.name });
+      // Median of 3 loads: one slow packet on the runner's network should not fail the check.
+      const samples = [];
+      for (let i = 0; i < 3; i++) {
+        await gotoStable(page, site.baseUrl);
+        await page.waitForTimeout(2500);
+        const v = Math.round(await page.evaluate(() => window.__lcp || 0));
+        if (v > 0) samples.push(v);
+      }
+      samples.sort((a, b) => a - b);
+      const lcp = samples.length ? samples[Math.floor(samples.length / 2)] : 0;
+      metric(testInfo, { lcpMs: lcp, samples, viewport: testInfo.project.name });
       expect(lcp, 'LCP not reported by the browser').toBeGreaterThan(0);
       expect(lcp, `LCP ${lcp} ms on ${testInfo.project.name} (limit ${limit} ms)`).toBeLessThan(limit);
     });

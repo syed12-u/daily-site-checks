@@ -36,3 +36,13 @@ Both caught by the daily suite on flexoffers.com and confirmed by hand.
 | flexoffers.com | Homepage title "Performance-Based Marketing" has no brand name | ER-05 |
 | fusetwo.com | Uncaught "Cannot read properties of null (reading 'offsetHeight')" on 9 pages | ER-01 |
 | flexoffers.com | Cookiebot dialog contains an unrendered placeholder link `[#DSR_FORM_URL#]` (hidden, not user-facing) | FN-01 (now excluded) |
+
+## BUG-3: Searching "affiliate" on flexoffers.com returns HTTP 500 "critical error"
+
+- **Severity:** High (FN-05 Search, UF-06 Browse / search). Found 13 Oct 2026.
+- **Steps to reproduce:**
+  1. Open https://www.flexoffers.com/?s=affiliate (or type "affiliate" in the header search and press Enter).
+  2. Observe HTTP 500 and the message "There has been a critical error on this website. Learn more about troubleshooting WordPress." below the filters.
+- **Expected:** a list of matching programs, blog posts and pages.
+- **Actual:** WordPress fatal error. Searching "amazon" works, so the crash depends on the results returned (likely one post or program template in the "affiliate" result set). The PHP error log on the server will name the file.
+- **Screenshot:** `BUG-3-flexoffers-search-critical-error.png`
