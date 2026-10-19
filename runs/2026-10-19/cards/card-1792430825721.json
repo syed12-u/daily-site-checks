@@ -1,0 +1,73 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentUrl": null,
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": [
+          {
+            "type": "Container",
+            "style": "good",
+            "bleed": true,
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "✅ RESOLVED: fusetwo.com - VR-04 Header and footer components",
+                "wrap": true,
+                "size": "Large",
+                "weight": "Bolder"
+              }
+            ]
+          },
+          {
+            "type": "FactSet",
+            "facts": [
+              {
+                "title": "Site",
+                "value": "fusetwo.com"
+              },
+              {
+                "title": "Scenario",
+                "value": "VR-04 Header and footer components"
+              },
+              {
+                "title": "Severity",
+                "value": "high"
+              },
+              {
+                "title": "First seen",
+                "value": "2026-10-14T20:33:02.552Z"
+              },
+              {
+                "title": "Resolved",
+                "value": "2026-10-19T17:27:05.600Z"
+              },
+              {
+                "title": "Occurrences",
+                "value": "1"
+              },
+              {
+                "title": "Retries",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "type": "TextBlock",
+            "text": "Screenshot: C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\brand-services-footer.png",
+            "wrap": true,
+            "size": "Small",
+            "isSubtle": true
+          }
+        ],
+        "msteams": {
+          "width": "Full"
+        }
+      }
+    }
+  ]
+}

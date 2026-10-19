@@ -1,0 +1,87 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentUrl": null,
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": [
+          {
+            "type": "Container",
+            "style": "warning",
+            "bleed": true,
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "🟠 HIGH: flexoffers.com - FN-01 Primary navigation",
+                "wrap": true,
+                "size": "Large",
+                "weight": "Bolder"
+              }
+            ]
+          },
+          {
+            "type": "FactSet",
+            "facts": [
+              {
+                "title": "Site",
+                "value": "flexoffers.com"
+              },
+              {
+                "title": "Scenario",
+                "value": "FN-01 Primary navigation"
+              },
+              {
+                "title": "Severity",
+                "value": "high"
+              },
+              {
+                "title": "First seen",
+                "value": "2026-10-19T17:27:05.600Z"
+              },
+              {
+                "title": "Last seen",
+                "value": "2026-10-19T17:27:05.600Z"
+              },
+              {
+                "title": "Occurrences",
+                "value": "1"
+              },
+              {
+                "title": "URL",
+                "value": "https://www.flexoffers.com"
+              },
+              {
+                "title": "Retries",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "type": "TextBlock",
+            "text": "**What failed**",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "```\nError: 1 broken navigation link(s): https://careers.flexoffers.com/ -> 500\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"https://careers.flexoffers.com/ -> 500\",\n+ ]\n```",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "Screenshot: C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\functionality-flexoffers-FN-01-flexoffers-Primary-navigation-desktop\\test-failed-1.png",
+            "wrap": true,
+            "size": "Small",
+            "isSubtle": true
+          }
+        ],
+        "msteams": {
+          "width": "Full"
+        }
+      }
+    }
+  ]
+}

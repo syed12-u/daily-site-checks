@@ -1,0 +1,5333 @@
+{
+  "date": "2026-10-19",
+  "startedAt": "2026-10-19T16:24:58.979Z",
+  "finishedAt": "2026-10-19T17:27:05.426Z",
+  "attempts": 3,
+  "results": [
+    {
+      "key": "desktop::[AV-01][perhaps] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "perhaps",
+      "name": "Homepage responds",
+      "title": "[AV-01][perhaps] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 605,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 685,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][perhaps] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "perhaps",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][perhaps] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 86,
+        "validTo": "2027-01-14T10:16:16.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 185,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][perhaps] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "perhaps",
+      "name": "DNS resolves",
+      "title": "[AV-05][perhaps] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "a": [
+          "104.18.18.154",
+          "104.18.19.154"
+        ],
+        "aaaa": [
+          "2606:4700::6812:129a",
+          "2606:4700::6812:139a"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 137,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][perhaps] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "perhaps",
+      "name": "Custom 404 page",
+      "title": "[AV-06][perhaps] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.perhaps.com/sentinel-404-check-1792427102285",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 296515
+      },
+      "attachments": [],
+      "durationMs": 863,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][perhaps] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "perhaps",
+      "name": "www / http redirects",
+      "title": "[AV-03][perhaps] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://www.perhaps.com/": "301 -> https://www.perhaps.com/ | 200",
+          "http://perhaps.com/": "301 -> https://perhaps.com/ | 301 -> https://www.perhaps.com/ | 200",
+          "https://perhaps.com/": "301 -> https://www.perhaps.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 2245,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][perhaps] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "perhaps",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][perhaps] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://www.perhaps.com/sitemap_index.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 593,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-01][flexoffers] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "flexoffers",
+      "name": "Homepage responds",
+      "title": "[AV-01][flexoffers] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 408,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 446,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][perhaps] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "perhaps",
+      "name": "Key pages respond",
+      "title": "[AV-02][perhaps] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 9,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "services": 200,
+          "about": 200,
+          "careers": 200,
+          "news": 200,
+          "faqs": 200,
+          "blog": 200,
+          "contact": 200,
+          "advertiser-signup": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 2659,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][flexoffers] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "flexoffers",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][flexoffers] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 68,
+        "validTo": "2026-12-27T15:37:20.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 203,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][flexoffers] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "flexoffers",
+      "name": "DNS resolves",
+      "title": "[AV-05][flexoffers] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "a": [
+          "104.17.130.236",
+          "104.17.131.236"
+        ],
+        "aaaa": [
+          "2606:4700::6811:82ec",
+          "2606:4700::6811:83ec"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 97,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][flexoffers] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "flexoffers",
+      "name": "Custom 404 page",
+      "title": "[AV-06][flexoffers] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.flexoffers.com/sentinel-404-check-1792427104270",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 192662
+      },
+      "attachments": [],
+      "durationMs": 1104,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][flexoffers] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "flexoffers",
+      "name": "www / http redirects",
+      "title": "[AV-03][flexoffers] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://www.flexoffers.com/": "301 -> https://www.flexoffers.com/ | 200",
+          "http://flexoffers.com/": "301 -> https://www.flexoffers.com | 200",
+          "https://flexoffers.com/": "301 -> https://www.flexoffers.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 1519,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][flexoffers] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "flexoffers",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][flexoffers] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://www.flexoffers.com/sitemap_index.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 515,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-01][fusetwo] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "fusetwo",
+      "name": "Homepage responds",
+      "title": "[AV-01][fusetwo] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 544,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 570,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][flexoffers] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "flexoffers",
+      "name": "Key pages respond",
+      "title": "[AV-02][flexoffers] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 10,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "publishers": 200,
+          "advertisers": 200,
+          "signup": 200,
+          "directory": 200,
+          "ranking": 200,
+          "about": 200,
+          "contact": 200,
+          "support": 200,
+          "blog": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 2380,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][fusetwo] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "fusetwo",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][fusetwo] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 52,
+        "validTo": "2026-12-11T04:41:49.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 276,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][fusetwo] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "fusetwo",
+      "name": "DNS resolves",
+      "title": "[AV-05][fusetwo] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "a": [
+          "104.18.6.247",
+          "104.18.7.247"
+        ],
+        "aaaa": [
+          "2606:4700::6812:6f7",
+          "2606:4700::6812:7f7"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 160,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][fusetwo] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "fusetwo",
+      "name": "www / http redirects",
+      "title": "[AV-03][fusetwo] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://www.fusetwo.com/": "301 -> https://www.fusetwo.com/ | 200",
+          "http://fusetwo.com/": "301 -> https://fusetwo.com/ | 301 -> https://www.fusetwo.com/ | 200",
+          "https://fusetwo.com/": "301 -> https://www.fusetwo.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 2016,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][fusetwo] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "fusetwo",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][fusetwo] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://www.fusetwo.com/sitemap_index.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 330,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-01][incubators] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "incubators",
+      "name": "Homepage responds",
+      "title": "[AV-01][incubators] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 786,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 794,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][fusetwo] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "fusetwo",
+      "name": "Custom 404 page",
+      "title": "[AV-06][fusetwo] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.fusetwo.com/sentinel-404-check-1792427106650",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 183151
+      },
+      "attachments": [],
+      "durationMs": 2875,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][incubators] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "incubators",
+      "name": "Key pages respond",
+      "title": "[AV-02][incubators] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 5,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "founder": 200,
+          "what-we-do": 200,
+          "companies": 200,
+          "contact": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 2084,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][incubators] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "incubators",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][incubators] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 36,
+        "validTo": "2026-11-25T14:14:15.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 184,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][incubators] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "incubators",
+      "name": "DNS resolves",
+      "title": "[AV-05][incubators] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "a": [
+          "104.21.80.7",
+          "172.67.172.142"
+        ],
+        "aaaa": [
+          "2606:4700:3032::ac43:ac8e",
+          "2606:4700:3033::6815:5007"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 149,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][incubators] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "incubators",
+      "name": "Custom 404 page",
+      "title": "[AV-06][incubators] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://incubators.com/sentinel-404-check-1792427111744",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 105606
+      },
+      "attachments": [],
+      "durationMs": 432,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][incubators] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "incubators",
+      "name": "www / http redirects",
+      "title": "[AV-03][incubators] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://incubators.com/": "301 -> https://incubators.com/ | 200",
+          "http://www.incubators.com/": "301 -> https://incubators.com/ | 200",
+          "https://www.incubators.com/": "301 -> https://incubators.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 2812,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][incubators] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "incubators",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][incubators] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://incubators.com/wp-sitemap.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 427,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][fusetwo] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "fusetwo",
+      "name": "Key pages respond",
+      "title": "[AV-02][fusetwo] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 9,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "platform": 200,
+          "brands": 200,
+          "brand-services": 200,
+          "industries": 200,
+          "publishers": 200,
+          "about": 200,
+          "support": 200,
+          "help": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 9101,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-03][perhaps] Mixed content",
+      "project": "desktop",
+      "scenario": "ER-03",
+      "site": "perhaps",
+      "name": "Mixed content",
+      "title": "[ER-03][perhaps] Mixed content",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithMixedContent": 0
+      },
+      "attachments": [],
+      "durationMs": 29365,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-02][perhaps] Failed network requests",
+      "project": "desktop",
+      "scenario": "ER-02",
+      "site": "perhaps",
+      "name": "Failed network requests",
+      "title": "[ER-02][perhaps] Failed network requests",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithFailedRequests": 0
+      },
+      "attachments": [],
+      "durationMs": 37223,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][perhaps] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "perhaps",
+      "name": "Console errors",
+      "title": "[ER-01][perhaps] Console errors",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 0
+      },
+      "attachments": [],
+      "durationMs": 41332,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][perhaps] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "perhaps",
+      "name": "Security headers",
+      "title": "[ER-06][perhaps] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 4\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+ ]",
+      "url": "https://www.perhaps.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 923,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[ER-04][perhaps] Unexpected text",
+      "project": "desktop",
+      "scenario": "ER-04",
+      "site": "perhaps",
+      "name": "Unexpected text",
+      "title": "[ER-04][perhaps] Unexpected text",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithBadText": 0
+      },
+      "attachments": [],
+      "durationMs": 26187,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][perhaps] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "perhaps",
+      "name": "Expected content present",
+      "title": "[ER-05][perhaps] Expected content present",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 0
+      },
+      "attachments": [],
+      "durationMs": 51225,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-02][flexoffers] Failed network requests",
+      "project": "desktop",
+      "scenario": "ER-02",
+      "site": "flexoffers",
+      "name": "Failed network requests",
+      "title": "[ER-02][flexoffers] Failed network requests",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithFailedRequests": 0
+      },
+      "attachments": [],
+      "durationMs": 58677,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][flexoffers] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "flexoffers",
+      "name": "Console errors",
+      "title": "[ER-01][flexoffers] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 10 page(s) affected: home, publishers, advertisers, signup, directory, ranking, about, contact, support, blog\n{\n  \"home\": [\n    \"wp is not defined\"\n  ],\n  \"publishers\": [\n    \"wp is not defined\"\n  ],\n  \"advertisers\": [\n    \"wp is not defined\"\n  ],\n  \"signup\": [\n    \"wp is not defined\"\n  ],\n  \"directory\": [\n    \"wp is not defined\"\n  ],\n  \"ranking\": [\n    \"wp is not defined\"\n  ],\n  \"about\": [\n    \"wp is not defined\"\n  ],\n  \"contact\": [\n    \"wp is not defined\"\n  ],\n  \"support\": [\n    \"wp is not defined\"\n  ],\n  \"blog\": [\n    \"wp is not defined\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 12\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"publishers\",\n+   \"advertisers\",\n+   \"signup\",\n+   \"directory\",\n+   \"ranking\",\n+   \"about\",\n+   \"contact\",\n+   \"support\",\n+   \"blog\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 10
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\errors-flexoffers-ER-01-flexoffers-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 75037,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[ER-03][flexoffers] Mixed content",
+      "project": "desktop",
+      "scenario": "ER-03",
+      "site": "flexoffers",
+      "name": "Mixed content",
+      "title": "[ER-03][flexoffers] Mixed content",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithMixedContent": 0
+      },
+      "attachments": [],
+      "durationMs": 57546,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][flexoffers] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "flexoffers",
+      "name": "Security headers",
+      "title": "[ER-06][flexoffers] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+ ]",
+      "url": "https://www.flexoffers.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": true,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 974,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[ER-04][flexoffers] Unexpected text",
+      "project": "desktop",
+      "scenario": "ER-04",
+      "site": "flexoffers",
+      "name": "Unexpected text",
+      "title": "[ER-04][flexoffers] Unexpected text",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithBadText": 0
+      },
+      "attachments": [],
+      "durationMs": 53117,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][flexoffers] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "flexoffers",
+      "name": "Expected content present",
+      "title": "[ER-05][flexoffers] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: advertisers: no <h1>\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"advertisers: no <h1>\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\errors-flexoffers-ER-05-flexoffers-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 64011,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[ER-01][fusetwo] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "fusetwo",
+      "name": "Console errors",
+      "title": "[ER-01][fusetwo] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 9 page(s) affected: home, platform, brands, brand-services, industries, publishers, about, support, help\n{\n  \"home\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"platform\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brands\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brand-services\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"industries\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"publishers\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"about\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"support\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"help\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 11\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"platform\",\n+   \"brands\",\n+   \"brand-services\",\n+   \"industries\",\n+   \"publishers\",\n+   \"about\",\n+   \"support\",\n+   \"help\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 9
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\errors-fusetwo-ER-01-fusetwo-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 54874,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[ER-02][fusetwo] Failed network requests",
+      "project": "desktop",
+      "scenario": "ER-02",
+      "site": "fusetwo",
+      "name": "Failed network requests",
+      "title": "[ER-02][fusetwo] Failed network requests",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithFailedRequests": 0
+      },
+      "attachments": [],
+      "durationMs": 36559,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-03][fusetwo] Mixed content",
+      "project": "desktop",
+      "scenario": "ER-03",
+      "site": "fusetwo",
+      "name": "Mixed content",
+      "title": "[ER-03][fusetwo] Mixed content",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithMixedContent": 0
+      },
+      "attachments": [],
+      "durationMs": 33133,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][fusetwo] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "fusetwo",
+      "name": "Security headers",
+      "title": "[ER-06][fusetwo] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 5\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+   \"X-Frame-Options or CSP frame-ancestors\",\n+ ]",
+      "url": "https://www.fusetwo.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": false,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 770,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[ER-05][fusetwo] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "fusetwo",
+      "name": "Expected content present",
+      "title": "[ER-05][fusetwo] Expected content present",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 0
+      },
+      "attachments": [],
+      "durationMs": 33552,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-04][fusetwo] Unexpected text",
+      "project": "desktop",
+      "scenario": "ER-04",
+      "site": "fusetwo",
+      "name": "Unexpected text",
+      "title": "[ER-04][fusetwo] Unexpected text",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithBadText": 0
+      },
+      "attachments": [],
+      "durationMs": 34042,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-03][incubators] Mixed content",
+      "project": "desktop",
+      "scenario": "ER-03",
+      "site": "incubators",
+      "name": "Mixed content",
+      "title": "[ER-03][incubators] Mixed content",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithMixedContent": 0
+      },
+      "attachments": [],
+      "durationMs": 8719,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-02][incubators] Failed network requests",
+      "project": "desktop",
+      "scenario": "ER-02",
+      "site": "incubators",
+      "name": "Failed network requests",
+      "title": "[ER-02][incubators] Failed network requests",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithFailedRequests": 0
+      },
+      "attachments": [],
+      "durationMs": 11782,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][incubators] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "incubators",
+      "name": "Console errors",
+      "title": "[ER-01][incubators] Console errors",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 0
+      },
+      "attachments": [],
+      "durationMs": 14588,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][incubators] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "incubators",
+      "name": "Security headers",
+      "title": "[ER-06][incubators] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 5\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+   \"X-Frame-Options or CSP frame-ancestors\",\n+ ]",
+      "url": "https://incubators.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": false,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 1063,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[ER-04][incubators] Unexpected text",
+      "project": "desktop",
+      "scenario": "ER-04",
+      "site": "incubators",
+      "name": "Unexpected text",
+      "title": "[ER-04][incubators] Unexpected text",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithBadText": 0
+      },
+      "attachments": [],
+      "durationMs": 9457,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][incubators] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "incubators",
+      "name": "Expected content present",
+      "title": "[ER-05][incubators] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: contact: no <h1>\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"contact: no <h1>\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\errors-incubators-ER-05-incubators-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 12762,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[UF-03][perhaps] Publisher signup",
+      "project": "desktop",
+      "scenario": "UF-03",
+      "site": "perhaps",
+      "name": "Publisher signup",
+      "title": "[UF-03][perhaps] Publisher signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 641,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-04][perhaps] Advertiser signup",
+      "project": "desktop",
+      "scenario": "UF-04",
+      "site": "perhaps",
+      "name": "Advertiser signup",
+      "title": "[UF-04][perhaps] Advertiser signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 444,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-01][perhaps] Visitor to contact",
+      "project": "desktop",
+      "scenario": "UF-01",
+      "site": "perhaps",
+      "name": "Visitor to contact",
+      "title": "[UF-01][perhaps] Visitor to contact",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [
+        "form filled but not submitted: ENABLE_FORM_SUBMIT is not true",
+        "form filled but not submitted: ENABLE_FORM_SUBMIT is not true"
+      ],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 11356,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-05][perhaps] Login attempt",
+      "project": "desktop",
+      "scenario": "UF-05",
+      "site": "perhaps",
+      "name": "Login attempt",
+      "title": "[UF-05][perhaps] Login attempt",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 459,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-06][perhaps] Browse / search",
+      "project": "desktop",
+      "scenario": "UF-06",
+      "site": "perhaps",
+      "name": "Browse / search",
+      "title": "[UF-06][perhaps] Browse / search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 387,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-07][perhaps] Mobile navigation",
+      "project": "desktop",
+      "scenario": "UF-07",
+      "site": "perhaps",
+      "name": "Mobile navigation",
+      "title": "[UF-07][perhaps] Mobile navigation",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 367,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-02][perhaps] Visitor to key landing page",
+      "project": "desktop",
+      "scenario": "UF-02",
+      "site": "perhaps",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][perhaps] Visitor to key landing page",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "landing": "https://www.perhaps.com/advertiser-sign-up/",
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 13312,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-01][flexoffers] Visitor to contact",
+      "project": "desktop",
+      "scenario": "UF-01",
+      "site": "flexoffers",
+      "name": "Visitor to contact",
+      "title": "[UF-01][flexoffers] Visitor to contact",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [
+        "no visible nav link matching /contact/i; navigated directly to https://www.flexoffers.com/contact-us/",
+        "form filled but not submitted: ENABLE_FORM_SUBMIT is not true",
+        "no visible nav link matching /contact/i; navigated directly to https://www.flexoffers.com/contact-us/",
+        "form filled but not submitted: ENABLE_FORM_SUBMIT is not true"
+      ],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 16820,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-02][flexoffers] Visitor to key landing page",
+      "project": "desktop",
+      "scenario": "UF-02",
+      "site": "flexoffers",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][flexoffers] Visitor to key landing page",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [
+        "landing page has 2 H1 elements (SEO: should be one)",
+        "landing page has 2 H1 elements (SEO: should be one)"
+      ],
+      "metrics": {
+        "landing": "https://www.flexoffers.com/sign-up/",
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 17564,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-03][flexoffers] Publisher signup",
+      "project": "desktop",
+      "scenario": "UF-03",
+      "site": "flexoffers",
+      "name": "Publisher signup",
+      "title": "[UF-03][flexoffers] Publisher signup",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com/sign-up/",
+      "notes": [
+        "no visible nav link matching /publisher/i; navigated directly to https://www.flexoffers.com/sign-up/",
+        "no visible nav link matching /publisher/i; navigated directly to https://www.flexoffers.com/sign-up/"
+      ],
+      "metrics": {
+        "invalidFields": 2,
+        "validationMessage": false
+      },
+      "attachments": [],
+      "durationMs": 21532,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-04][flexoffers] Advertiser signup",
+      "project": "desktop",
+      "scenario": "UF-04",
+      "site": "flexoffers",
+      "name": "Advertiser signup",
+      "title": "[UF-04][flexoffers] Advertiser signup",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com/advertisers/",
+      "notes": [
+        "no visible nav link matching /advertiser/i; navigated directly to https://www.flexoffers.com/advertisers/",
+        "no visible nav link matching /advertiser/i; navigated directly to https://www.flexoffers.com/advertisers/"
+      ],
+      "metrics": {
+        "invalidFields": 2,
+        "validationMessage": false
+      },
+      "attachments": [],
+      "durationMs": 26579,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-07][flexoffers] Mobile navigation",
+      "project": "desktop",
+      "scenario": "UF-07",
+      "site": "flexoffers",
+      "name": "Mobile navigation",
+      "title": "[UF-07][flexoffers] Mobile navigation",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 556,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-01][fusetwo] Visitor to contact",
+      "project": "desktop",
+      "scenario": "UF-01",
+      "site": "fusetwo",
+      "name": "Visitor to contact",
+      "title": "[UF-01][fusetwo] Visitor to contact",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 408,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-05][flexoffers] Login attempt",
+      "project": "desktop",
+      "scenario": "UF-05",
+      "site": "flexoffers",
+      "name": "Login attempt",
+      "title": "[UF-05][flexoffers] Login attempt",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://publisherpro.flexoffers.com/",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 36070,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-03][fusetwo] Publisher signup",
+      "project": "desktop",
+      "scenario": "UF-03",
+      "site": "fusetwo",
+      "name": "Publisher signup",
+      "title": "[UF-03][fusetwo] Publisher signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 510,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-04][fusetwo] Advertiser signup",
+      "project": "desktop",
+      "scenario": "UF-04",
+      "site": "fusetwo",
+      "name": "Advertiser signup",
+      "title": "[UF-04][fusetwo] Advertiser signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 412,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-05][fusetwo] Login attempt",
+      "project": "desktop",
+      "scenario": "UF-05",
+      "site": "fusetwo",
+      "name": "Login attempt",
+      "title": "[UF-05][fusetwo] Login attempt",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 417,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-06][fusetwo] Browse / search",
+      "project": "desktop",
+      "scenario": "UF-06",
+      "site": "fusetwo",
+      "name": "Browse / search",
+      "title": "[UF-06][fusetwo] Browse / search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 334,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-07][fusetwo] Mobile navigation",
+      "project": "desktop",
+      "scenario": "UF-07",
+      "site": "fusetwo",
+      "name": "Mobile navigation",
+      "title": "[UF-07][fusetwo] Mobile navigation",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 316,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-02][fusetwo] Visitor to key landing page",
+      "project": "desktop",
+      "scenario": "UF-02",
+      "site": "fusetwo",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][fusetwo] Visitor to key landing page",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "landing": "https://www.fusetwo.com/platform/",
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 11595,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-01][incubators] Visitor to contact",
+      "project": "desktop",
+      "scenario": "UF-01",
+      "site": "incubators",
+      "name": "Visitor to contact",
+      "title": "[UF-01][incubators] Visitor to contact",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 493,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-03][incubators] Publisher signup",
+      "project": "desktop",
+      "scenario": "UF-03",
+      "site": "incubators",
+      "name": "Publisher signup",
+      "title": "[UF-03][incubators] Publisher signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 544,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-04][incubators] Advertiser signup",
+      "project": "desktop",
+      "scenario": "UF-04",
+      "site": "incubators",
+      "name": "Advertiser signup",
+      "title": "[UF-04][incubators] Advertiser signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 544,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-05][incubators] Login attempt",
+      "project": "desktop",
+      "scenario": "UF-05",
+      "site": "incubators",
+      "name": "Login attempt",
+      "title": "[UF-05][incubators] Login attempt",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 588,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-06][incubators] Browse / search",
+      "project": "desktop",
+      "scenario": "UF-06",
+      "site": "incubators",
+      "name": "Browse / search",
+      "title": "[UF-06][incubators] Browse / search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 465,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-07][incubators] Mobile navigation",
+      "project": "desktop",
+      "scenario": "UF-07",
+      "site": "incubators",
+      "name": "Mobile navigation",
+      "title": "[UF-07][incubators] Mobile navigation",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 487,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-02][incubators] Visitor to key landing page",
+      "project": "desktop",
+      "scenario": "UF-02",
+      "site": "incubators",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][incubators] Visitor to key landing page",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 3340,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[UF-06][flexoffers] Browse / search",
+      "project": "desktop",
+      "scenario": "UF-06",
+      "site": "flexoffers",
+      "name": "Browse / search",
+      "title": "[UF-06][flexoffers] Browse / search",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "opened": "https://www.flexoffers.com/?s=affiliate",
+        "resultHref": "https://www.flexoffers.com?s=affiliate"
+      },
+      "attachments": [],
+      "durationMs": 37753,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-01][perhaps] Primary navigation",
+      "project": "desktop",
+      "scenario": "FN-01",
+      "site": "perhaps",
+      "name": "Primary navigation",
+      "title": "[FN-01][perhaps] Primary navigation",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "linksChecked": 22,
+        "internal": 13,
+        "external": 9,
+        "linksBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 7629,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-04][perhaps] Contact form submits (test mode)",
+      "project": "desktop",
+      "scenario": "FN-04",
+      "site": "perhaps",
+      "name": "Contact form submits (test mode)",
+      "title": "[FN-04][perhaps] Contact form submits (test mode)",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 714,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-05][perhaps] Search",
+      "project": "desktop",
+      "scenario": "FN-05",
+      "site": "perhaps",
+      "name": "Search",
+      "title": "[FN-05][perhaps] Search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 564,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-06][perhaps] Login page",
+      "project": "desktop",
+      "scenario": "FN-06",
+      "site": "perhaps",
+      "name": "Login page",
+      "title": "[FN-06][perhaps] Login page",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 885,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-07][perhaps] Signup / apply page",
+      "project": "desktop",
+      "scenario": "FN-07",
+      "site": "perhaps",
+      "name": "Signup / apply page",
+      "title": "[FN-07][perhaps] Signup / apply page",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 884,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-03][perhaps] Contact form loads",
+      "project": "desktop",
+      "scenario": "FN-03",
+      "site": "perhaps",
+      "name": "Contact form loads",
+      "title": "[FN-03][perhaps] Contact form loads",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.perhaps.com/contact-us/",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 7650,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-08][perhaps] Third-party embeds",
+      "project": "desktop",
+      "scenario": "FN-08",
+      "site": "perhaps",
+      "name": "Third-party embeds",
+      "title": "[FN-08][perhaps] Third-party embeds",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 8541,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-09][perhaps] Key CTA buttons",
+      "project": "desktop",
+      "scenario": "FN-09",
+      "site": "perhaps",
+      "name": "Key CTA buttons",
+      "title": "[FN-09][perhaps] Key CTA buttons",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "ctasFound": 3,
+        "ctasChecked": 2
+      },
+      "attachments": [],
+      "durationMs": 7646,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-02][perhaps] No broken images",
+      "project": "desktop",
+      "scenario": "FN-02",
+      "site": "perhaps",
+      "name": "No broken images",
+      "title": "[FN-02][perhaps] No broken images",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "imagesChecked": 102,
+        "pagesWithBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 35721,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-01][flexoffers] Primary navigation",
+      "project": "desktop",
+      "scenario": "FN-01",
+      "site": "flexoffers",
+      "name": "Primary navigation",
+      "title": "[FN-01][flexoffers] Primary navigation",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: 1 broken navigation link(s): https://careers.flexoffers.com/ -> 500\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"https://careers.flexoffers.com/ -> 500\",\n+ ]",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "linksChecked": 38,
+        "internal": 29,
+        "external": 9,
+        "linksBroken": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\functionality-flexoffers-FN-01-flexoffers-Primary-navigation-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 13776,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[FN-03][flexoffers] Contact form loads",
+      "project": "desktop",
+      "scenario": "FN-03",
+      "site": "flexoffers",
+      "name": "Contact form loads",
+      "title": "[FN-03][flexoffers] Contact form loads",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com/contact-us/",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 9765,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-04][flexoffers] Contact form submits (test mode)",
+      "project": "desktop",
+      "scenario": "FN-04",
+      "site": "flexoffers",
+      "name": "Contact form submits (test mode)",
+      "title": "[FN-04][flexoffers] Contact form submits (test mode)",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 940,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-05][flexoffers] Search",
+      "project": "desktop",
+      "scenario": "FN-05",
+      "site": "flexoffers",
+      "name": "Search",
+      "title": "[FN-05][flexoffers] Search",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com/",
+      "notes": [],
+      "metrics": {
+        "results": 1,
+        "resultsUrl": "https://www.flexoffers.com/?s=affiliate"
+      },
+      "attachments": [],
+      "durationMs": 20346,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-07][flexoffers] Signup / apply page",
+      "project": "desktop",
+      "scenario": "FN-07",
+      "site": "flexoffers",
+      "name": "Signup / apply page",
+      "title": "[FN-07][flexoffers] Signup / apply page",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 16501,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-06][flexoffers] Login page",
+      "project": "desktop",
+      "scenario": "FN-06",
+      "site": "flexoffers",
+      "name": "Login page",
+      "title": "[FN-06][flexoffers] Login page",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://publisherpro.flexoffers.com/",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 37217,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-02][flexoffers] No broken images",
+      "project": "desktop",
+      "scenario": "FN-02",
+      "site": "flexoffers",
+      "name": "No broken images",
+      "title": "[FN-02][flexoffers] No broken images",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "imagesChecked": 255,
+        "pagesWithBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 68987,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-09][flexoffers] Key CTA buttons",
+      "project": "desktop",
+      "scenario": "FN-09",
+      "site": "flexoffers",
+      "name": "Key CTA buttons",
+      "title": "[FN-09][flexoffers] Key CTA buttons",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "ctasFound": 10,
+        "ctasChecked": 1
+      },
+      "attachments": [],
+      "durationMs": 12946,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-08][flexoffers] Third-party embeds",
+      "project": "desktop",
+      "scenario": "FN-08",
+      "site": "flexoffers",
+      "name": "Third-party embeds",
+      "title": "[FN-08][flexoffers] Third-party embeds",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 14237,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-03][fusetwo] Contact form loads",
+      "project": "desktop",
+      "scenario": "FN-03",
+      "site": "fusetwo",
+      "name": "Contact form loads",
+      "title": "[FN-03][fusetwo] Contact form loads",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 721,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-04][fusetwo] Contact form submits (test mode)",
+      "project": "desktop",
+      "scenario": "FN-04",
+      "site": "fusetwo",
+      "name": "Contact form submits (test mode)",
+      "title": "[FN-04][fusetwo] Contact form submits (test mode)",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 837,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-05][fusetwo] Search",
+      "project": "desktop",
+      "scenario": "FN-05",
+      "site": "fusetwo",
+      "name": "Search",
+      "title": "[FN-05][fusetwo] Search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 976,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-06][fusetwo] Login page",
+      "project": "desktop",
+      "scenario": "FN-06",
+      "site": "fusetwo",
+      "name": "Login page",
+      "title": "[FN-06][fusetwo] Login page",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 652,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-07][fusetwo] Signup / apply page",
+      "project": "desktop",
+      "scenario": "FN-07",
+      "site": "fusetwo",
+      "name": "Signup / apply page",
+      "title": "[FN-07][fusetwo] Signup / apply page",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 446,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-08][fusetwo] Third-party embeds",
+      "project": "desktop",
+      "scenario": "FN-08",
+      "site": "fusetwo",
+      "name": "Third-party embeds",
+      "title": "[FN-08][fusetwo] Third-party embeds",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 8882,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-01][fusetwo] Primary navigation",
+      "project": "desktop",
+      "scenario": "FN-01",
+      "site": "fusetwo",
+      "name": "Primary navigation",
+      "title": "[FN-01][fusetwo] Primary navigation",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "linksChecked": 22,
+        "internal": 14,
+        "external": 8,
+        "linksBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 21319,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-01][incubators] Primary navigation",
+      "project": "desktop",
+      "scenario": "FN-01",
+      "site": "incubators",
+      "name": "Primary navigation",
+      "title": "[FN-01][incubators] Primary navigation",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "linksChecked": 8,
+        "internal": 8,
+        "external": 0,
+        "linksBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 4745,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-09][fusetwo] Key CTA buttons",
+      "project": "desktop",
+      "scenario": "FN-09",
+      "site": "fusetwo",
+      "name": "Key CTA buttons",
+      "title": "[FN-09][fusetwo] Key CTA buttons",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "ctasFound": 10,
+        "ctasChecked": 6
+      },
+      "attachments": [],
+      "durationMs": 12298,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-03][incubators] Contact form loads",
+      "project": "desktop",
+      "scenario": "FN-03",
+      "site": "incubators",
+      "name": "Contact form loads",
+      "title": "[FN-03][incubators] Contact form loads",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 491,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-04][incubators] Contact form submits (test mode)",
+      "project": "desktop",
+      "scenario": "FN-04",
+      "site": "incubators",
+      "name": "Contact form submits (test mode)",
+      "title": "[FN-04][incubators] Contact form submits (test mode)",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 536,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-05][incubators] Search",
+      "project": "desktop",
+      "scenario": "FN-05",
+      "site": "incubators",
+      "name": "Search",
+      "title": "[FN-05][incubators] Search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 652,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-06][incubators] Login page",
+      "project": "desktop",
+      "scenario": "FN-06",
+      "site": "incubators",
+      "name": "Login page",
+      "title": "[FN-06][incubators] Login page",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 467,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-07][incubators] Signup / apply page",
+      "project": "desktop",
+      "scenario": "FN-07",
+      "site": "incubators",
+      "name": "Signup / apply page",
+      "title": "[FN-07][incubators] Signup / apply page",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 840,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-08][incubators] Third-party embeds",
+      "project": "desktop",
+      "scenario": "FN-08",
+      "site": "incubators",
+      "name": "Third-party embeds",
+      "title": "[FN-08][incubators] Third-party embeds",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 1006,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-09][incubators] Key CTA buttons",
+      "project": "desktop",
+      "scenario": "FN-09",
+      "site": "incubators",
+      "name": "Key CTA buttons",
+      "title": "[FN-09][incubators] Key CTA buttons",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 841,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-02][incubators] No broken images",
+      "project": "desktop",
+      "scenario": "FN-02",
+      "site": "incubators",
+      "name": "No broken images",
+      "title": "[FN-02][incubators] No broken images",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "imagesChecked": 18,
+        "pagesWithBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 11941,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-01][perhaps] Time to first byte",
+      "project": "desktop",
+      "scenario": "PF-01",
+      "site": "perhaps",
+      "name": "Time to first byte",
+      "title": "[PF-01][perhaps] Time to first byte",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "ttfbMs": 342,
+        "domLoadedMs": 1918,
+        "loadMs": 3482
+      },
+      "attachments": [],
+      "durationMs": 6433,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-02][fusetwo] No broken images",
+      "project": "desktop",
+      "scenario": "FN-02",
+      "site": "fusetwo",
+      "name": "No broken images",
+      "title": "[FN-02][fusetwo] No broken images",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "imagesChecked": 129,
+        "pagesWithBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 38748,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-03][perhaps] Total page weight",
+      "project": "desktop",
+      "scenario": "PF-03",
+      "site": "perhaps",
+      "name": "Total page weight",
+      "title": "[PF-03][perhaps] Total page weight",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "bytes": 2074975,
+        "mb": 1.98,
+        "increasePct": 0
+      },
+      "attachments": [],
+      "durationMs": 7626,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-05][perhaps] Response-time trend",
+      "project": "desktop",
+      "scenario": "PF-05",
+      "site": "perhaps",
+      "name": "Response-time trend",
+      "title": "[PF-05][perhaps] Response-time trend",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 243,
+        "avg7dMs": 256,
+        "samples": 4
+      },
+      "attachments": [],
+      "durationMs": 1093,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-04][perhaps] Request count",
+      "project": "desktop",
+      "scenario": "PF-04",
+      "site": "perhaps",
+      "name": "Request count",
+      "title": "[PF-04][perhaps] Request count",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "requests": 124,
+        "increasePct": 0
+      },
+      "attachments": [],
+      "durationMs": 7801,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-02][perhaps] Largest Contentful Paint",
+      "project": "desktop",
+      "scenario": "PF-02",
+      "site": "perhaps",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][perhaps] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 588,
+        "samples": [
+          544,
+          588,
+          1548
+        ],
+        "viewport": "desktop"
+      },
+      "attachments": [],
+      "durationMs": 20644,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-01][flexoffers] Time to first byte",
+      "project": "desktop",
+      "scenario": "PF-01",
+      "site": "flexoffers",
+      "name": "Time to first byte",
+      "title": "[PF-01][flexoffers] Time to first byte",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "ttfbMs": 287,
+        "domLoadedMs": 1575,
+        "loadMs": 5486
+      },
+      "attachments": [],
+      "durationMs": 9153,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-03][flexoffers] Total page weight",
+      "project": "desktop",
+      "scenario": "PF-03",
+      "site": "flexoffers",
+      "name": "Total page weight",
+      "title": "[PF-03][flexoffers] Total page weight",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "bytes": 2468146,
+        "mb": 2.35,
+        "increasePct": 1
+      },
+      "attachments": [],
+      "durationMs": 13016,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-04][flexoffers] Request count",
+      "project": "desktop",
+      "scenario": "PF-04",
+      "site": "flexoffers",
+      "name": "Request count",
+      "title": "[PF-04][flexoffers] Request count",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "requests": 165,
+        "increasePct": -7
+      },
+      "attachments": [],
+      "durationMs": 12691,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-05][flexoffers] Response-time trend",
+      "project": "desktop",
+      "scenario": "PF-05",
+      "site": "flexoffers",
+      "name": "Response-time trend",
+      "title": "[PF-05][flexoffers] Response-time trend",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 215,
+        "avg7dMs": 185,
+        "samples": 4
+      },
+      "attachments": [],
+      "durationMs": 1090,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-02][flexoffers] Largest Contentful Paint",
+      "project": "desktop",
+      "scenario": "PF-02",
+      "site": "flexoffers",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][flexoffers] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 608,
+        "samples": [
+          264,
+          608,
+          2888
+        ],
+        "viewport": "desktop"
+      },
+      "attachments": [],
+      "durationMs": 27384,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-01][fusetwo] Time to first byte",
+      "project": "desktop",
+      "scenario": "PF-01",
+      "site": "fusetwo",
+      "name": "Time to first byte",
+      "title": "[PF-01][fusetwo] Time to first byte",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "ttfbMs": 118,
+        "domLoadedMs": 1431,
+        "loadMs": 5377
+      },
+      "attachments": [],
+      "durationMs": 8925,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-03][fusetwo] Total page weight",
+      "project": "desktop",
+      "scenario": "PF-03",
+      "site": "fusetwo",
+      "name": "Total page weight",
+      "title": "[PF-03][fusetwo] Total page weight",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "bytes": 2995617,
+        "mb": 2.86,
+        "increasePct": 0
+      },
+      "attachments": [],
+      "durationMs": 9935,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-05][fusetwo] Response-time trend",
+      "project": "desktop",
+      "scenario": "PF-05",
+      "site": "fusetwo",
+      "name": "Response-time trend",
+      "title": "[PF-05][fusetwo] Response-time trend",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 136,
+        "avg7dMs": 262,
+        "samples": 4
+      },
+      "attachments": [],
+      "durationMs": 749,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-04][fusetwo] Request count",
+      "project": "desktop",
+      "scenario": "PF-04",
+      "site": "fusetwo",
+      "name": "Request count",
+      "title": "[PF-04][fusetwo] Request count",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "requests": 132,
+        "increasePct": 0
+      },
+      "attachments": [],
+      "durationMs": 9036,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-01][incubators] Time to first byte",
+      "project": "desktop",
+      "scenario": "PF-01",
+      "site": "incubators",
+      "name": "Time to first byte",
+      "title": "[PF-01][incubators] Time to first byte",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "ttfbMs": 357,
+        "domLoadedMs": 1210,
+        "loadMs": 1502
+      },
+      "attachments": [],
+      "durationMs": 2975,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-03][incubators] Total page weight",
+      "project": "desktop",
+      "scenario": "PF-03",
+      "site": "incubators",
+      "name": "Total page weight",
+      "title": "[PF-03][incubators] Total page weight",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "bytes": 579366,
+        "mb": 0.55,
+        "increasePct": 0
+      },
+      "attachments": [],
+      "durationMs": 4549,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-02][fusetwo] Largest Contentful Paint",
+      "project": "desktop",
+      "scenario": "PF-02",
+      "site": "fusetwo",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][fusetwo] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 1076,
+        "samples": [
+          792,
+          1076,
+          2724
+        ],
+        "viewport": "desktop"
+      },
+      "attachments": [],
+      "durationMs": 25644,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-05][incubators] Response-time trend",
+      "project": "desktop",
+      "scenario": "PF-05",
+      "site": "incubators",
+      "name": "Response-time trend",
+      "title": "[PF-05][incubators] Response-time trend",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 424,
+        "avg7dMs": 577,
+        "samples": 4
+      },
+      "attachments": [],
+      "durationMs": 1393,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-04][incubators] Request count",
+      "project": "desktop",
+      "scenario": "PF-04",
+      "site": "incubators",
+      "name": "Request count",
+      "title": "[PF-04][incubators] Request count",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "requests": 42,
+        "increasePct": 0
+      },
+      "attachments": [],
+      "durationMs": 4320,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-02][incubators] Largest Contentful Paint",
+      "project": "desktop",
+      "scenario": "PF-02",
+      "site": "incubators",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][incubators] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 524,
+        "samples": [
+          456,
+          524,
+          1304
+        ],
+        "viewport": "desktop"
+      },
+      "attachments": [],
+      "durationMs": 12797,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-08][perhaps] Sitemap URLs respond",
+      "project": "desktop",
+      "scenario": "AV-08",
+      "site": "perhaps",
+      "name": "Sitemap URLs respond",
+      "title": "[AV-08][perhaps] Sitemap URLs respond",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.perhaps.com/robots.txt",
+      "notes": [
+        "70 sitemap URLs checked in 7 s (9 sitemap files)",
+        "70 sitemap URLs checked in 7 s (9 sitemap files)"
+      ],
+      "metrics": {
+        "sitemaps": 9,
+        "urlsChecked": 70,
+        "broken": 0,
+        "brokenPct": 0,
+        "slow": 0,
+        "seconds": 7
+      },
+      "attachments": [],
+      "durationMs": 11287,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-08][incubators] Sitemap URLs respond",
+      "project": "desktop",
+      "scenario": "AV-08",
+      "site": "incubators",
+      "name": "Sitemap URLs respond",
+      "title": "[AV-08][incubators] Sitemap URLs respond",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com/robots.txt",
+      "notes": [
+        "16 sitemap URLs checked in 1 s (6 sitemap files)",
+        "16 sitemap URLs checked in 1 s (6 sitemap files)"
+      ],
+      "metrics": {
+        "sitemaps": 6,
+        "urlsChecked": 16,
+        "broken": 0,
+        "brokenPct": 0,
+        "slow": 0,
+        "seconds": 1
+      },
+      "attachments": [],
+      "durationMs": 2399,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-08][fusetwo] Sitemap URLs respond",
+      "project": "desktop",
+      "scenario": "AV-08",
+      "site": "fusetwo",
+      "name": "Sitemap URLs respond",
+      "title": "[AV-08][fusetwo] Sitemap URLs respond",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com/robots.txt",
+      "notes": [
+        "73 sitemap URLs checked in 11 s (4 sitemap files)",
+        "73 sitemap URLs checked in 11 s (4 sitemap files)"
+      ],
+      "metrics": {
+        "sitemaps": 4,
+        "urlsChecked": 73,
+        "broken": 0,
+        "brokenPct": 0,
+        "slow": 0,
+        "seconds": 11
+      },
+      "attachments": [],
+      "durationMs": 12740,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-02][perhaps] Full-page screenshot, mobile",
+      "project": "desktop",
+      "scenario": "VR-02",
+      "site": "perhaps",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][perhaps] Full-page screenshot, mobile",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 447,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-03][perhaps] Above-the-fold hero",
+      "project": "desktop",
+      "scenario": "VR-03",
+      "site": "perhaps",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][perhaps] Above-the-fold hero",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "outcome": "pass",
+        "heroSelectorMatched": true
+      },
+      "attachments": [],
+      "durationMs": 11667,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][perhaps] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "perhaps",
+      "name": "Header and footer components",
+      "title": "[VR-04][perhaps] Header and footer components",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 0,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 68419,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-01][perhaps] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "perhaps",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][perhaps] Full-page screenshot, desktop",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  380707 pixels (ratio 0.11 of all image pixels) are different.\n\n  Snapshot: perhaps\\blog.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\blog.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 380707 pixels (ratio 0.11 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 380707 pixels (ratio 0.11 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 1,
+        "outcome": {
+          "home": "pass",
+          "services": "pass",
+          "about": "pass",
+          "careers": "pass",
+          "news": "pass",
+          "faqs": "pass",
+          "blog": "fail",
+          "contact": "pass",
+          "advertiser-signup": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\blog-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\blog.png"
+        },
+        {
+          "name": "perhaps\\blog-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\blog-actual.png"
+        },
+        {
+          "name": "perhaps\\blog-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\blog-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 133353,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-05][perhaps] Layout shift",
+      "project": "desktop",
+      "scenario": "VR-05",
+      "site": "perhaps",
+      "name": "Layout shift",
+      "title": "[VR-05][perhaps] Layout shift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 0
+      },
+      "attachments": [],
+      "durationMs": 58691,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-07][perhaps] Styling drift",
+      "project": "desktop",
+      "scenario": "VR-07",
+      "site": "perhaps",
+      "name": "Styling drift",
+      "title": "[VR-07][perhaps] Styling drift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "styles": {
+          "font": {
+            "fontFamily": "\"Josefin Sans\"",
+            "fontSize": "18px"
+          },
+          "primary": {
+            "color": "rgb(0, 0, 102)",
+            "fontFamily": "\"Nunito Sans\"",
+            "fontWeight": "700"
+          },
+          "button": {
+            "backgroundColor": "rgb(77, 2, 185)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "20px",
+            "fontFamily": "\"Nunito Sans\""
+          }
+        }
+      },
+      "attachments": [],
+      "durationMs": 9487,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-08][perhaps] Missing sections",
+      "project": "desktop",
+      "scenario": "VR-08",
+      "site": "perhaps",
+      "name": "Missing sections",
+      "title": "[VR-08][perhaps] Missing sections",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "sections": 4,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 9223,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-06][perhaps] Text content diff",
+      "project": "desktop",
+      "scenario": "VR-06",
+      "site": "perhaps",
+      "name": "Text content diff",
+      "title": "[VR-06][perhaps] Text content diff",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: text changed:\n{\n  \"services\": [\n    \"- Exclusive Promotion\",\n    \"- Qualified advertisers can dramatically boost partner marketing ROAS through an exclusive promotion from our top strategi\",\n    \"- Find Out If You Qualify\",\n    \"+ Growth Launch Offer\",\n    \"+ Qualified advertisers can dramatically boost partner marketing ROAS through an exclusive promotion from our top strategi\",\n    \"+ Explore the Promotion\"\n  ],\n  \"blog\": [\n    \"- How Media Partnerships Influence Advertising Strategies\",\n    \"- August 19, 2026\",\n    \"+ Perhaps Earns AvantLink Certified Agency Partner Status\",\n    \"+ October 16, 2026\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 4\n\n- Array []\n+ Array [\n+   \"services\",\n+   \"blog\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChanged": 2
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-06-perhaps-Text-content-diff-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 105076,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-02][flexoffers] Full-page screenshot, mobile",
+      "project": "desktop",
+      "scenario": "VR-02",
+      "site": "flexoffers",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][flexoffers] Full-page screenshot, mobile",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 602,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-03][flexoffers] Above-the-fold hero",
+      "project": "desktop",
+      "scenario": "VR-03",
+      "site": "flexoffers",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][flexoffers] Above-the-fold hero",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "outcome": "pass",
+        "heroSelectorMatched": true
+      },
+      "attachments": [],
+      "durationMs": 12084,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][flexoffers] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "flexoffers",
+      "name": "Header and footer components",
+      "title": "[VR-04][flexoffers] Header and footer components",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 20,
+        "diffs": 0,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 99027,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-01][flexoffers] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "flexoffers",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][flexoffers] Full-page screenshot, desktop",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  168081 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: flexoffers\\home.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\home.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 168081 pixels (ratio 0.02 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 168081 pixels (ratio 0.02 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  81787 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: flexoffers\\directory.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\directory.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 81787 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 81787 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 5047px, received 1440px by 4767px. 2082494 pixels (ratio 0.29 of all image pixels) are different.\n\n  Snapshot: flexoffers\\blog.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\blog.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 5047px, received 1440px by 4767px. 2082494 pixels (ratio 0.29 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 5047px, received 1440px by 4767px. 2082494 pixels (ratio 0.29 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 10,
+        "diffs": 3,
+        "outcome": {
+          "home": "fail",
+          "publishers": "pass",
+          "advertisers": "pass",
+          "signup": "pass",
+          "directory": "fail",
+          "ranking": "pass",
+          "about": "pass",
+          "contact": "pass",
+          "support": "pass",
+          "blog": "fail"
+        }
+      },
+      "attachments": [
+        {
+          "name": "flexoffers\\home-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\home.png"
+        },
+        {
+          "name": "flexoffers\\home-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\home-actual.png"
+        },
+        {
+          "name": "flexoffers\\home-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\home-diff.png"
+        },
+        {
+          "name": "flexoffers\\directory-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\directory.png"
+        },
+        {
+          "name": "flexoffers\\directory-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\directory-actual.png"
+        },
+        {
+          "name": "flexoffers\\directory-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\directory-diff.png"
+        },
+        {
+          "name": "flexoffers\\blog-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\blog.png"
+        },
+        {
+          "name": "flexoffers\\blog-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\blog-actual.png"
+        },
+        {
+          "name": "flexoffers\\blog-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\blog-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 167327,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-05][flexoffers] Layout shift",
+      "project": "desktop",
+      "scenario": "VR-05",
+      "site": "flexoffers",
+      "name": "Layout shift",
+      "title": "[VR-05][flexoffers] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: blog: footer: moved 0px horizontally, 69px vertically (was 85,1075 now 85,1006)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"blog: footer: moved 0px horizontally, 69px vertically (was 85,1075 now 85,1006)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-05-flexoffers-Layout-shift-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 116858,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-07][flexoffers] Styling drift",
+      "project": "desktop",
+      "scenario": "VR-07",
+      "site": "flexoffers",
+      "name": "Styling drift",
+      "title": "[VR-07][flexoffers] Styling drift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "styles": {
+          "font": {
+            "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "fontSize": "16px"
+          },
+          "primary": {
+            "color": "rgb(20, 22, 144)",
+            "fontFamily": "Poppins, sans-serif",
+            "fontWeight": "600"
+          },
+          "button": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(20, 20, 20)",
+            "borderRadius": "34px",
+            "fontFamily": "sans-serif"
+          }
+        }
+      },
+      "attachments": [],
+      "durationMs": 11703,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-08][flexoffers] Missing sections",
+      "project": "desktop",
+      "scenario": "VR-08",
+      "site": "flexoffers",
+      "name": "Missing sections",
+      "title": "[VR-08][flexoffers] Missing sections",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "sections": 4,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 11592,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-06][flexoffers] Text content diff",
+      "project": "desktop",
+      "scenario": "VR-06",
+      "site": "flexoffers",
+      "name": "Text content diff",
+      "title": "[VR-06][flexoffers] Text content diff",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: text changed:\n{\n  \"home\": [\n    \"- Fall Fashion 2026: Programs to Monetize Seasonal Trends\",\n    \"- Fall Fashion 2026: Programs to Monetize Seasonal Trends Discover nine fashion affiliate programs publishers can promote \",\n    \"- October 8, 2026\",\n    \"- How to Use Publisher Platforms to Increase Brand Visibility\",\n    \"- Building an audience is only one part of growing as a publisher or creator. The next step is connecting that audience wi\",\n    \"- October 6, 2026\",\n    \"+ The Ultimate Guide to Q4 Affiliate Marketing Success\",\n    \"+ Q4 is one of the biggest opportunities of the year for influencer and affiliate marketing. From Black Friday and Cyber M\",\n    \"+ October 15, 2026\",\n    \"+ Sports & Outdoor Gear Affiliate Programs to Promote This Fall 2026\",\n    \"+ Sports & Outdoor Gear Affiliate Programs to Promote This Fall 2026 Discover 7 sports and outdoor gear affiliate programs\",\n    \"+ October 15, 2026\"\n  ],\n  \"directory\": [\n    \"- Databox Affiliate Program\",\n    \"- Sylvox TV Affiliate Program\",\n    \"- Epachois Affiliate Program\",\n    \"- NICEDAY Affiliate Program\",\n    \"- Narwal FR Affiliate Program\",\n    \"- Adam & Eve AU Affiliate Program\",\n    \"- THE OBJECT Affiliate Program\",\n    \"- Alleop RO Affiliate Program\",\n    \"- Gotrax CA Affiliate Program\",\n    \"+ Geekflare Affiliate Program\",\n    \"+ GeekShare Affiliate Program\",\n    \"+ Rose-Hip Vital Affiliate Program\",\n    \"+ Rage Fitness US Affiliate Program\",\n    \"+ Yarbo Affiliate Program\",\n    \"+ Geekvape Affiliate Program\",\n    \"+ Alibaba APAC Affiliate Program\",\n    \"+ AliExpress DE Affiliate Program\",\n    \"+ PXG Affiliate Program\"\n  ],\n  \"ranking\": [\n    \"- 14k+\",\n    \"- Cards for Bad Credit\",\n    \"- Ireland\",\n    \"- $1.85 $3.22 $2.89 04/01/2026\",\n    \"- $1.09 $0.6 $1.17 07/21/2026\",\n    \"- $0.16 $1.54 $2.76 01/16/2026\",\n    \"- $6.11 $3.33 $0.54 02/16/2026\",\n    \"- $0.91 $1.49 $1.21 08/13/2026\",\n    \"- $0.22 $0.19 $0.22 01/19/2026\",\n    \"- $0.02 $0.08 $0.25 09/10/2026\",\n    \"- $0.51 $0.54 $0.46 09/02/2026\",\n    \"- $0.15 $0.37 $0.49 03/15/2022\",\n    \"- $1.98 $4.65 $7.96 04/14/2025\",\n    \"- Showing 1 to 10 of 14,066\",\n    \"+ 14.4k+\",\n    \"+ Airline Rewards Cards\",\n    \"+ Fintech Cards\",\n    \"+ $2.51 $3.11 $3.11 04/01/2026\",\n    \"+ $0.64 $0.75 $1.21 07/21/2026\",\n    \"+ $0.14 $0.72 $2.27 01/16/2026\",\n    \"+ $2.33 $3.17 $0.59 02/16/2026\",\n    \"+ $0.74 $1.36 $1.21 08/13/2026\",\n    \"+ $0.16 $0.18 $0.21 01/19/2026\",\n    \"+ $0.02 $0.06 $0.22 09/10/2026\",\n    \"+ $0.37 $0.53 $0.47 09/02/2026\",\n    \"+ $0.19 $0.29 $0.46 03/15/2022\",\n    \"+ $1.75 $5.44 $8.78 04/14/2025\",\n    \"+ Showing 1 to 10 of 14,446\"\n  ],\n  \"blog\": [\n    \"- September Beauty Reset: Monetize the Ongoing Demand for Beauty and Skin Essentials\",\n    \"- September serves as the bridge between end-of-summer beauty deals, fall launches, seasonal routine resets, and…\",\n    \"- SEPTEMBER BEAUTY RESET: MONETIZE THE ONGOING DEMAND FOR BEAUTY AND SKIN ESSENTIALS\",\n    \"- FlexOffers Appoints Dipak Joshi as New CEO to Lead Next Stage of Growth\",\n    \"- How Global Technology Leadership Will Guide FlexOffers FlexOffers has appointed global technology executive Dipak Joshi \",\n    \"- FLEXOFFERS APPOINTS DIPAK JOSHI AS NEW CEO TO LEAD NEXT STAGE OF GROWTH\",\n    \"+ The Ultimate Guide to Q4 Affiliate Marketing Success\",\n    \"+ Q4 is one of the biggest opportunities of the year for influencer and affiliate marketing….\",\n    \"+ THE ULTIMATE GUIDE TO Q4 AFFILIATE MARKETING SUCCESS\",\n    \"+ Sports & Outdoor Gear Affiliate Programs to Promote This Fall 2026\",\n    \"+ Sports & Outdoor Gear Affiliate Programs to Promote This Fall 2026 Discover 7 sports and…\",\n    \"+ SPORTS & OUTDOOR GEAR AFFILIATE PROGRAMS TO PROMOTE THIS FALL 2026\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 6\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"directory\",\n+   \"ranking\",\n+   \"blog\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChanged": 4
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-06-flexoffers-Text-content-diff-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 193726,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-02][fusetwo] Full-page screenshot, mobile",
+      "project": "desktop",
+      "scenario": "VR-02",
+      "site": "fusetwo",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][fusetwo] Full-page screenshot, mobile",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 526,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-03][fusetwo] Above-the-fold hero",
+      "project": "desktop",
+      "scenario": "VR-03",
+      "site": "fusetwo",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][fusetwo] Above-the-fold hero",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "outcome": "pass",
+        "heroSelectorMatched": true
+      },
+      "attachments": [],
+      "durationMs": 14768,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][fusetwo] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "fusetwo",
+      "name": "Header and footer components",
+      "title": "[VR-04][fusetwo] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  4581 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: fusetwo\\about-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\about-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 4579 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 4581 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 1,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\about-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\fusetwo\\about-footer.png"
+        },
+        {
+          "name": "fusetwo\\about-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-desktop\\fusetwo\\about-footer-actual.png"
+        },
+        {
+          "name": "fusetwo\\about-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-desktop\\fusetwo\\about-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 155280,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-01][fusetwo] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "fusetwo",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][fusetwo] Full-page screenshot, desktop",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 5412px, received 1440px by 6105px. 4325454 pixels (ratio 0.50 of all image pixels) are different.\n\n  Snapshot: fusetwo\\about.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\about.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 5412px, received 1440px by 6105px. 4325454 pixels (ratio 0.50 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 5412px, received 1440px by 6105px. 4325454 pixels (ratio 0.50 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 1,
+        "outcome": {
+          "home": "pass",
+          "platform": "pass",
+          "brands": "pass",
+          "brand-services": "pass",
+          "industries": "pass",
+          "publishers": "pass",
+          "about": "fail",
+          "support": "pass",
+          "help": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\about-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\fusetwo\\about.png"
+        },
+        {
+          "name": "fusetwo\\about-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\about-actual.png"
+        },
+        {
+          "name": "fusetwo\\about-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\about-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 167895,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-05][fusetwo] Layout shift",
+      "project": "desktop",
+      "scenario": "VR-05",
+      "site": "fusetwo",
+      "name": "Layout shift",
+      "title": "[VR-05][fusetwo] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: about: footer: moved 0px horizontally, 693px vertically (was 0,5090 now 0,5783)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"about: footer: moved 0px horizontally, 693px vertically (was 0,5090 now 0,5783)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-05-fusetwo-Layout-shift-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 134052,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-06][fusetwo] Text content diff",
+      "project": "desktop",
+      "scenario": "VR-06",
+      "site": "fusetwo",
+      "name": "Text content diff",
+      "title": "[VR-06][fusetwo] Text content diff",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: text changed:\n{\n  \"about\": [\n    \"- When the ShareASale platform closed in 2025, it didn’t just disrupt the market — it left entry-level brands without a pl\",\n    \"- FuseTwo was built to close that gap.\",\n    \"- Built by Partner Marketing Experts Who Understand Your Challenge\",\n    \"- FuseTwo started with a simple observation: with AI discovery disrupting search, growing brands were being left behind. W\",\n    \"- Our founders spent their careers inside partner marketing, through every platform shift, algorithm change, and AI-driven\",\n    \"- We built FuseTwo because we knew what brands were missing: a curated publisher network, smart automation, and expertise \",\n    \"- Speed matters in scaling\",\n    \"- Trust drives long-term partnerships\",\n    \"- Results speak louder than promises\",\n    \"- Connecting Brands with Publishers Who Deliver\",\n    \"- Today, FuseTwo connects growing advertisers with high-trust publishers through intuitive tools, streamlined onboarding, \",\n    \"- We make it fast and easy for brands to be discovered, shape preferences, and acquire customers as AI continues to redefi\",\n    \"- If partner marketing has felt out of reach, it shouldn’t.\",\n    \"- We built this for you.\",\n    \"- FuseTwo is the platform where both brands and publishers find what they’re looking for.\",\n    \"+ A Changing Partner Marketing Landscape\",\n    \"+ As the partner marketing industry has evolved and consolidated, many growing brands are looking for a partner marketing \",\n    \"+ These brands still need access to quality publishers, creators, and media partners. They need the technology and experti\",\n    \"+ FuseTwo was created to serve that opportunity.\",\n    \"+ We built FuseTwo to make partner marketing more accessible, combining industry experience with AI, automation, and smart\",\n    \"+ Experience Behind FuseTwo’s Partner Marketing Platform\",\n    \"+ FuseTwo entered the market by acquiring the direct advertiser business and assets of FlexOffers, establishing a foundati\",\n    \"+ Led by industry veterans with decades of affiliate network experience, FuseTwo was developed with a practical understand\",\n    \"+ As AI transforms how consumers discover products, third-party content, and trusted recommendations are becoming increasi\",\n    \"+ The line between affiliate, influencer, and performance media has also blurred, creating new opportunities for brands to\",\n    \"+ FuseTwo brings these channels together through technology, automation, experienced people, and a more accessible economi\",\n    \"+ What FuseTwo Brings Together\",\n    \"+ Combined Access\",\n    \"+ Affiliate, influencer, and media partnerships connected on one platform.\",\n    \"+ Streamlined Technology\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"about\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChanged": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-06-fusetwo-Text-content-diff-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 123827,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-07][fusetwo] Styling drift",
+      "project": "desktop",
+      "scenario": "VR-07",
+      "site": "fusetwo",
+      "name": "Styling drift",
+      "title": "[VR-07][fusetwo] Styling drift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "styles": {
+          "font": {
+            "fontFamily": "-apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "fontSize": "17px"
+          },
+          "primary": {
+            "color": "rgb(0, 0, 0)",
+            "fontFamily": "\"Plus Jakarta Sans\", sans-serif",
+            "fontWeight": "700"
+          },
+          "button": {
+            "backgroundColor": "rgb(255, 45, 0)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "10px",
+            "fontFamily": "\"Plus Jakarta Sans\", sans-serif"
+          }
+        }
+      },
+      "attachments": [],
+      "durationMs": 14071,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-08][fusetwo] Missing sections",
+      "project": "desktop",
+      "scenario": "VR-08",
+      "site": "fusetwo",
+      "name": "Missing sections",
+      "title": "[VR-08][fusetwo] Missing sections",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "sections": 4,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 12514,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-02][incubators] Full-page screenshot, mobile",
+      "project": "desktop",
+      "scenario": "VR-02",
+      "site": "incubators",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][incubators] Full-page screenshot, mobile",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 378,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-03][incubators] Above-the-fold hero",
+      "project": "desktop",
+      "scenario": "VR-03",
+      "site": "incubators",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][incubators] Above-the-fold hero",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "outcome": "pass",
+        "heroSelectorMatched": true
+      },
+      "attachments": [],
+      "durationMs": 6301,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-01][incubators] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "incubators",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][incubators] Full-page screenshot, desktop",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 5,
+        "diffs": 0,
+        "outcome": {
+          "home": "pass",
+          "founder": "pass",
+          "what-we-do": "pass",
+          "companies": "pass",
+          "contact": "pass"
+        }
+      },
+      "attachments": [],
+      "durationMs": 29074,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][incubators] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "incubators",
+      "name": "Header and footer components",
+      "title": "[VR-04][incubators] Header and footer components",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 10,
+        "diffs": 0,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 23734,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-06][incubators] Text content diff",
+      "project": "desktop",
+      "scenario": "VR-06",
+      "site": "incubators",
+      "name": "Text content diff",
+      "title": "[VR-06][incubators] Text content diff",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChanged": 0
+      },
+      "attachments": [],
+      "durationMs": 21817,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-07][incubators] Styling drift",
+      "project": "desktop",
+      "scenario": "VR-07",
+      "site": "incubators",
+      "name": "Styling drift",
+      "title": "[VR-07][incubators] Styling drift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "styles": {
+          "font": {
+            "fontFamily": "-apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "fontSize": "17px"
+          },
+          "primary": {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "Helvetica, sans-serif",
+            "fontWeight": "600"
+          },
+          "button": null
+        }
+      },
+      "attachments": [],
+      "durationMs": 5564,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-05][incubators] Layout shift",
+      "project": "desktop",
+      "scenario": "VR-05",
+      "site": "incubators",
+      "name": "Layout shift",
+      "title": "[VR-05][incubators] Layout shift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 0
+      },
+      "attachments": [],
+      "durationMs": 37105,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-08][incubators] Missing sections",
+      "project": "desktop",
+      "scenario": "VR-08",
+      "site": "incubators",
+      "name": "Missing sections",
+      "title": "[VR-08][incubators] Missing sections",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "sections": 4,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 5382,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-01][perhaps] Visitor to contact",
+      "project": "mobile",
+      "scenario": "UF-01",
+      "site": "perhaps",
+      "name": "Visitor to contact",
+      "title": "[UF-01][perhaps] Visitor to contact",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 580,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-03][perhaps] Publisher signup",
+      "project": "mobile",
+      "scenario": "UF-03",
+      "site": "perhaps",
+      "name": "Publisher signup",
+      "title": "[UF-03][perhaps] Publisher signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 443,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-04][perhaps] Advertiser signup",
+      "project": "mobile",
+      "scenario": "UF-04",
+      "site": "perhaps",
+      "name": "Advertiser signup",
+      "title": "[UF-04][perhaps] Advertiser signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 455,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-05][perhaps] Login attempt",
+      "project": "mobile",
+      "scenario": "UF-05",
+      "site": "perhaps",
+      "name": "Login attempt",
+      "title": "[UF-05][perhaps] Login attempt",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 378,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-06][perhaps] Browse / search",
+      "project": "mobile",
+      "scenario": "UF-06",
+      "site": "perhaps",
+      "name": "Browse / search",
+      "title": "[UF-06][perhaps] Browse / search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 416,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-02][perhaps] Visitor to key landing page",
+      "project": "mobile",
+      "scenario": "UF-02",
+      "site": "perhaps",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][perhaps] Visitor to key landing page",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 520,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-01][flexoffers] Visitor to contact",
+      "project": "mobile",
+      "scenario": "UF-01",
+      "site": "flexoffers",
+      "name": "Visitor to contact",
+      "title": "[UF-01][flexoffers] Visitor to contact",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 318,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-02][flexoffers] Visitor to key landing page",
+      "project": "mobile",
+      "scenario": "UF-02",
+      "site": "flexoffers",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][flexoffers] Visitor to key landing page",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 331,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-03][flexoffers] Publisher signup",
+      "project": "mobile",
+      "scenario": "UF-03",
+      "site": "flexoffers",
+      "name": "Publisher signup",
+      "title": "[UF-03][flexoffers] Publisher signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 407,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-04][flexoffers] Advertiser signup",
+      "project": "mobile",
+      "scenario": "UF-04",
+      "site": "flexoffers",
+      "name": "Advertiser signup",
+      "title": "[UF-04][flexoffers] Advertiser signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 553,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-05][flexoffers] Login attempt",
+      "project": "mobile",
+      "scenario": "UF-05",
+      "site": "flexoffers",
+      "name": "Login attempt",
+      "title": "[UF-05][flexoffers] Login attempt",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 815,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-06][flexoffers] Browse / search",
+      "project": "mobile",
+      "scenario": "UF-06",
+      "site": "flexoffers",
+      "name": "Browse / search",
+      "title": "[UF-06][flexoffers] Browse / search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 667,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-07][perhaps] Mobile navigation",
+      "project": "mobile",
+      "scenario": "UF-07",
+      "site": "perhaps",
+      "name": "Mobile navigation",
+      "title": "[UF-07][perhaps] Mobile navigation",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "opened": "https://www.perhaps.com/faqs/",
+        "tried": [
+          "https://www.perhaps.com/faqs/",
+          "https://www.perhaps.com/blog/",
+          "https://www.perhaps.com/contact-us/",
+          "https://www.perhaps.com/advertiser-sign-up/?show_name=Inbound"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 14492,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-01][fusetwo] Visitor to contact",
+      "project": "mobile",
+      "scenario": "UF-01",
+      "site": "fusetwo",
+      "name": "Visitor to contact",
+      "title": "[UF-01][fusetwo] Visitor to contact",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 629,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-02][fusetwo] Visitor to key landing page",
+      "project": "mobile",
+      "scenario": "UF-02",
+      "site": "fusetwo",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][fusetwo] Visitor to key landing page",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 776,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-03][fusetwo] Publisher signup",
+      "project": "mobile",
+      "scenario": "UF-03",
+      "site": "fusetwo",
+      "name": "Publisher signup",
+      "title": "[UF-03][fusetwo] Publisher signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 651,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-04][fusetwo] Advertiser signup",
+      "project": "mobile",
+      "scenario": "UF-04",
+      "site": "fusetwo",
+      "name": "Advertiser signup",
+      "title": "[UF-04][fusetwo] Advertiser signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 537,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-05][fusetwo] Login attempt",
+      "project": "mobile",
+      "scenario": "UF-05",
+      "site": "fusetwo",
+      "name": "Login attempt",
+      "title": "[UF-05][fusetwo] Login attempt",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 610,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-06][fusetwo] Browse / search",
+      "project": "mobile",
+      "scenario": "UF-06",
+      "site": "fusetwo",
+      "name": "Browse / search",
+      "title": "[UF-06][fusetwo] Browse / search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 699,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-07][flexoffers] Mobile navigation",
+      "project": "mobile",
+      "scenario": "UF-07",
+      "site": "flexoffers",
+      "name": "Mobile navigation",
+      "title": "[UF-07][flexoffers] Mobile navigation",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [
+        "tapping https://www.flexoffers.com/publishers/ did not navigate; trying the next link",
+        "tapping https://www.flexoffers.com/publishers/ did not navigate; trying the next link"
+      ],
+      "metrics": {
+        "opened": "https://www.flexoffers.com/advertisers/",
+        "tried": [
+          "https://www.flexoffers.com/publishers/",
+          "https://www.flexoffers.com/advertisers/",
+          "https://www.flexoffers.com/publishers/flexcash/",
+          "https://www.flexoffers.com/publishers/publisher-agency-management/"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 29164,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-07][fusetwo] Mobile navigation",
+      "project": "mobile",
+      "scenario": "UF-07",
+      "site": "fusetwo",
+      "name": "Mobile navigation",
+      "title": "[UF-07][fusetwo] Mobile navigation",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "opened": "https://www.fusetwo.com/platform/",
+        "tried": [
+          "https://www.fusetwo.com/platform/",
+          "https://www.fusetwo.com/publishers/",
+          "https://www.fusetwo.com/about-us/",
+          "https://advertiser.fusetwo.com/signin"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 14655,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-01][incubators] Visitor to contact",
+      "project": "mobile",
+      "scenario": "UF-01",
+      "site": "incubators",
+      "name": "Visitor to contact",
+      "title": "[UF-01][incubators] Visitor to contact",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 685,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-02][incubators] Visitor to key landing page",
+      "project": "mobile",
+      "scenario": "UF-02",
+      "site": "incubators",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][incubators] Visitor to key landing page",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 669,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-03][incubators] Publisher signup",
+      "project": "mobile",
+      "scenario": "UF-03",
+      "site": "incubators",
+      "name": "Publisher signup",
+      "title": "[UF-03][incubators] Publisher signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 641,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-04][incubators] Advertiser signup",
+      "project": "mobile",
+      "scenario": "UF-04",
+      "site": "incubators",
+      "name": "Advertiser signup",
+      "title": "[UF-04][incubators] Advertiser signup",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 668,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-05][incubators] Login attempt",
+      "project": "mobile",
+      "scenario": "UF-05",
+      "site": "incubators",
+      "name": "Login attempt",
+      "title": "[UF-05][incubators] Login attempt",
+      "status": "skipped",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 582,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-06][incubators] Browse / search",
+      "project": "mobile",
+      "scenario": "UF-06",
+      "site": "incubators",
+      "name": "Browse / search",
+      "title": "[UF-06][incubators] Browse / search",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 564,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-01][perhaps] Time to first byte",
+      "project": "mobile",
+      "scenario": "PF-01",
+      "site": "perhaps",
+      "name": "Time to first byte",
+      "title": "[PF-01][perhaps] Time to first byte",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 505,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-07][incubators] Mobile navigation",
+      "project": "mobile",
+      "scenario": "UF-07",
+      "site": "incubators",
+      "name": "Mobile navigation",
+      "title": "[UF-07][incubators] Mobile navigation",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "opened": "https://incubators.com/the-battlefield-of-ideas/",
+        "tried": [
+          "https://incubators.com/the-battlefield-of-ideas/",
+          "https://incubators.com/the-factory/",
+          "https://incubators.com/the-ecosystem-of-knowledge/",
+          "https://incubators.com/we-chirp-together/"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 6317,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-03][perhaps] Total page weight",
+      "project": "mobile",
+      "scenario": "PF-03",
+      "site": "perhaps",
+      "name": "Total page weight",
+      "title": "[PF-03][perhaps] Total page weight",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 400,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-04][perhaps] Request count",
+      "project": "mobile",
+      "scenario": "PF-04",
+      "site": "perhaps",
+      "name": "Request count",
+      "title": "[PF-04][perhaps] Request count",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 373,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-05][perhaps] Response-time trend",
+      "project": "mobile",
+      "scenario": "PF-05",
+      "site": "perhaps",
+      "name": "Response-time trend",
+      "title": "[PF-05][perhaps] Response-time trend",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 1,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-01][flexoffers] Time to first byte",
+      "project": "mobile",
+      "scenario": "PF-01",
+      "site": "flexoffers",
+      "name": "Time to first byte",
+      "title": "[PF-01][flexoffers] Time to first byte",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 382,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-02][perhaps] Largest Contentful Paint",
+      "project": "mobile",
+      "scenario": "PF-02",
+      "site": "perhaps",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][perhaps] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 928,
+        "samples": [
+          844,
+          928,
+          2288
+        ],
+        "viewport": "mobile"
+      },
+      "attachments": [],
+      "durationMs": 21311,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-03][flexoffers] Total page weight",
+      "project": "mobile",
+      "scenario": "PF-03",
+      "site": "flexoffers",
+      "name": "Total page weight",
+      "title": "[PF-03][flexoffers] Total page weight",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 658,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-04][flexoffers] Request count",
+      "project": "mobile",
+      "scenario": "PF-04",
+      "site": "flexoffers",
+      "name": "Request count",
+      "title": "[PF-04][flexoffers] Request count",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 581,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-05][flexoffers] Response-time trend",
+      "project": "mobile",
+      "scenario": "PF-05",
+      "site": "flexoffers",
+      "name": "Response-time trend",
+      "title": "[PF-05][flexoffers] Response-time trend",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 3,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-01][fusetwo] Time to first byte",
+      "project": "mobile",
+      "scenario": "PF-01",
+      "site": "fusetwo",
+      "name": "Time to first byte",
+      "title": "[PF-01][fusetwo] Time to first byte",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 532,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-02][flexoffers] Largest Contentful Paint",
+      "project": "mobile",
+      "scenario": "PF-02",
+      "site": "flexoffers",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][flexoffers] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.flexoffers.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 268,
+        "samples": [
+          220,
+          268,
+          1320
+        ],
+        "viewport": "mobile"
+      },
+      "attachments": [],
+      "durationMs": 25546,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-03][fusetwo] Total page weight",
+      "project": "mobile",
+      "scenario": "PF-03",
+      "site": "fusetwo",
+      "name": "Total page weight",
+      "title": "[PF-03][fusetwo] Total page weight",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 424,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-04][fusetwo] Request count",
+      "project": "mobile",
+      "scenario": "PF-04",
+      "site": "fusetwo",
+      "name": "Request count",
+      "title": "[PF-04][fusetwo] Request count",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 383,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-05][fusetwo] Response-time trend",
+      "project": "mobile",
+      "scenario": "PF-05",
+      "site": "fusetwo",
+      "name": "Response-time trend",
+      "title": "[PF-05][fusetwo] Response-time trend",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 1,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-01][incubators] Time to first byte",
+      "project": "mobile",
+      "scenario": "PF-01",
+      "site": "incubators",
+      "name": "Time to first byte",
+      "title": "[PF-01][incubators] Time to first byte",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 366,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-02][incubators] Largest Contentful Paint",
+      "project": "mobile",
+      "scenario": "PF-02",
+      "site": "incubators",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][incubators] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 548,
+        "samples": [
+          484,
+          548,
+          1436
+        ],
+        "viewport": "mobile"
+      },
+      "attachments": [],
+      "durationMs": 13103,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-03][incubators] Total page weight",
+      "project": "mobile",
+      "scenario": "PF-03",
+      "site": "incubators",
+      "name": "Total page weight",
+      "title": "[PF-03][incubators] Total page weight",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 487,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-02][fusetwo] Largest Contentful Paint",
+      "project": "mobile",
+      "scenario": "PF-02",
+      "site": "fusetwo",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][fusetwo] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 896,
+        "samples": [
+          856,
+          896,
+          2180
+        ],
+        "viewport": "mobile"
+      },
+      "attachments": [],
+      "durationMs": 24063,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-05][incubators] Response-time trend",
+      "project": "mobile",
+      "scenario": "PF-05",
+      "site": "incubators",
+      "name": "Response-time trend",
+      "title": "[PF-05][incubators] Response-time trend",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 4,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-04][incubators] Request count",
+      "project": "mobile",
+      "scenario": "PF-04",
+      "site": "incubators",
+      "name": "Request count",
+      "title": "[PF-04][incubators] Request count",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 459,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-01][perhaps] Full-page screenshot, desktop",
+      "project": "mobile",
+      "scenario": "VR-01",
+      "site": "perhaps",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][perhaps] Full-page screenshot, desktop",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 446,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-03][perhaps] Above-the-fold hero",
+      "project": "mobile",
+      "scenario": "VR-03",
+      "site": "perhaps",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][perhaps] Above-the-fold hero",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 416,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-08][flexoffers] Sitemap URLs respond",
+      "project": "desktop",
+      "scenario": "AV-08",
+      "site": "flexoffers",
+      "name": "Sitemap URLs respond",
+      "title": "[AV-08][flexoffers] Sitemap URLs respond",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 3 of 6000 sitemap URLs broken (0.05%): 400 https://www.flexoffers.com/affiliate-programs/100%-pure-affiliate-program/; 520 https://www.flexoffers.com/affiliate-programs/linksys-affiliate-program/; fetch failed https://www.flexoffers.com/affiliate-programs/bionatrol-llc-affiliate-program/\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 3",
+      "url": "https://www.flexoffers.com/robots.txt",
+      "notes": [
+        "6000 sitemap URLs checked in 198 s (8 sitemap files)",
+        "6000 sitemap URLs checked in 198 s (8 sitemap files)"
+      ],
+      "metrics": {
+        "sitemaps": 8,
+        "urlsChecked": 6000,
+        "broken": 3,
+        "brokenPct": 0.05,
+        "slow": 0,
+        "seconds": 198
+      },
+      "attachments": [],
+      "durationMs": 200766,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-04][perhaps] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "perhaps",
+      "name": "Header and footer components",
+      "title": "[VR-04][perhaps] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  Expected an image 390px by 694px, received 390px by 693px. 2163 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\services-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\services-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - Expected an image 390px by 694px, received 390px by 693px. 2186 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - Expected an image 390px by 694px, received 390px by 693px. 2163 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  22 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\about-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\about-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 2,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\services-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\services-footer.png"
+        },
+        {
+          "name": "perhaps\\services-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\services-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\services-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\services-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\about-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\about-footer.png"
+        },
+        {
+          "name": "perhaps\\about-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\about-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\about-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\about-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 152730,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-06][perhaps] Text content diff",
+      "project": "mobile",
+      "scenario": "VR-06",
+      "site": "perhaps",
+      "name": "Text content diff",
+      "title": "[VR-06][perhaps] Text content diff",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 713,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-07][perhaps] Styling drift",
+      "project": "mobile",
+      "scenario": "VR-07",
+      "site": "perhaps",
+      "name": "Styling drift",
+      "title": "[VR-07][perhaps] Styling drift",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 363,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-08][perhaps] Missing sections",
+      "project": "mobile",
+      "scenario": "VR-08",
+      "site": "perhaps",
+      "name": "Missing sections",
+      "title": "[VR-08][perhaps] Missing sections",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 419,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-01][flexoffers] Full-page screenshot, desktop",
+      "project": "mobile",
+      "scenario": "VR-01",
+      "site": "flexoffers",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][flexoffers] Full-page screenshot, desktop",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 389,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][perhaps] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "perhaps",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][perhaps] Full-page screenshot, mobile",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 390px by 8367px, received 390px by 8390px. 53876 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: perhaps\\services.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\services.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 390px by 8367px, received 390px by 8390px. 53876 pixels (ratio 0.02 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 390px by 8367px, received 390px by 8390px. 53876 pixels (ratio 0.02 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  303437 pixels (ratio 0.19 of all image pixels) are different.\n\n  Snapshot: perhaps\\blog.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\blog.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 303437 pixels (ratio 0.19 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 303437 pixels (ratio 0.19 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 2,
+        "outcome": {
+          "home": "pass",
+          "services": "fail",
+          "about": "pass",
+          "careers": "pass",
+          "news": "pass",
+          "faqs": "pass",
+          "blog": "fail",
+          "contact": "pass",
+          "advertiser-signup": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\services-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\services.png"
+        },
+        {
+          "name": "perhaps\\services-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\services-actual.png"
+        },
+        {
+          "name": "perhaps\\services-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\services-diff.png"
+        },
+        {
+          "name": "perhaps\\blog-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\blog.png"
+        },
+        {
+          "name": "perhaps\\blog-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\blog-actual.png"
+        },
+        {
+          "name": "perhaps\\blog-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\blog-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 148078,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-03][flexoffers] Above-the-fold hero",
+      "project": "mobile",
+      "scenario": "VR-03",
+      "site": "flexoffers",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][flexoffers] Above-the-fold hero",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 634,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-05][perhaps] Layout shift",
+      "project": "mobile",
+      "scenario": "VR-05",
+      "site": "perhaps",
+      "name": "Layout shift",
+      "title": "[VR-05][perhaps] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: services: footer: moved 0px horizontally, 22px vertically (was 0,7675 now 0,7697)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"services: footer: moved 0px horizontally, 22px vertically (was 0,7675 now 0,7697)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-perhaps-VR-05-perhaps-Layout-shift-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 161226,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-04][flexoffers] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "flexoffers",
+      "name": "Header and footer components",
+      "title": "[VR-04][flexoffers] Header and footer components",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 20,
+        "diffs": 0,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 113484,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-06][flexoffers] Text content diff",
+      "project": "mobile",
+      "scenario": "VR-06",
+      "site": "flexoffers",
+      "name": "Text content diff",
+      "title": "[VR-06][flexoffers] Text content diff",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 612,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-07][flexoffers] Styling drift",
+      "project": "mobile",
+      "scenario": "VR-07",
+      "site": "flexoffers",
+      "name": "Styling drift",
+      "title": "[VR-07][flexoffers] Styling drift",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 504,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-08][flexoffers] Missing sections",
+      "project": "mobile",
+      "scenario": "VR-08",
+      "site": "flexoffers",
+      "name": "Missing sections",
+      "title": "[VR-08][flexoffers] Missing sections",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 526,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-01][fusetwo] Full-page screenshot, desktop",
+      "project": "mobile",
+      "scenario": "VR-01",
+      "site": "fusetwo",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][fusetwo] Full-page screenshot, desktop",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 433,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][flexoffers] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "flexoffers",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][flexoffers] Full-page screenshot, mobile",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  197097 pixels (ratio 0.06 of all image pixels) are different.\n\n  Snapshot: flexoffers\\home.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\home.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 197097 pixels (ratio 0.06 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 197097 pixels (ratio 0.06 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  82628 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: flexoffers\\directory.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\directory.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 82628 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 82628 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 390px by 13779px, received 390px by 13308px. 2325637 pixels (ratio 0.44 of all image pixels) are different.\n\n  Snapshot: flexoffers\\blog.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\blog.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 390px by 13779px, received 390px by 13308px. 2325637 pixels (ratio 0.44 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 390px by 13779px, received 390px by 13308px. 2325637 pixels (ratio 0.44 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 10,
+        "diffs": 3,
+        "outcome": {
+          "home": "fail",
+          "publishers": "pass",
+          "advertisers": "pass",
+          "signup": "pass",
+          "directory": "fail",
+          "ranking": "pass",
+          "about": "pass",
+          "contact": "pass",
+          "support": "pass",
+          "blog": "fail"
+        }
+      },
+      "attachments": [
+        {
+          "name": "flexoffers\\home-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\home.png"
+        },
+        {
+          "name": "flexoffers\\home-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\home-actual.png"
+        },
+        {
+          "name": "flexoffers\\home-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\home-diff.png"
+        },
+        {
+          "name": "flexoffers\\directory-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\directory.png"
+        },
+        {
+          "name": "flexoffers\\directory-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\directory-actual.png"
+        },
+        {
+          "name": "flexoffers\\directory-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\directory-diff.png"
+        },
+        {
+          "name": "flexoffers\\blog-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\blog.png"
+        },
+        {
+          "name": "flexoffers\\blog-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\blog-actual.png"
+        },
+        {
+          "name": "flexoffers\\blog-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\blog-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 216964,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-03][fusetwo] Above-the-fold hero",
+      "project": "mobile",
+      "scenario": "VR-03",
+      "site": "fusetwo",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][fusetwo] Above-the-fold hero",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 573,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][fusetwo] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "fusetwo",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][fusetwo] Full-page screenshot, mobile",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 395px by 6777px, received 395px by 7451px. 1537461 pixels (ratio 0.53 of all image pixels) are different.\n\n  Snapshot: fusetwo\\about.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\about.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 395px by 6777px, received 395px by 7451px. 1537461 pixels (ratio 0.53 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 395px by 6777px, received 395px by 7451px. 1537461 pixels (ratio 0.53 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 1,
+        "outcome": {
+          "home": "pass",
+          "platform": "pass",
+          "brands": "pass",
+          "brand-services": "pass",
+          "industries": "pass",
+          "publishers": "pass",
+          "about": "fail",
+          "support": "pass",
+          "help": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\about-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\about.png"
+        },
+        {
+          "name": "fusetwo\\about-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\about-actual.png"
+        },
+        {
+          "name": "fusetwo\\about-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\about-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 152278,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-05][flexoffers] Layout shift",
+      "project": "mobile",
+      "scenario": "VR-05",
+      "site": "flexoffers",
+      "name": "Layout shift",
+      "title": "[VR-05][flexoffers] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: blog: footer: moved 0px horizontally, 46px vertically (was 32,1011 now 32,965)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"blog: footer: moved 0px horizontally, 46px vertically (was 32,1011 now 32,965)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-flexoffers-VR-05-flexoffers-Layout-shift-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 185773,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-06][fusetwo] Text content diff",
+      "project": "mobile",
+      "scenario": "VR-06",
+      "site": "fusetwo",
+      "name": "Text content diff",
+      "title": "[VR-06][fusetwo] Text content diff",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 1095,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-07][fusetwo] Styling drift",
+      "project": "mobile",
+      "scenario": "VR-07",
+      "site": "fusetwo",
+      "name": "Styling drift",
+      "title": "[VR-07][fusetwo] Styling drift",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 834,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-08][fusetwo] Missing sections",
+      "project": "mobile",
+      "scenario": "VR-08",
+      "site": "fusetwo",
+      "name": "Missing sections",
+      "title": "[VR-08][fusetwo] Missing sections",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 1411,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-01][incubators] Full-page screenshot, desktop",
+      "project": "mobile",
+      "scenario": "VR-01",
+      "site": "incubators",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][incubators] Full-page screenshot, desktop",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 812,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-04][fusetwo] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "fusetwo",
+      "name": "Header and footer components",
+      "title": "[VR-04][fusetwo] Header and footer components",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 0,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 78360,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-03][incubators] Above-the-fold hero",
+      "project": "mobile",
+      "scenario": "VR-03",
+      "site": "incubators",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][incubators] Above-the-fold hero",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 658,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][incubators] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "incubators",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][incubators] Full-page screenshot, mobile",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 5,
+        "diffs": 0,
+        "outcome": {
+          "home": "pass",
+          "founder": "pass",
+          "what-we-do": "pass",
+          "companies": "pass",
+          "contact": "pass"
+        }
+      },
+      "attachments": [],
+      "durationMs": 24380,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-04][incubators] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "incubators",
+      "name": "Header and footer components",
+      "title": "[VR-04][incubators] Header and footer components",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 10,
+        "diffs": 0,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 23705,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-06][incubators] Text content diff",
+      "project": "mobile",
+      "scenario": "VR-06",
+      "site": "incubators",
+      "name": "Text content diff",
+      "title": "[VR-06][incubators] Text content diff",
+      "status": "skipped",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 614,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-07][incubators] Styling drift",
+      "project": "mobile",
+      "scenario": "VR-07",
+      "site": "incubators",
+      "name": "Styling drift",
+      "title": "[VR-07][incubators] Styling drift",
+      "status": "skipped",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 466,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-08][incubators] Missing sections",
+      "project": "mobile",
+      "scenario": "VR-08",
+      "site": "incubators",
+      "name": "Missing sections",
+      "title": "[VR-08][incubators] Missing sections",
+      "status": "skipped",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 534,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-05][incubators] Layout shift",
+      "project": "mobile",
+      "scenario": "VR-05",
+      "site": "incubators",
+      "name": "Layout shift",
+      "title": "[VR-05][incubators] Layout shift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 0
+      },
+      "attachments": [],
+      "durationMs": 36724,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-05][fusetwo] Layout shift",
+      "project": "mobile",
+      "scenario": "VR-05",
+      "site": "fusetwo",
+      "name": "Layout shift",
+      "title": "[VR-05][fusetwo] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: about: footer: moved 0px horizontally, 674px vertically (was 0,6160 now 0,6834)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"about: footer: moved 0px horizontally, 674px vertically (was 0,6160 now 0,6834)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-19\\artifacts\\visual-fusetwo-VR-05-fusetwo-Layout-shift-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 114421,
+      "retry": 2
+    }
+  ]
+}

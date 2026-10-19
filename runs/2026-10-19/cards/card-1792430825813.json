@@ -1,0 +1,349 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentUrl": null,
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": [
+          {
+            "type": "Container",
+            "style": "accent",
+            "bleed": true,
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "📈 Weekly site report - week ending 2026-10-19",
+                "wrap": true,
+                "size": "Large",
+                "weight": "Bolder"
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Site",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Uptime",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Avg response",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Trend",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Failed checks",
+                    "wrap": true,
+                    "weight": "Bolder"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "perhaps.com",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "100.00%",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "794 ms",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "▁█▅▃▄",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "18",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "flexoffers.com",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "100.00%",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "619 ms",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "▁█▂▂▂",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "38",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "fusetwo.com",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "100.00%",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "729 ms",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "▁█▁▂▁",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "21",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "incubators.com",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "100.00%",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "979 ms",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "2",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "▁█▇▃▃",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "1",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "15",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TextBlock",
+            "text": "- No hourly uptime data yet; uptime is derived from the daily homepage check.",
+            "wrap": true,
+            "size": "Small",
+            "isSubtle": true
+          }
+        ],
+        "msteams": {
+          "width": "Full"
+        }
+      }
+    }
+  ]
+}
