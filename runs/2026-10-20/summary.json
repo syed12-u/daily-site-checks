@@ -1,0 +1,301 @@
+{
+  "date": "2026-10-20",
+  "overall": "red",
+  "passed": 124,
+  "total": 152,
+  "skipped": 100,
+  "attempts": 3,
+  "rows": [
+    {
+      "site": "perhaps.com",
+      "key": "perhaps",
+      "status": "high",
+      "failedIds": [
+        "ER-06",
+        "VR-04",
+        "VR-01",
+        "VR-06",
+        "VR-04 (m)",
+        "VR-02 (m)",
+        "VR-05 (m)"
+      ],
+      "responseMs": 873,
+      "avgMs": 811,
+      "diffs": 6,
+      "thumbnails": [],
+      "failures": [
+        {
+          "scenario": "ER-06",
+          "name": "Security headers",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff"
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "1 screenshot(s) differ from baseline: perhaps/advertiser-signup-footer.png"
+        },
+        {
+          "scenario": "VR-01",
+          "name": "Full-page screenshot, desktop",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "1 screenshot(s) differ from baseline: perhaps/blog.png"
+        },
+        {
+          "scenario": "VR-06",
+          "name": "Text content diff",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "text changed: | \"services\": [ | \"- Exclusive Promotion\","
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "mobile",
+          "summary": "3 screenshot(s) differ from baseline: perhaps/home-footer.png, perhaps/services-footer.png, perhaps/about-footer.png"
+        },
+        {
+          "scenario": "VR-02",
+          "name": "Full-page screenshot, mobile",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "2 screenshot(s) differ from baseline: perhaps/services.png, perhaps/blog.png"
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "services: footer: moved 0px horizontally, 22px vertically (was 0,7675 now 0,7697)"
+        }
+      ],
+      "passed": 31,
+      "total": 38
+    },
+    {
+      "site": "flexoffers.com",
+      "key": "flexoffers",
+      "status": "high",
+      "failedIds": [
+        "ER-06",
+        "ER-01",
+        "ER-05",
+        "VR-04",
+        "VR-01",
+        "AV-08",
+        "VR-05",
+        "VR-06",
+        "VR-04 (m)",
+        "VR-02 (m)",
+        "VR-05 (m)"
+      ],
+      "responseMs": 518,
+      "avgMs": 621.2,
+      "diffs": 7,
+      "thumbnails": [],
+      "failures": [
+        {
+          "scenario": "ER-06",
+          "name": "Security headers",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "missing security headers: Strict-Transport-Security"
+        },
+        {
+          "scenario": "ER-01",
+          "name": "Console errors",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "10 page(s) affected: home, publishers, advertisers, signup, directory, ranking, about, contact, support, blog | \"home\": [ | \"wp is not defined\""
+        },
+        {
+          "scenario": "ER-05",
+          "name": "Expected content present",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "advertisers: no <h1>"
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "1 screenshot(s) differ from baseline: flexoffers/home-footer.png"
+        },
+        {
+          "scenario": "VR-01",
+          "name": "Full-page screenshot, desktop",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "3 screenshot(s) differ from baseline: flexoffers/home.png, flexoffers/directory.png, flexoffers/blog.png"
+        },
+        {
+          "scenario": "AV-08",
+          "name": "Sitemap URLs respond",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "3 of 6000 sitemap URLs broken (0.05%): 400 https://www.flexoffers.com/affiliate-programs/100%-pure-affiliate-program/; 520 https://www.flexoffers.com/affiliate-programs/linksys-affiliate-program/; fetch failed https://ww"
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "home: footer: moved 0px horizontally, 31px vertically (was 0,5403 now 0,5434) | blog: footer: moved 0px horizontally, 44px vertically (was 85,1075 now 85,1031)"
+        },
+        {
+          "scenario": "VR-06",
+          "name": "Text content diff",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "text changed: | \"home\": [ | \"- Get Holiday-Ready in October with 9 Profitable Affiliate Partnerships\","
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "mobile",
+          "summary": "1 screenshot(s) differ from baseline: flexoffers/home-footer.png"
+        },
+        {
+          "scenario": "VR-02",
+          "name": "Full-page screenshot, mobile",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "3 screenshot(s) differ from baseline: flexoffers/home.png, flexoffers/directory.png, flexoffers/blog.png"
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "home: footer: moved 0px horizontally, 31px vertically (was 0,7528 now 0,7559) | blog: footer: moved 0px horizontally, 22px vertically (was 32,1011 now 32,989)"
+        }
+      ],
+      "passed": 34,
+      "total": 45
+    },
+    {
+      "site": "fusetwo.com",
+      "key": "fusetwo",
+      "status": "high",
+      "failedIds": [
+        "ER-01",
+        "ER-06",
+        "VR-05",
+        "VR-04",
+        "VR-01",
+        "VR-06",
+        "VR-05 (m)",
+        "VR-02 (m)"
+      ],
+      "responseMs": 601,
+      "avgMs": 737.2,
+      "diffs": 6,
+      "thumbnails": [],
+      "failures": [
+        {
+          "scenario": "ER-01",
+          "name": "Console errors",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "9 page(s) affected: home, platform, brands, brand-services, industries, publishers, about, support, help | \"home\": [ | \"Cannot read properties of null (reading 'offsetHeight')\""
+        },
+        {
+          "scenario": "ER-06",
+          "name": "Security headers",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors"
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "about: footer: moved 0px horizontally, 693px vertically (was 0,5090 now 0,5783)"
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "1 screenshot(s) differ from baseline: fusetwo/about-footer.png"
+        },
+        {
+          "scenario": "VR-01",
+          "name": "Full-page screenshot, desktop",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "1 screenshot(s) differ from baseline: fusetwo/about.png"
+        },
+        {
+          "scenario": "VR-06",
+          "name": "Text content diff",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "text changed: | \"about\": [ | \"- When the ShareASale platform closed in 2025, it didn’t just disrupt the market — it left entry-level brands without a pl\","
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "about: footer: moved 0px horizontally, 674px vertically (was 0,6160 now 0,6834)"
+        },
+        {
+          "scenario": "VR-02",
+          "name": "Full-page screenshot, mobile",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "1 screenshot(s) differ from baseline: fusetwo/about.png"
+        }
+      ],
+      "passed": 28,
+      "total": 36
+    },
+    {
+      "site": "incubators.com",
+      "key": "incubators",
+      "status": "high",
+      "failedIds": [
+        "ER-06",
+        "ER-05"
+      ],
+      "responseMs": 987,
+      "avgMs": 981.6,
+      "diffs": 0,
+      "thumbnails": [],
+      "failures": [
+        {
+          "scenario": "ER-06",
+          "name": "Security headers",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors"
+        },
+        {
+          "scenario": "ER-05",
+          "name": "Expected content present",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "contact: no <h1>"
+        }
+      ],
+      "passed": 31,
+      "total": 33
+    }
+  ],
+  "notes": [
+    "100 check(s) skipped (not configured yet: login, search, signup or form submit)"
+  ],
+  "changeLog": [],
+  "reportUrl": null,
+  "reportPath": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-20\\html\\index.html",
+  "narrative": null
+}
