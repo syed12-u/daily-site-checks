@@ -2,7 +2,7 @@
 .SYNOPSIS
   Registers the Windows scheduled tasks for daily-site-checks on the always-on machine.
 
-  - "DailySiteChecks Daily"   06:00 every day   -> node src/run.js
+  - "DailySiteChecks Daily"   06:00 every day   -> node src/run-per-site.js (one Teams card per site)
   - "DailySiteChecks Hourly"  every hour        -> node src/uptime.js
 
   Run from an elevated PowerShell in the project folder:
