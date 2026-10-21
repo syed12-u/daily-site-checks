@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-21",
+  "overall": "red",
+  "passed": 31,
+  "total": 33,
+  "skipped": 0,
+  "attempts": 3,
+  "rows": [
+    {
+      "site": "incubators.com",
+      "key": "incubators",
+      "status": "high",
+      "failedIds": [
+        "ER-06",
+        "ER-05"
+      ],
+      "responseMs": 1686,
+      "avgMs": 936,
+      "diffs": 0,
+      "thumbnails": [],
+      "failures": [
+        {
+          "scenario": "ER-06",
+          "name": "Security headers",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors"
+        },
+        {
+          "scenario": "ER-05",
+          "name": "Expected content present",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "contact: no <h1>"
+        }
+      ],
+      "passed": 31,
+      "total": 33
+    }
+  ],
+  "notes": [],
+  "changeLog": [],
+  "reportUrl": null,
+  "reportPath": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\incubators\\html\\index.html",
+  "narrative": null
+}

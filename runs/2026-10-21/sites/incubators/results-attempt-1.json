@@ -1,0 +1,744 @@
+{
+  "startedAt": "2026-10-21T18:06:30.987Z",
+  "finishedAt": "2026-10-21T18:09:52.921Z",
+  "durationMs": 201934,
+  "results": [
+    {
+      "key": "desktop::[AV-01][incubators] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "incubators",
+      "name": "Homepage responds",
+      "title": "[AV-01][incubators] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 1686,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 1867,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][incubators] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "incubators",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][incubators] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 34,
+        "validTo": "2026-11-25T14:14:15.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 536,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][incubators] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "incubators",
+      "name": "DNS resolves",
+      "title": "[AV-05][incubators] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "a": [
+          "104.21.80.7",
+          "172.67.172.142"
+        ],
+        "aaaa": [
+          "2606:4700:3032::ac43:ac8e",
+          "2606:4700:3033::6815:5007"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 154,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][incubators] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "incubators",
+      "name": "Custom 404 page",
+      "title": "[AV-06][incubators] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://incubators.com/sentinel-404-check-1792605996305",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 105606
+      },
+      "attachments": [],
+      "durationMs": 855,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][incubators] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "incubators",
+      "name": "Key pages respond",
+      "title": "[AV-02][incubators] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 5,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "founder": 200,
+          "what-we-do": 200,
+          "companies": 200,
+          "contact": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 4660,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][incubators] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "incubators",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][incubators] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://incubators.com/wp-sitemap.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 1320,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][incubators] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "incubators",
+      "name": "www / http redirects",
+      "title": "[AV-03][incubators] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://incubators.com/": "301 -> https://incubators.com/ | 200",
+          "http://www.incubators.com/": "301 -> https://incubators.com/ | 200",
+          "https://www.incubators.com/": "301 -> https://incubators.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 6314,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-03][incubators] Mixed content",
+      "project": "desktop",
+      "scenario": "ER-03",
+      "site": "incubators",
+      "name": "Mixed content",
+      "title": "[ER-03][incubators] Mixed content",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithMixedContent": 0
+      },
+      "attachments": [],
+      "durationMs": 15525,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-02][incubators] Failed network requests",
+      "project": "desktop",
+      "scenario": "ER-02",
+      "site": "incubators",
+      "name": "Failed network requests",
+      "title": "[ER-02][incubators] Failed network requests",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithFailedRequests": 0
+      },
+      "attachments": [],
+      "durationMs": 21781,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][incubators] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "incubators",
+      "name": "Console errors",
+      "title": "[ER-01][incubators] Console errors",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 0
+      },
+      "attachments": [],
+      "durationMs": 22639,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-06][incubators] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "incubators",
+      "name": "Security headers",
+      "title": "[ER-06][incubators] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 5\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+   \"X-Frame-Options or CSP frame-ancestors\",\n+ ]",
+      "url": "https://incubators.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": false,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 1187,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-01][incubators] Primary navigation",
+      "project": "desktop",
+      "scenario": "FN-01",
+      "site": "incubators",
+      "name": "Primary navigation",
+      "title": "[FN-01][incubators] Primary navigation",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "linksChecked": 8,
+        "internal": 8,
+        "external": 0,
+        "linksBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 8402,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-04][incubators] Unexpected text",
+      "project": "desktop",
+      "scenario": "ER-04",
+      "site": "incubators",
+      "name": "Unexpected text",
+      "title": "[ER-04][incubators] Unexpected text",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithBadText": 0
+      },
+      "attachments": [],
+      "durationMs": 23378,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-01][incubators] Time to first byte",
+      "project": "desktop",
+      "scenario": "PF-01",
+      "site": "incubators",
+      "name": "Time to first byte",
+      "title": "[PF-01][incubators] Time to first byte",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: TTFB 1328 ms (limit 800 ms)\n\nexpect(received).toBeLessThan(expected)\n\nExpected: < 800\nReceived:   1328",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "ttfbMs": 1328,
+        "domLoadedMs": 3861,
+        "loadMs": 3861
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\incubators\\artifacts\\performance-incubators-PF-01-incubators-Time-to-first-byte-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 8413,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][incubators] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "incubators",
+      "name": "Expected content present",
+      "title": "[ER-05][incubators] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: contact: no <h1>\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"contact: no <h1>\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\incubators\\artifacts\\errors-incubators-ER-05-incubators-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 27709,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-02][incubators] No broken images",
+      "project": "desktop",
+      "scenario": "FN-02",
+      "site": "incubators",
+      "name": "No broken images",
+      "title": "[FN-02][incubators] No broken images",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "imagesChecked": 18,
+        "pagesWithBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 20091,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-03][incubators] Total page weight",
+      "project": "desktop",
+      "scenario": "PF-03",
+      "site": "incubators",
+      "name": "Total page weight",
+      "title": "[PF-03][incubators] Total page weight",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "bytes": 579466,
+        "mb": 0.55,
+        "increasePct": 0
+      },
+      "attachments": [],
+      "durationMs": 12745,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-04][incubators] Request count",
+      "project": "desktop",
+      "scenario": "PF-04",
+      "site": "incubators",
+      "name": "Request count",
+      "title": "[PF-04][incubators] Request count",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "requests": 42,
+        "increasePct": 0
+      },
+      "attachments": [],
+      "durationMs": 13142,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-05][incubators] Response-time trend",
+      "project": "desktop",
+      "scenario": "PF-05",
+      "site": "incubators",
+      "name": "Response-time trend",
+      "title": "[PF-05][incubators] Response-time trend",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 585,
+        "avg7dMs": 491,
+        "samples": 5
+      },
+      "attachments": [],
+      "durationMs": 2783,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-02][incubators] Largest Contentful Paint",
+      "project": "desktop",
+      "scenario": "PF-02",
+      "site": "incubators",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][incubators] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 860,
+        "samples": [
+          836,
+          860,
+          2888
+        ],
+        "viewport": "desktop"
+      },
+      "attachments": [],
+      "durationMs": 17319,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-08][incubators] Sitemap URLs respond",
+      "project": "desktop",
+      "scenario": "AV-08",
+      "site": "incubators",
+      "name": "Sitemap URLs respond",
+      "title": "[AV-08][incubators] Sitemap URLs respond",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com/robots.txt",
+      "notes": [
+        "16 sitemap URLs checked in 2 s (6 sitemap files)",
+        "16 sitemap URLs checked in 2 s (6 sitemap files)"
+      ],
+      "metrics": {
+        "sitemaps": 6,
+        "urlsChecked": 16,
+        "broken": 0,
+        "brokenPct": 0,
+        "slow": 0,
+        "seconds": 2
+      },
+      "attachments": [],
+      "durationMs": 6541,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-03][incubators] Above-the-fold hero",
+      "project": "desktop",
+      "scenario": "VR-03",
+      "site": "incubators",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][incubators] Above-the-fold hero",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "outcome": "pass",
+        "heroSelectorMatched": true
+      },
+      "attachments": [],
+      "durationMs": 10389,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][incubators] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "incubators",
+      "name": "Header and footer components",
+      "title": "[VR-04][incubators] Header and footer components",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 10,
+        "diffs": 0,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 35500,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-01][incubators] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "incubators",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][incubators] Full-page screenshot, desktop",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 5,
+        "diffs": 0,
+        "outcome": {
+          "home": "pass",
+          "founder": "pass",
+          "what-we-do": "pass",
+          "companies": "pass",
+          "contact": "pass"
+        }
+      },
+      "attachments": [],
+      "durationMs": 41518,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-07][incubators] Styling drift",
+      "project": "desktop",
+      "scenario": "VR-07",
+      "site": "incubators",
+      "name": "Styling drift",
+      "title": "[VR-07][incubators] Styling drift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "styles": {
+          "font": {
+            "fontFamily": "-apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "fontSize": "17px"
+          },
+          "primary": {
+            "color": "rgb(255, 255, 255)",
+            "fontFamily": "Helvetica, sans-serif",
+            "fontWeight": "600"
+          },
+          "button": null
+        }
+      },
+      "attachments": [],
+      "durationMs": 10809,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-05][incubators] Layout shift",
+      "project": "desktop",
+      "scenario": "VR-05",
+      "site": "incubators",
+      "name": "Layout shift",
+      "title": "[VR-05][incubators] Layout shift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 0
+      },
+      "attachments": [],
+      "durationMs": 45598,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-08][incubators] Missing sections",
+      "project": "desktop",
+      "scenario": "VR-08",
+      "site": "incubators",
+      "name": "Missing sections",
+      "title": "[VR-08][incubators] Missing sections",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "sections": 4,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 7251,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-06][incubators] Text content diff",
+      "project": "desktop",
+      "scenario": "VR-06",
+      "site": "incubators",
+      "name": "Text content diff",
+      "title": "[VR-06][incubators] Text content diff",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChanged": 0
+      },
+      "attachments": [],
+      "durationMs": 26641,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-07][incubators] Mobile navigation",
+      "project": "mobile",
+      "scenario": "UF-07",
+      "site": "incubators",
+      "name": "Mobile navigation",
+      "title": "[UF-07][incubators] Mobile navigation",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "opened": "https://incubators.com/the-battlefield-of-ideas/",
+        "tried": [
+          "https://incubators.com/the-battlefield-of-ideas/",
+          "https://incubators.com/the-factory/",
+          "https://incubators.com/the-ecosystem-of-knowledge/",
+          "https://incubators.com/we-chirp-together/"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 9380,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-02][incubators] Largest Contentful Paint",
+      "project": "mobile",
+      "scenario": "PF-02",
+      "site": "incubators",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][incubators] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://incubators.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 776,
+        "samples": [
+          552,
+          776,
+          1760
+        ],
+        "viewport": "mobile"
+      },
+      "attachments": [],
+      "durationMs": 15846,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-04][incubators] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "incubators",
+      "name": "Header and footer components",
+      "title": "[VR-04][incubators] Header and footer components",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 10,
+        "diffs": 0,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 30377,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][incubators] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "incubators",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][incubators] Full-page screenshot, mobile",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 5,
+        "diffs": 0,
+        "outcome": {
+          "home": "pass",
+          "founder": "pass",
+          "what-we-do": "pass",
+          "companies": "pass",
+          "contact": "pass"
+        }
+      },
+      "attachments": [],
+      "durationMs": 30210,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-05][incubators] Layout shift",
+      "project": "mobile",
+      "scenario": "VR-05",
+      "site": "incubators",
+      "name": "Layout shift",
+      "title": "[VR-05][incubators] Layout shift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 0
+      },
+      "attachments": [],
+      "durationMs": 42008,
+      "retry": 0
+    }
+  ]
+}

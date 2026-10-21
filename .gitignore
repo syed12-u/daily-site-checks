@@ -8,3 +8,6 @@ runs/_*/
 state/.last-run.json
 *.log
 videos/
+runs/*/sites/*/artifacts/
+runs/*/sites/*/html/
+runs/*/sites/*/html-retry-*/

@@ -1,0 +1,661 @@
+{
+  "startedAt": "2026-10-21T16:24:04.641Z",
+  "finishedAt": "2026-10-21T16:29:38.640Z",
+  "durationMs": 333999,
+  "results": [
+    {
+      "key": "desktop::[ER-06][perhaps] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "perhaps",
+      "name": "Security headers",
+      "title": "[ER-06][perhaps] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 4\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+ ]",
+      "url": "https://www.perhaps.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 665,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-03][perhaps] Above-the-fold hero",
+      "project": "desktop",
+      "scenario": "VR-03",
+      "site": "perhaps",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][perhaps] Above-the-fold hero",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('.hero, [class*=\"hero\" i], .elementor-location-header + *, main > *:first-child, header + section, header + div, [data-elementor-type=\"wp-page\"] > *:first-child').visible().first()\n  667312 pixels (ratio 0.12 of all image pixels) are different.\n\n  Snapshot: perhaps\\hero.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\hero.png)\" locator('.hero, [class*=\"hero\" i], .elementor-location-header + *, main > *:first-child, header + section, header + div, [data-elementor-type=\"wp-page\"] > *:first-child').visible().first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('.hero, [class*=\"hero\" i], .elementor-location-header + *, main > *:first-child, header + section, header + div, [data-elementor-type=\"wp-page\"] > *:first-child').visible().first()\n    - locator resolved to <div id=\"primary\" class=\"content-area\">…</div>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 49266 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('.hero, [class*=\"hero\" i], .elementor-location-header + *, main > *:first-child, header + section, header + div, [data-elementor-type=\"wp-page\"] > *:first-child').visible().first()\n    - locator resolved to <div id=\"primary\" class=\"content-area\">…</div>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 674783 pixels (ratio 0.12 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - waiting for locator('.hero, [class*=\"hero\" i], .elementor-location-header + *, main > *:first-child, header + section, header + div, [data-elementor-type=\"wp-page\"] > *:first-child').visible().first()\n    - locator resolved to <div id=\"primary\" class=\"content-area\">…</div>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 667312 pixels (ratio 0.12 of all image pixels) are different.\n",
+      "url": "https://www.perhaps.com",
+      "notes": [],
+      "metrics": {
+        "outcome": "fail",
+        "heroSelectorMatched": true
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\hero-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\hero.png"
+        },
+        {
+          "name": "perhaps\\hero-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-03-perhaps-Above-the-fold-hero-desktop\\perhaps\\hero-actual.png"
+        },
+        {
+          "name": "perhaps\\hero-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-03-perhaps-Above-the-fold-hero-desktop\\perhaps\\hero-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-03-perhaps-Above-the-fold-hero-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 34588,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][perhaps] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "perhaps",
+      "name": "Header and footer components",
+      "title": "[VR-04][perhaps] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('header, .elementor-location-header').first()\n  Expected an image 1440px by 119px, received 1440px by 114px. 5746 pixels (ratio 0.04 of all image pixels) are different.\n\n  Snapshot: perhaps\\home-header.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\home-header.png)\" locator('header, .elementor-location-header').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('header, .elementor-location-header').first()\n    - locator resolved to <header id=\"masthead\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPHeader\">…</header>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - Expected an image 1440px by 119px, received 1440px by 114px. 5746 pixels (ratio 0.04 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('header, .elementor-location-header').first()\n    - locator resolved to <header id=\"masthead\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPHeader\">…</header>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - Expected an image 1440px by 119px, received 1440px by 114px. 5746 pixels (ratio 0.04 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  Expected an image 1440px by 232px, received 1440px by 231px. 5025 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: perhaps\\home-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\home-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - Expected an image 1440px by 232px, received 1440px by 231px. 5025 pixels (ratio 0.02 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - Expected an image 1440px by 232px, received 1440px by 231px. 5025 pixels (ratio 0.02 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('header, .elementor-location-header').first()\n  Expected an image 1440px by 119px, received 1440px by 114px. 5736 pixels (ratio 0.04 of all image pixels) are different.\n\n  Snapshot: perhaps\\services-header.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\services-header.png)\" locator('header, .elementor-location-header').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('header, .elementor-location-header').first()\n    - locator resolved to <header id=\"masthead\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPHeader\">…</header>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n  ",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 18,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\home-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\home-header.png"
+        },
+        {
+          "name": "perhaps\\home-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\home-header-actual.png"
+        },
+        {
+          "name": "perhaps\\home-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\home-header-diff.png"
+        },
+        {
+          "name": "perhaps\\home-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\home-footer.png"
+        },
+        {
+          "name": "perhaps\\home-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\home-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\home-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\home-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\services-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\services-header.png"
+        },
+        {
+          "name": "perhaps\\services-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\services-header-actual.png"
+        },
+        {
+          "name": "perhaps\\services-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\services-header-diff.png"
+        },
+        {
+          "name": "perhaps\\services-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\services-footer.png"
+        },
+        {
+          "name": "perhaps\\services-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\services-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\services-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\services-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\about-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\about-header.png"
+        },
+        {
+          "name": "perhaps\\about-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\about-header-actual.png"
+        },
+        {
+          "name": "perhaps\\about-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\about-header-diff.png"
+        },
+        {
+          "name": "perhaps\\about-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\about-footer.png"
+        },
+        {
+          "name": "perhaps\\about-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\about-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\about-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\about-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\careers-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\careers-header.png"
+        },
+        {
+          "name": "perhaps\\careers-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\careers-header-actual.png"
+        },
+        {
+          "name": "perhaps\\careers-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\careers-header-diff.png"
+        },
+        {
+          "name": "perhaps\\careers-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\careers-footer.png"
+        },
+        {
+          "name": "perhaps\\careers-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\careers-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\careers-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\careers-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\news-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\news-header.png"
+        },
+        {
+          "name": "perhaps\\news-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\news-header-actual.png"
+        },
+        {
+          "name": "perhaps\\news-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\news-header-diff.png"
+        },
+        {
+          "name": "perhaps\\news-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\news-footer.png"
+        },
+        {
+          "name": "perhaps\\news-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\news-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\news-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\news-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\faqs-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\faqs-header.png"
+        },
+        {
+          "name": "perhaps\\faqs-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\faqs-header-actual.png"
+        },
+        {
+          "name": "perhaps\\faqs-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\faqs-header-diff.png"
+        },
+        {
+          "name": "perhaps\\faqs-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\faqs-footer.png"
+        },
+        {
+          "name": "perhaps\\faqs-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\faqs-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\faqs-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\faqs-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\blog-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\blog-header.png"
+        },
+        {
+          "name": "perhaps\\blog-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\blog-header-actual.png"
+        },
+        {
+          "name": "perhaps\\blog-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\blog-header-diff.png"
+        },
+        {
+          "name": "perhaps\\blog-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\blog-footer.png"
+        },
+        {
+          "name": "perhaps\\blog-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\blog-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\blog-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\blog-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\contact-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\contact-header.png"
+        },
+        {
+          "name": "perhaps\\contact-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\contact-header-actual.png"
+        },
+        {
+          "name": "perhaps\\contact-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\contact-header-diff.png"
+        },
+        {
+          "name": "perhaps\\contact-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\contact-footer.png"
+        },
+        {
+          "name": "perhaps\\contact-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\contact-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\contact-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\contact-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\advertiser-signup-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\advertiser-signup-header.png"
+        },
+        {
+          "name": "perhaps\\advertiser-signup-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\advertiser-signup-header-actual.png"
+        },
+        {
+          "name": "perhaps\\advertiser-signup-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\advertiser-signup-header-diff.png"
+        },
+        {
+          "name": "perhaps\\advertiser-signup-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\advertiser-signup-footer.png"
+        },
+        {
+          "name": "perhaps\\advertiser-signup-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\advertiser-signup-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\advertiser-signup-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\perhaps\\advertiser-signup-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 99925,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-06][perhaps] Text content diff",
+      "project": "desktop",
+      "scenario": "VR-06",
+      "site": "perhaps",
+      "name": "Text content diff",
+      "title": "[VR-06][perhaps] Text content diff",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: text changed:\n{\n  \"services\": [\n    \"- Exclusive Promotion\",\n    \"- Qualified advertisers can dramatically boost partner marketing ROAS through an exclusive promotion from our top strategi\",\n    \"- Find Out If You Qualify\",\n    \"+ Growth Launch Offer\",\n    \"+ Qualified advertisers can dramatically boost partner marketing ROAS through an exclusive promotion from our top strategi\",\n    \"+ Explore the Promotion\"\n  ],\n  \"blog\": [\n    \"- 5 Things to Know Before Hiring an Influencer Agency\",\n    \"- August 25, 2026\",\n    \"- How Media Partnerships Influence Advertising Strategies\",\n    \"- August 19, 2026\",\n    \"+ Best Partner Marketing Agencies for Brands in 2027\",\n    \"+ October 21, 2026\",\n    \"+ Perhaps Earns AvantLink Certified Agency Partner Status\",\n    \"+ October 16, 2026\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 4\n\n- Array []\n+ Array [\n+   \"services\",\n+   \"blog\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChanged": 2
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-06-perhaps-Text-content-diff-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 72395,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-01][perhaps] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "perhaps",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][perhaps] Full-page screenshot, desktop",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 4387px, received 1440px by 4382px. 270308 pixels (ratio 0.05 of all image pixels) are different.\n\n  Snapshot: perhaps\\home.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\home.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 4387px, received 1440px by 4382px. 270308 pixels (ratio 0.05 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 4387px, received 1440px by 4382px. 270308 pixels (ratio 0.05 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 4526px, received 1440px by 4522px. 235380 pixels (ratio 0.04 of all image pixels) are different.\n\n  Snapshot: perhaps\\services.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\services.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 4526px, received 1440px by 4522px. 235380 pixels (ratio 0.04 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 4526px, received 1440px by 4522px. 235380 pixels (ratio 0.04 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 5525px, received 1440px by 5520px. 399362 pixels (ratio 0.06 of all image pixels) are different.\n\n  Snapshot: perhaps\\about.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\about.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 5525px, received 1440px by 5520px. 399362 pixels (ratio 0.06 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 5525px, received 1440px by 5520px. 399362 pixels (ratio 0.06 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 2483px, received 1440px by 2478px. 130525 pixels (ratio 0.04 of all image pixels) are different.\n\n  Snapshot: perhaps\\careers.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\careers.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 2483px, received 1440px by 2478px. 130525 pixels (ratio 0.04 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 2483px, received 1440px by 2478px. 130525 pixels (ratio 0.04 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 4369px, received 1440px by 4364px. 239341 pixels (ratio 0.04 of all image pixels) are different.\n\n  Snapshot: perhaps\\news.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\news.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screensho",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 9,
+        "outcome": {
+          "home": "fail",
+          "services": "fail",
+          "about": "fail",
+          "careers": "fail",
+          "news": "fail",
+          "faqs": "fail",
+          "blog": "fail",
+          "contact": "fail",
+          "advertiser-signup": "fail"
+        }
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\home-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\home.png"
+        },
+        {
+          "name": "perhaps\\home-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\home-actual.png"
+        },
+        {
+          "name": "perhaps\\home-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\home-diff.png"
+        },
+        {
+          "name": "perhaps\\services-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\services.png"
+        },
+        {
+          "name": "perhaps\\services-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\services-actual.png"
+        },
+        {
+          "name": "perhaps\\services-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\services-diff.png"
+        },
+        {
+          "name": "perhaps\\about-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\about.png"
+        },
+        {
+          "name": "perhaps\\about-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\about-actual.png"
+        },
+        {
+          "name": "perhaps\\about-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\about-diff.png"
+        },
+        {
+          "name": "perhaps\\careers-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\careers.png"
+        },
+        {
+          "name": "perhaps\\careers-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\careers-actual.png"
+        },
+        {
+          "name": "perhaps\\careers-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\careers-diff.png"
+        },
+        {
+          "name": "perhaps\\news-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\news.png"
+        },
+        {
+          "name": "perhaps\\news-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\news-actual.png"
+        },
+        {
+          "name": "perhaps\\news-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\news-diff.png"
+        },
+        {
+          "name": "perhaps\\faqs-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\faqs.png"
+        },
+        {
+          "name": "perhaps\\faqs-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\faqs-actual.png"
+        },
+        {
+          "name": "perhaps\\faqs-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\faqs-diff.png"
+        },
+        {
+          "name": "perhaps\\blog-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\blog.png"
+        },
+        {
+          "name": "perhaps\\blog-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\blog-actual.png"
+        },
+        {
+          "name": "perhaps\\blog-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\blog-diff.png"
+        },
+        {
+          "name": "perhaps\\contact-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\contact.png"
+        },
+        {
+          "name": "perhaps\\contact-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\contact-actual.png"
+        },
+        {
+          "name": "perhaps\\contact-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\contact-diff.png"
+        },
+        {
+          "name": "perhaps\\advertiser-signup-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\perhaps\\advertiser-signup.png"
+        },
+        {
+          "name": "perhaps\\advertiser-signup-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\advertiser-signup-actual.png"
+        },
+        {
+          "name": "perhaps\\advertiser-signup-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\perhaps\\advertiser-signup-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-01-perhaps-Full-page-screenshot-desktop-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 169662,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-04][perhaps] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "perhaps",
+      "name": "Header and footer components",
+      "title": "[VR-04][perhaps] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  22 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\home-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\home-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  Expected an image 390px by 694px, received 390px by 693px. 2163 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\services-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\services-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - Expected an image 390px by 694px, received 390px by 693px. 2163 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 22 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - Expected an image 390px by 694px, received 390px by 693px. 2163 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  22 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: perhaps\\about-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\about-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-foot",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 6,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\home-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\home-footer.png"
+        },
+        {
+          "name": "perhaps\\home-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\home-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\home-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\home-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\services-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\services-footer.png"
+        },
+        {
+          "name": "perhaps\\services-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\services-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\services-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\services-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\about-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\about-footer.png"
+        },
+        {
+          "name": "perhaps\\about-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\about-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\about-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\about-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\news-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\news-footer.png"
+        },
+        {
+          "name": "perhaps\\news-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\news-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\news-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\news-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\blog-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\blog-footer.png"
+        },
+        {
+          "name": "perhaps\\blog-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\blog-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\blog-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\blog-footer-diff.png"
+        },
+        {
+          "name": "perhaps\\contact-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\contact-footer.png"
+        },
+        {
+          "name": "perhaps\\contact-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\contact-footer-actual.png"
+        },
+        {
+          "name": "perhaps\\contact-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\perhaps\\contact-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-04-perhaps-Header-and-footer-components-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 89100,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][perhaps] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "perhaps",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][perhaps] Full-page screenshot, mobile",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 390px by 8367px, received 390px by 8390px. 53873 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: perhaps\\services.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\services.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 390px by 8367px, received 390px by 8390px. 53873 pixels (ratio 0.02 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 390px by 8367px, received 390px by 8390px. 53873 pixels (ratio 0.02 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  295268 pixels (ratio 0.18 of all image pixels) are different.\n\n  Snapshot: perhaps\\blog.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(perhaps\\\\blog.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 329909 pixels (ratio 0.20 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 44908 pixels (ratio 0.03 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 47177 pixels (ratio 0.03 of all image pixels) are different.\n  - waiting 500ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 295268 pixels (ratio 0.18 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 2,
+        "outcome": {
+          "home": "pass",
+          "services": "fail",
+          "about": "pass",
+          "careers": "pass",
+          "news": "pass",
+          "faqs": "pass",
+          "blog": "fail",
+          "contact": "pass",
+          "advertiser-signup": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "perhaps\\services-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\services.png"
+        },
+        {
+          "name": "perhaps\\services-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\services-actual.png"
+        },
+        {
+          "name": "perhaps\\services-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\services-diff.png"
+        },
+        {
+          "name": "perhaps\\blog-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\perhaps\\blog.png"
+        },
+        {
+          "name": "perhaps\\blog-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\blog-actual.png"
+        },
+        {
+          "name": "perhaps\\blog-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\perhaps\\blog-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-02-perhaps-Full-page-screenshot-mobile-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 101550,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-05][perhaps] Layout shift",
+      "project": "mobile",
+      "scenario": "VR-05",
+      "site": "perhaps",
+      "name": "Layout shift",
+      "title": "[VR-05][perhaps] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: services: footer: moved 0px horizontally, 22px vertically (was 0,7675 now 0,7697)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"services: footer: moved 0px horizontally, 22px vertically (was 0,7675 now 0,7697)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\artifacts\\visual-perhaps-VR-05-perhaps-Layout-shift-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 127822,
+      "retry": 0
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-21",
+  "overall": "red",
+  "passed": 27,
+  "total": 36,
+  "skipped": 0,
+  "attempts": 3,
+  "rows": [
+    {
+      "site": "fusetwo.com",
+      "key": "fusetwo",
+      "status": "high",
+      "failedIds": [
+        "ER-01",
+        "ER-06",
+        "VR-04",
+        "VR-05",
+        "VR-06",
+        "VR-01",
+        "VR-05 (m)",
+        "VR-04 (m)",
+        "VR-02 (m)"
+      ],
+      "responseMs": 645,
+      "avgMs": 570.8,
+      "diffs": 7,
+      "thumbnails": [],
+      "failures": [
+        {
+          "scenario": "ER-01",
+          "name": "Console errors",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "9 page(s) affected: home, platform, brands, brand-services, industries, publishers, about, support, help | \"home\": [ | \"Cannot read properties of null (reading 'offsetHeight')\""
+        },
+        {
+          "scenario": "ER-06",
+          "name": "Security headers",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors"
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "1 screenshot(s) differ from baseline: fusetwo/about-footer.png"
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "about: footer: moved 0px horizontally, 693px vertically (was 0,5090 now 0,5783)"
+        },
+        {
+          "scenario": "VR-06",
+          "name": "Text content diff",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "text changed: | \"about\": [ | \"- When the ShareASale platform closed in 2025, it didn’t just disrupt the market — it left entry-level brands without a pl\","
+        },
+        {
+          "scenario": "VR-01",
+          "name": "Full-page screenshot, desktop",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "1 screenshot(s) differ from baseline: fusetwo/about.png"
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "about: footer: moved 0px horizontally, 674px vertically (was 0,6160 now 0,6834)"
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "mobile",
+          "summary": "2 screenshot(s) differ from baseline: fusetwo/brand-services-footer.png, fusetwo/support-footer.png"
+        },
+        {
+          "scenario": "VR-02",
+          "name": "Full-page screenshot, mobile",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "2 screenshot(s) differ from baseline: fusetwo/platform.png, fusetwo/about.png"
+        }
+      ],
+      "passed": 27,
+      "total": 36
+    }
+  ],
+  "notes": [],
+  "changeLog": [],
+  "reportUrl": null,
+  "reportPath": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\html\\index.html",
+  "narrative": null
+}

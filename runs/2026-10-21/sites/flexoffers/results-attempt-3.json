@@ -1,0 +1,443 @@
+{
+  "startedAt": "2026-10-21T17:11:29.722Z",
+  "finishedAt": "2026-10-21T17:30:02.093Z",
+  "durationMs": 1112371,
+  "results": [
+    {
+      "key": "desktop::[ER-06][flexoffers] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "flexoffers",
+      "name": "Security headers",
+      "title": "[ER-06][flexoffers] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+ ]",
+      "url": "https://www.flexoffers.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": true,
+        "frame": true,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 2091,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][flexoffers] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "flexoffers",
+      "name": "Expected content present",
+      "title": "[ER-05][flexoffers] Expected content present",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: advertisers: no <h1>\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"advertisers: no <h1>\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\errors-flexoffers-ER-05-flexoffers-Expected-content-present-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 156639,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][flexoffers] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "flexoffers",
+      "name": "Console errors",
+      "title": "[ER-01][flexoffers] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 10 page(s) affected: home, publishers, advertisers, signup, directory, ranking, about, contact, support, blog\n{\n  \"home\": [\n    \"wp is not defined\"\n  ],\n  \"publishers\": [\n    \"wp is not defined\"\n  ],\n  \"advertisers\": [\n    \"wp is not defined\"\n  ],\n  \"signup\": [\n    \"wp is not defined\"\n  ],\n  \"directory\": [\n    \"wp is not defined\"\n  ],\n  \"ranking\": [\n    \"wp is not defined\"\n  ],\n  \"about\": [\n    \"wp is not defined\"\n  ],\n  \"contact\": [\n    \"wp is not defined\"\n  ],\n  \"support\": [\n    \"wp is not defined\"\n  ],\n  \"blog\": [\n    \"wp is not defined\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 12\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"publishers\",\n+   \"advertisers\",\n+   \"signup\",\n+   \"directory\",\n+   \"ranking\",\n+   \"about\",\n+   \"contact\",\n+   \"support\",\n+   \"blog\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 10
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\errors-flexoffers-ER-01-flexoffers-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 192003,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-08][flexoffers] Sitemap URLs respond",
+      "project": "desktop",
+      "scenario": "AV-08",
+      "site": "flexoffers",
+      "name": "Sitemap URLs respond",
+      "title": "[AV-08][flexoffers] Sitemap URLs respond",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 3 of 6000 sitemap URLs broken (0.05%): 400 https://www.flexoffers.com/affiliate-programs/100%-pure-affiliate-program/; 404 https://www.flexoffers.com/affiliate-programs/linksys-affiliate-program/; fetch failed https://www.flexoffers.com/affiliate-programs/bionatrol-llc-affiliate-program/\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 0\nReceived: 3",
+      "url": "https://www.flexoffers.com/robots.txt",
+      "notes": [
+        "6000 sitemap URLs checked in 531 s (8 sitemap files)",
+        "6000 sitemap URLs checked in 531 s (8 sitemap files)"
+      ],
+      "metrics": {
+        "sitemaps": 8,
+        "urlsChecked": 6000,
+        "broken": 3,
+        "brokenPct": 0.05,
+        "slow": 8,
+        "seconds": 531
+      },
+      "attachments": [],
+      "durationMs": 536565,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][flexoffers] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "flexoffers",
+      "name": "Header and footer components",
+      "title": "[VR-04][flexoffers] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  Expected an image 1440px by 818px, received 1440px by 817px. 9317 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: flexoffers\\home-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\home-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - Expected an image 1440px by 818px, received 1440px by 817px. 9317 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - Expected an image 1440px by 818px, received 1440px by 817px. 9317 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('header, .elementor-location-header').first()\n  77482 pixels (ratio 0.75 of all image pixels) are different.\n\n  Snapshot: flexoffers\\advertisers-header.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\advertisers-header.png)\" locator('header, .elementor-location-header').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('header, .elementor-location-header').first()\n    - locator resolved to <header itemscope=\"\" id=\"masthead\" role=\"banner\" class=\"site-header\" itemtype=\"https://schema.org/WPHeader\">…</header>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 77482 pixels (ratio 0.75 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('header, .elementor-location-header').first()\n    - locator resolved to <header itemscope=\"\" id=\"masthead\" role=\"banner\" class=\"site-header\" itemtype=\"https://schema.org/WPHeader\">…</header>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 77482 pixels (ratio 0.75 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  81505 pixels (ratio 0.07 of all image pixels) are different.\n\n  Snapshot: flexoffers\\advertisers-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\advertisers-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 81505 pixels (ratio 0.07 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"col",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 20,
+        "diffs": 4,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "flexoffers\\home-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\home-footer.png"
+        },
+        {
+          "name": "flexoffers\\home-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\home-footer-actual.png"
+        },
+        {
+          "name": "flexoffers\\home-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\home-footer-diff.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-header-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\advertisers-header.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-header-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\advertisers-header-actual.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-header-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\advertisers-header-diff.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\advertisers-footer.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\advertisers-footer-actual.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\advertisers-footer-diff.png"
+        },
+        {
+          "name": "flexoffers\\blog-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\blog-footer.png"
+        },
+        {
+          "name": "flexoffers\\blog-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\blog-footer-actual.png"
+        },
+        {
+          "name": "flexoffers\\blog-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\flexoffers\\blog-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 298413,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-01][flexoffers] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "flexoffers",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][flexoffers] Full-page screenshot, desktop",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 6219px, received 1440px by 6251px. 438129 pixels (ratio 0.05 of all image pixels) are different.\n\n  Snapshot: flexoffers\\home.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\home.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 6219px, received 1440px by 6251px. 438129 pixels (ratio 0.05 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 6219px, received 1440px by 6251px. 438129 pixels (ratio 0.05 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\nTimeout: 30000ms\n  Timeout 30000ms exceeded.\n\n  Snapshot: flexoffers\\advertisers.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\advertisers.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 8102px, received 1440px by 8019px. 637835 pixels (ratio 0.06 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - Timeout 30000ms exceeded.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  257829 pixels (ratio 0.11 of all image pixels) are different.\n\n  Snapshot: flexoffers\\signup.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\signup.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 257829 pixels (ratio 0.11 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 257829 pixels (ratio 0.11 of all image pixels) are different.\n\n---\nTest timeout of 300000ms exceeded.\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  152663 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: flexoffers\\directory.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\directory.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 152663 pixels (ratio 0.02 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 152663 pixels (ratio 0.02 of all image pixels) are different.\n\n---\nError: page.evaluate: Test ended.",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "flexoffers\\home-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\home.png"
+        },
+        {
+          "name": "flexoffers\\home-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\home-actual.png"
+        },
+        {
+          "name": "flexoffers\\home-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\home-diff.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\advertisers.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\advertisers-actual.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\advertisers-diff.png"
+        },
+        {
+          "name": "flexoffers\\signup-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\signup.png"
+        },
+        {
+          "name": "flexoffers\\signup-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\signup-actual.png"
+        },
+        {
+          "name": "flexoffers\\signup-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\signup-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\test-failed-1.png"
+        },
+        {
+          "name": "flexoffers\\directory-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\flexoffers\\directory.png"
+        },
+        {
+          "name": "flexoffers\\directory-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\directory-actual.png"
+        },
+        {
+          "name": "flexoffers\\directory-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-01-fl-00678-ull-page-screenshot-desktop-desktop\\flexoffers\\directory-diff.png"
+        }
+      ],
+      "durationMs": 335044,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-05][flexoffers] Layout shift",
+      "project": "desktop",
+      "scenario": "VR-05",
+      "site": "flexoffers",
+      "name": "Layout shift",
+      "title": "[VR-05][flexoffers] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: home: footer: moved 0px horizontally, 31px vertically (was 0,5403 now 0,5434)\nadvertisers: footer: moved 0px horizontally, 83px vertically (was 0,7285 now 0,7202)\nsignup: h1: moved 20px horizontally, 86px vertically (was 275,403 now 255,317)\nblog: footer: moved 0px horizontally, 44px vertically (was 85,1075 now 85,1031)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 6\n\n- Array []\n+ Array [\n+   \"home: footer: moved 0px horizontally, 31px vertically (was 0,5403 now 0,5434)\",\n+   \"advertisers: footer: moved 0px horizontally, 83px vertically (was 0,7285 now 0,7202)\",\n+   \"signup: h1: moved 20px horizontally, 86px vertically (was 275,403 now 255,317)\",\n+   \"blog: footer: moved 0px horizontally, 44px vertically (was 85,1075 now 85,1031)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 4
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-05-flexoffers-Layout-shift-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 248669,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-06][flexoffers] Text content diff",
+      "project": "desktop",
+      "scenario": "VR-06",
+      "site": "flexoffers",
+      "name": "Text content diff",
+      "title": "[VR-06][flexoffers] Text content diff",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: text changed:\n{\n  \"home\": [\n    \"- Get Holiday-Ready in October with 9 Profitable Affiliate Partnerships\",\n    \"- Get Holiday-Ready in October with 9 Profitable Affiliate Partnerships Get ready for the 2026 holiday season with nine af\",\n    \"- October 13, 2026\",\n    \"- Fall Fashion 2026: Programs to Monetize Seasonal Trends\",\n    \"- Fall Fashion 2026: Programs to Monetize Seasonal Trends Discover nine fashion affiliate programs publishers can promote \",\n    \"- October 8, 2026\",\n    \"- How to Use Publisher Platforms to Increase Brand Visibility\",\n    \"- Building an audience is only one part of growing as a publisher or creator. The next step is connecting that audience wi\",\n    \"- October 6, 2026\",\n    \"+ FlexOffers Announces Sale of Direct Advertiser Business to FuseTwo\",\n    \"+ FlexOffers has announced the sale of its direct advertiser business and associated assets to FuseTwo, a partner marketin\",\n    \"+ October 20, 2026\",\n    \"+ Delivery Services & Subscription Affiliate Programs to Promote This Fall 2026\",\n    \"+ Delivery Services & Subscription Affiliate Programs to Promote This Fall 2026 Monetize the demand for delivery services \",\n    \"+ October 20, 2026\",\n    \"+ The Ultimate Guide to Q4 Affiliate Marketing Success\",\n    \"+ Q4 is one of the biggest opportunities of the year for influencer and affiliate marketing. From Black Friday and Cyber M\",\n    \"+ October 15, 2026\"\n  ],\n  \"advertisers\": [\n    \"- Create your AdvertiserMax account to streamline workflows and drive strategic growth.\",\n    \"- Sign Up\",\n    \"- Ready to grow with AdvertiserMax?\",\n    \"- How can I get started with AdvertiserMax?\",\n    \"+ Get Started with FuseTwo\",\n    \"+ Contact FuseTwo\",\n    \"+ Create your FuseTwo account to streamline workflows and drive strategic growth.\",\n    \"+ Sign Up with FuseTwo\",\n    \"+ Ready to grow with\",\n    \"+ FuseTwo?\",\n    \"+ Sign Up with FuseTwo\",\n    \"+ The Direct Advertiser Business Of FlexOffers Has Been Acquired By FuseTwo\",\n    \"+ Learn More\"\n  ],\n  \"signup\": [\n    \"+ The direct advertiser business of FlexOffers has been acquired by FuseTwo.\",\n    \"+ Sign Up with FuseTwo\"\n  ],\n  \"directory\": [\n    \"- Prezi Affiliate Program\",\n    \"- Databox Affiliate Program\",\n    \"- University of the People (US) Affiliate Program\",\n    \"- Natkina UK Affiliate Program\",\n    \"- Peachaus Lounge Affiliate Program\",\n    \"- Sylvox TV Affiliate Program\",\n    \"- upGrad Affiliate Program\",\n    \"- MiniOlie Affiliate Program\",\n    \"- Yves Rocher BE Affiliate Program\",\n    \"- Club EarlyBird Affiliate Program\",\n    \"- Hilo – USA Affiliate Program\",\n    \"- CocoaVia Affiliate Program\",\n    \"- European Wax Center Affiliate Program\",\n    \"- GHD DE Affiliate Program\",\n    \"- Laurageller.online CPA Affiliate Program\",\n    \"- LEVENIS Affiliate Program\",\n    \"- Epachois Affiliate Program\",\n    \"- NICEDAY Affiliate Program\",\n    \"- Boloyo Affiliate Program\",\n    \"- Agrothrive Affiliate Program\",\n    \"- ZONLIHOME (US) Affiliate Program\",\n    \"- Clarifion Affiliate Program\",\n    \"- DASH Dog Food Affiliate Program\",\n    \"- Narwal FR Affiliate Program\",\n    \"- Cheerful Painting Affiliate Program\",\n    \"- Adam & Eve AU Affiliate Program\",\n    \"- MerkuryMarket.hu Affiliate Program\",\n    \"- THE OBJECT Affiliate Program\",\n    \"- Alleop RO Affiliate Program\",\n    \"- Golf and Affordable DE Affiliate Program\"\n  ],\n  \"ranking\": [\n    \"- 14k+\",\n    \"- $1.85 $3.22 $2.89 04/01/2026\",\n    \"- $1.09 $0.6 $1.17 07/21/2026\",\n    \"- $0.16 $1.54 $2.76 01/16/2026\",\n    \"- $6.11 $3.33 $0.54 02/16/2026\",\n    \"- $0.91 $1.49 $1.21 08/13/2026\",\n    \"- $0.22 $0.19 $0.22 01/19/2026\",\n    \"- $0.02 $0.08 $0.25 09/10/2026\",\n    \"- $0.51 $0.54 $0.46 09/02/2026\",\n    \"- $0.15 $0.37 $0.49 03/15/2022\",\n    \"- $1.98 $4.65 $7.96 04/14/2025\",\n    \"- Showing 1 to 10 of 14,066\",\n    \"+ 14.6k+\",\n    \"+ Airline Rewards Cards\",\n    \"+ Dining Rewards Cards\",\n    \"+ Fintech Cards\",\n    \"+ No Annual Fee Cards\",\n    \"+ $2.54 $2.9 $3.19 04/01/2026\",\n    \"+ $0.73 $0.85 $1.22 07/21/2026\",\n    \"+ $0.0",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChanged": 6
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-06-flexoffers-Text-content-diff-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 237949,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-02][flexoffers] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "flexoffers",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][flexoffers] Full-page screenshot, mobile",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 390px by 9328px, received 390px by 9381px. 367343 pixels (ratio 0.11 of all image pixels) are different.\n\n  Snapshot: flexoffers\\home.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\home.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 390px by 9328px, received 390px by 9381px. 367343 pixels (ratio 0.11 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 390px by 9328px, received 390px by 9381px. 367343 pixels (ratio 0.11 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 390px by 10753px, received 390px by 10678px. 594174 pixels (ratio 0.15 of all image pixels) are different.\n\n  Snapshot: flexoffers\\advertisers.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\advertisers.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 390px by 10753px, received 390px by 10678px. 594174 pixels (ratio 0.15 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 390px by 10753px, received 390px by 10678px. 594174 pixels (ratio 0.15 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 390px by 3084px, received 390px by 3097px. 81853 pixels (ratio 0.07 of all image pixels) are different.\n\n  Snapshot: flexoffers\\signup.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\signup.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 390px by 3084px, received 390px by 3097px. 81853 pixels (ratio 0.07 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 390px by 3084px, received 390px by 3097px. 81853 pixels (ratio 0.07 of all image pixels) are different.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  369235 pixels (ratio 0.04 of all image pixels) are different.\n\n  Snapshot: flexoffers\\directory.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\directory.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 369235 pixels (ratio 0.04 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - 369235 pixels (ratio 0.04 of all image pixels) are different.\n\n---\nTest timeout of 300000ms exceeded.\n---\nError: page.evaluate: Target page, context or browser has been closed",
+      "url": null,
+      "notes": [],
+      "metrics": {},
+      "attachments": [
+        {
+          "name": "flexoffers\\home-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\home.png"
+        },
+        {
+          "name": "flexoffers\\home-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\home-actual.png"
+        },
+        {
+          "name": "flexoffers\\home-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\home-diff.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\advertisers.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\advertisers-actual.png"
+        },
+        {
+          "name": "flexoffers\\advertisers-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\advertisers-diff.png"
+        },
+        {
+          "name": "flexoffers\\signup-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\signup.png"
+        },
+        {
+          "name": "flexoffers\\signup-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\signup-actual.png"
+        },
+        {
+          "name": "flexoffers\\signup-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\signup-diff.png"
+        },
+        {
+          "name": "flexoffers\\directory-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\directory.png"
+        },
+        {
+          "name": "flexoffers\\directory-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\directory-actual.png"
+        },
+        {
+          "name": "flexoffers\\directory-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\flexoffers\\directory-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-02-fl-fefdd-Full-page-screenshot-mobile-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 348830,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-05][flexoffers] Layout shift",
+      "project": "mobile",
+      "scenario": "VR-05",
+      "site": "flexoffers",
+      "name": "Layout shift",
+      "title": "[VR-05][flexoffers] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: home: footer: moved 0px horizontally, 52px vertically (was 0,7528 now 0,7580)\nadvertisers: footer: moved 0px horizontally, 75px vertically (was 0,8952 now 0,8877)\nsignup: h1: moved 15px horizontally, 4px vertically (was 62,325 now 47,329); footer: moved 0px horizontally, 13px vertically (was 0,1283 now 0,1296)\nblog: footer: moved 0px horizontally, 22px vertically (was 32,1011 now 32,989)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 6\n\n- Array []\n+ Array [\n+   \"home: footer: moved 0px horizontally, 52px vertically (was 0,7528 now 0,7580)\",\n+   \"advertisers: footer: moved 0px horizontally, 75px vertically (was 0,8952 now 0,8877)\",\n+   \"signup: h1: moved 15px horizontally, 4px vertically (was 62,325 now 47,329); footer: moved 0px horizontally, 13px vertically (was 0,1283 now 0,1296)\",\n+   \"blog: footer: moved 0px horizontally, 22px vertically (was 32,1011 now 32,989)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 4
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-05-flexoffers-Layout-shift-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 235026,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[VR-04][flexoffers] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "flexoffers",
+      "name": "Header and footer components",
+      "title": "[VR-04][flexoffers] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  Expected an image 390px by 1802px, received 390px by 1801px. 6089 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: flexoffers\\home-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\home-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - Expected an image 390px by 1802px, received 390px by 1801px. 6089 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - Expected an image 390px by 1802px, received 390px by 1801px. 6089 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  Expected an image 390px by 1802px, received 390px by 1801px. 7700 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: flexoffers\\signup-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(flexoffers\\\\signup-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - Expected an image 390px by 1802px, received 390px by 1801px. 7700 pixels (ratio 0.02 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" class=\"site-footer\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - Expected an image 390px by 1802px, received 390px by 1801px. 7700 pixels (ratio 0.02 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 20,
+        "diffs": 2,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "flexoffers\\home-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\home-footer.png"
+        },
+        {
+          "name": "flexoffers\\home-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-mobile\\flexoffers\\home-footer-actual.png"
+        },
+        {
+          "name": "flexoffers\\home-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-mobile\\flexoffers\\home-footer-diff.png"
+        },
+        {
+          "name": "flexoffers\\signup-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\flexoffers\\signup-footer.png"
+        },
+        {
+          "name": "flexoffers\\signup-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-mobile\\flexoffers\\signup-footer-actual.png"
+        },
+        {
+          "name": "flexoffers\\signup-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-mobile\\flexoffers\\signup-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\artifacts\\visual-flexoffers-VR-04-fl-8e7b7-eader-and-footer-components-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 256656,
+      "retry": 0
+    }
+  ]
+}

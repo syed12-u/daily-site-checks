@@ -1,0 +1,925 @@
+{
+  "date": "2026-10-21",
+  "startedAt": "2026-10-21T17:30:05.775Z",
+  "finishedAt": "2026-10-21T18:06:22.002Z",
+  "attempts": 3,
+  "results": [
+    {
+      "key": "desktop::[AV-01][fusetwo] Homepage responds",
+      "project": "desktop",
+      "scenario": "AV-01",
+      "site": "fusetwo",
+      "name": "Homepage responds",
+      "title": "[AV-01][fusetwo] Homepage responds",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 645,
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 712,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-04][fusetwo] TLS certificate valid",
+      "project": "desktop",
+      "scenario": "AV-04",
+      "site": "fusetwo",
+      "name": "TLS certificate valid",
+      "title": "[AV-04][fusetwo] TLS certificate valid",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "daysLeft": 50,
+        "validTo": "2026-12-11T04:41:49.000Z",
+        "issuer": "Google Trust Services"
+      },
+      "attachments": [],
+      "durationMs": 290,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-05][fusetwo] DNS resolves",
+      "project": "desktop",
+      "scenario": "AV-05",
+      "site": "fusetwo",
+      "name": "DNS resolves",
+      "title": "[AV-05][fusetwo] DNS resolves",
+      "status": "passed",
+      "severity": "critical",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "a": [
+          "104.18.6.247",
+          "104.18.7.247"
+        ],
+        "aaaa": [
+          "2606:4700::6812:6f7",
+          "2606:4700::6812:7f7"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 207,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-03][fusetwo] www / http redirects",
+      "project": "desktop",
+      "scenario": "AV-03",
+      "site": "fusetwo",
+      "name": "www / http redirects",
+      "title": "[AV-03][fusetwo] www / http redirects",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "chains": {
+          "http://www.fusetwo.com/": "301 -> https://www.fusetwo.com/ | 200",
+          "http://fusetwo.com/": "301 -> https://fusetwo.com/ | 301 -> https://www.fusetwo.com/ | 200",
+          "https://fusetwo.com/": "301 -> https://www.fusetwo.com/ | 200"
+        }
+      },
+      "attachments": [],
+      "durationMs": 1795,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-07][fusetwo] robots.txt and sitemap.xml",
+      "project": "desktop",
+      "scenario": "AV-07",
+      "site": "fusetwo",
+      "name": "robots.txt and sitemap.xml",
+      "title": "[AV-07][fusetwo] robots.txt and sitemap.xml",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "sitemap": "https://www.fusetwo.com/sitemap_index.xml",
+        "sitemapsDeclared": 1
+      },
+      "attachments": [],
+      "durationMs": 313,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-06][fusetwo] Custom 404 page",
+      "project": "desktop",
+      "scenario": "AV-06",
+      "site": "fusetwo",
+      "name": "Custom 404 page",
+      "title": "[AV-06][fusetwo] Custom 404 page",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.fusetwo.com/sentinel-404-check-1792603810232",
+      "notes": [],
+      "metrics": {
+        "status": 404,
+        "bytes": 183151
+      },
+      "attachments": [],
+      "durationMs": 1546,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[AV-02][fusetwo] Key pages respond",
+      "project": "desktop",
+      "scenario": "AV-02",
+      "site": "fusetwo",
+      "name": "Key pages respond",
+      "title": "[AV-02][fusetwo] Key pages respond",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChecked": 9,
+        "pagesFailed": 0,
+        "statuses": {
+          "home": 200,
+          "platform": 200,
+          "brands": 200,
+          "brand-services": 200,
+          "industries": 200,
+          "publishers": 200,
+          "about": 200,
+          "support": 200,
+          "help": 200
+        }
+      },
+      "attachments": [],
+      "durationMs": 6030,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-03][fusetwo] Mixed content",
+      "project": "desktop",
+      "scenario": "ER-03",
+      "site": "fusetwo",
+      "name": "Mixed content",
+      "title": "[ER-03][fusetwo] Mixed content",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithMixedContent": 0
+      },
+      "attachments": [],
+      "durationMs": 65328,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-02][fusetwo] Failed network requests",
+      "project": "desktop",
+      "scenario": "ER-02",
+      "site": "fusetwo",
+      "name": "Failed network requests",
+      "title": "[ER-02][fusetwo] Failed network requests",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithFailedRequests": 0
+      },
+      "attachments": [],
+      "durationMs": 69522,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-01][fusetwo] Console errors",
+      "project": "desktop",
+      "scenario": "ER-01",
+      "site": "fusetwo",
+      "name": "Console errors",
+      "title": "[ER-01][fusetwo] Console errors",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: 9 page(s) affected: home, platform, brands, brand-services, industries, publishers, about, support, help\n{\n  \"home\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"platform\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brands\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"brand-services\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"industries\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"publishers\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"about\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"support\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ],\n  \"help\": [\n    \"Cannot read properties of null (reading 'offsetHeight')\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 11\n\n- Array []\n+ Array [\n+   \"home\",\n+   \"platform\",\n+   \"brands\",\n+   \"brand-services\",\n+   \"industries\",\n+   \"publishers\",\n+   \"about\",\n+   \"support\",\n+   \"help\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithErrors": 9
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\errors-fusetwo-ER-01-fusetwo-Console-errors-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 98088,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[ER-06][fusetwo] Security headers",
+      "project": "desktop",
+      "scenario": "ER-06",
+      "site": "fusetwo",
+      "name": "Security headers",
+      "title": "[ER-06][fusetwo] Security headers",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-Options or CSP frame-ancestors\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 5\n\n- Array []\n+ Array [\n+   \"Strict-Transport-Security\",\n+   \"X-Content-Type-Options: nosniff\",\n+   \"X-Frame-Options or CSP frame-ancestors\",\n+ ]",
+      "url": "https://www.fusetwo.com",
+      "notes": [
+        "No Content-Security-Policy header (informational)",
+        "No Content-Security-Policy header (informational)"
+      ],
+      "metrics": {
+        "hsts": false,
+        "xcto": false,
+        "frame": false,
+        "csp": false
+      },
+      "attachments": [],
+      "durationMs": 967,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[UF-02][fusetwo] Visitor to key landing page",
+      "project": "desktop",
+      "scenario": "UF-02",
+      "site": "fusetwo",
+      "name": "Visitor to key landing page",
+      "title": "[UF-02][fusetwo] Visitor to key landing page",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "landing": "https://www.fusetwo.com/platform/",
+        "status": 200
+      },
+      "attachments": [],
+      "durationMs": 23889,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-05][fusetwo] Expected content present",
+      "project": "desktop",
+      "scenario": "ER-05",
+      "site": "fusetwo",
+      "name": "Expected content present",
+      "title": "[ER-05][fusetwo] Expected content present",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "problems": 0
+      },
+      "attachments": [],
+      "durationMs": 59481,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[ER-04][fusetwo] Unexpected text",
+      "project": "desktop",
+      "scenario": "ER-04",
+      "site": "fusetwo",
+      "name": "Unexpected text",
+      "title": "[ER-04][fusetwo] Unexpected text",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesWithBadText": 0
+      },
+      "attachments": [],
+      "durationMs": 62772,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-01][fusetwo] Primary navigation",
+      "project": "desktop",
+      "scenario": "FN-01",
+      "site": "fusetwo",
+      "name": "Primary navigation",
+      "title": "[FN-01][fusetwo] Primary navigation",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "linksChecked": 22,
+        "internal": 14,
+        "external": 8,
+        "linksBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 24833,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-08][fusetwo] Third-party embeds",
+      "project": "desktop",
+      "scenario": "FN-08",
+      "site": "fusetwo",
+      "name": "Third-party embeds",
+      "title": "[FN-08][fusetwo] Third-party embeds",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {},
+      "attachments": [],
+      "durationMs": 21012,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-01][fusetwo] Time to first byte",
+      "project": "desktop",
+      "scenario": "PF-01",
+      "site": "fusetwo",
+      "name": "Time to first byte",
+      "title": "[PF-01][fusetwo] Time to first byte",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "ttfbMs": 104,
+        "domLoadedMs": 1594,
+        "loadMs": 6472
+      },
+      "attachments": [],
+      "durationMs": 12066,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-09][fusetwo] Key CTA buttons",
+      "project": "desktop",
+      "scenario": "FN-09",
+      "site": "fusetwo",
+      "name": "Key CTA buttons",
+      "title": "[FN-09][fusetwo] Key CTA buttons",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "ctasFound": 10,
+        "ctasChecked": 6
+      },
+      "attachments": [],
+      "durationMs": 22836,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-03][fusetwo] Total page weight",
+      "project": "desktop",
+      "scenario": "PF-03",
+      "site": "fusetwo",
+      "name": "Total page weight",
+      "title": "[PF-03][fusetwo] Total page weight",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "bytes": 3001141,
+        "mb": 2.86,
+        "increasePct": 0
+      },
+      "attachments": [],
+      "durationMs": 15782,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[FN-02][fusetwo] No broken images",
+      "project": "desktop",
+      "scenario": "FN-02",
+      "site": "fusetwo",
+      "name": "No broken images",
+      "title": "[FN-02][fusetwo] No broken images",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "imagesChecked": 129,
+        "pagesWithBroken": 0
+      },
+      "attachments": [],
+      "durationMs": 74382,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-05][fusetwo] Response-time trend",
+      "project": "desktop",
+      "scenario": "PF-05",
+      "site": "fusetwo",
+      "name": "Response-time trend",
+      "title": "[PF-05][fusetwo] Response-time trend",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "responseMs": 125,
+        "avg7dMs": 137,
+        "samples": 5
+      },
+      "attachments": [],
+      "durationMs": 1249,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-04][fusetwo] Request count",
+      "project": "desktop",
+      "scenario": "PF-04",
+      "site": "fusetwo",
+      "name": "Request count",
+      "title": "[PF-04][fusetwo] Request count",
+      "status": "passed",
+      "severity": "low",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "requests": 132,
+        "increasePct": 1
+      },
+      "attachments": [],
+      "durationMs": 15628,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[PF-02][fusetwo] Largest Contentful Paint",
+      "project": "desktop",
+      "scenario": "PF-02",
+      "site": "fusetwo",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][fusetwo] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 1752,
+        "samples": [
+          1652,
+          1752,
+          2564
+        ],
+        "viewport": "desktop"
+      },
+      "attachments": [],
+      "durationMs": 41358,
+      "retry": 1
+    },
+    {
+      "key": "desktop::[AV-08][fusetwo] Sitemap URLs respond",
+      "project": "desktop",
+      "scenario": "AV-08",
+      "site": "fusetwo",
+      "name": "Sitemap URLs respond",
+      "title": "[AV-08][fusetwo] Sitemap URLs respond",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com/robots.txt",
+      "notes": [
+        "73 sitemap URLs checked in 9 s (4 sitemap files)",
+        "73 sitemap URLs checked in 9 s (4 sitemap files)"
+      ],
+      "metrics": {
+        "sitemaps": 4,
+        "urlsChecked": 73,
+        "broken": 0,
+        "brokenPct": 0,
+        "slow": 0,
+        "seconds": 9
+      },
+      "attachments": [],
+      "durationMs": 9487,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-03][fusetwo] Above-the-fold hero",
+      "project": "desktop",
+      "scenario": "VR-03",
+      "site": "fusetwo",
+      "name": "Above-the-fold hero",
+      "title": "[VR-03][fusetwo] Above-the-fold hero",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "outcome": "pass",
+        "heroSelectorMatched": true
+      },
+      "attachments": [],
+      "durationMs": 44774,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-04][fusetwo] Header and footer components",
+      "project": "desktop",
+      "scenario": "VR-04",
+      "site": "fusetwo",
+      "name": "Header and footer components",
+      "title": "[VR-04][fusetwo] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  4581 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: fusetwo\\about-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\about-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 4581 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 4581 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 1,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\about-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\fusetwo\\about-footer.png"
+        },
+        {
+          "name": "fusetwo\\about-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-desktop\\fusetwo\\about-footer-actual.png"
+        },
+        {
+          "name": "fusetwo\\about-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-desktop\\fusetwo\\about-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 184944,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-05][fusetwo] Layout shift",
+      "project": "desktop",
+      "scenario": "VR-05",
+      "site": "fusetwo",
+      "name": "Layout shift",
+      "title": "[VR-05][fusetwo] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: about: footer: moved 0px horizontally, 693px vertically (was 0,5090 now 0,5783)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"about: footer: moved 0px horizontally, 693px vertically (was 0,5090 now 0,5783)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-05-fusetwo-Layout-shift-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 174904,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-07][fusetwo] Styling drift",
+      "project": "desktop",
+      "scenario": "VR-07",
+      "site": "fusetwo",
+      "name": "Styling drift",
+      "title": "[VR-07][fusetwo] Styling drift",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "styles": {
+          "font": {
+            "fontFamily": "-apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "fontSize": "17px"
+          },
+          "primary": {
+            "color": "rgb(0, 0, 0)",
+            "fontFamily": "\"Plus Jakarta Sans\", sans-serif",
+            "fontWeight": "700"
+          },
+          "button": {
+            "backgroundColor": "rgb(255, 45, 0)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "10px",
+            "fontFamily": "\"Plus Jakarta Sans\", sans-serif"
+          }
+        }
+      },
+      "attachments": [],
+      "durationMs": 17664,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-08][fusetwo] Missing sections",
+      "project": "desktop",
+      "scenario": "VR-08",
+      "site": "fusetwo",
+      "name": "Missing sections",
+      "title": "[VR-08][fusetwo] Missing sections",
+      "status": "passed",
+      "severity": "high",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "sections": 4,
+        "missing": 0
+      },
+      "attachments": [],
+      "durationMs": 26095,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[UF-07][fusetwo] Mobile navigation",
+      "project": "mobile",
+      "scenario": "UF-07",
+      "site": "fusetwo",
+      "name": "Mobile navigation",
+      "title": "[UF-07][fusetwo] Mobile navigation",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "opened": "https://www.fusetwo.com/platform/",
+        "tried": [
+          "https://www.fusetwo.com/platform/",
+          "https://www.fusetwo.com/publishers/",
+          "https://www.fusetwo.com/about-us/",
+          "https://advertiser.fusetwo.com/signin"
+        ]
+      },
+      "attachments": [],
+      "durationMs": 31207,
+      "retry": 0
+    },
+    {
+      "key": "mobile::[PF-02][fusetwo] Largest Contentful Paint",
+      "project": "mobile",
+      "scenario": "PF-02",
+      "site": "fusetwo",
+      "name": "Largest Contentful Paint",
+      "title": "[PF-02][fusetwo] Largest Contentful Paint",
+      "status": "passed",
+      "severity": "medium",
+      "error": "",
+      "url": "https://www.fusetwo.com",
+      "notes": [],
+      "metrics": {
+        "lcpMs": 1420,
+        "samples": [
+          1240,
+          1420,
+          1492
+        ],
+        "viewport": "mobile"
+      },
+      "attachments": [],
+      "durationMs": 32736,
+      "retry": 0
+    },
+    {
+      "key": "desktop::[VR-06][fusetwo] Text content diff",
+      "project": "desktop",
+      "scenario": "VR-06",
+      "site": "fusetwo",
+      "name": "Text content diff",
+      "title": "[VR-06][fusetwo] Text content diff",
+      "status": "failed",
+      "severity": "low",
+      "error": "Error: text changed:\n{\n  \"about\": [\n    \"- When the ShareASale platform closed in 2025, it didn’t just disrupt the market — it left entry-level brands without a pl\",\n    \"- FuseTwo was built to close that gap.\",\n    \"- Built by Partner Marketing Experts Who Understand Your Challenge\",\n    \"- FuseTwo started with a simple observation: with AI discovery disrupting search, growing brands were being left behind. W\",\n    \"- Our founders spent their careers inside partner marketing, through every platform shift, algorithm change, and AI-driven\",\n    \"- We built FuseTwo because we knew what brands were missing: a curated publisher network, smart automation, and expertise \",\n    \"- Speed matters in scaling\",\n    \"- Trust drives long-term partnerships\",\n    \"- Results speak louder than promises\",\n    \"- Connecting Brands with Publishers Who Deliver\",\n    \"- Today, FuseTwo connects growing advertisers with high-trust publishers through intuitive tools, streamlined onboarding, \",\n    \"- We make it fast and easy for brands to be discovered, shape preferences, and acquire customers as AI continues to redefi\",\n    \"- If partner marketing has felt out of reach, it shouldn’t.\",\n    \"- We built this for you.\",\n    \"- FuseTwo is the platform where both brands and publishers find what they’re looking for.\",\n    \"+ A Changing Partner Marketing Landscape\",\n    \"+ As the partner marketing industry has evolved and consolidated, many growing brands are looking for a partner marketing \",\n    \"+ These brands still need access to quality publishers, creators, and media partners. They need the technology and experti\",\n    \"+ FuseTwo was created to serve that opportunity.\",\n    \"+ We built FuseTwo to make partner marketing more accessible, combining industry experience with AI, automation, and smart\",\n    \"+ Experience Behind FuseTwo’s Partner Marketing Platform\",\n    \"+ FuseTwo entered the market by acquiring the direct advertiser business and assets of FlexOffers, establishing a foundati\",\n    \"+ Led by industry veterans with decades of affiliate network experience, FuseTwo was developed with a practical understand\",\n    \"+ As AI transforms how consumers discover products, third-party content, and trusted recommendations are becoming increasi\",\n    \"+ The line between affiliate, influencer, and performance media has also blurred, creating new opportunities for brands to\",\n    \"+ FuseTwo brings these channels together through technology, automation, experienced people, and a more accessible economi\",\n    \"+ What FuseTwo Brings Together\",\n    \"+ Combined Access\",\n    \"+ Affiliate, influencer, and media partnerships connected on one platform.\",\n    \"+ Streamlined Technology\"\n  ]\n}\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"about\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesChanged": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-06-fusetwo-Text-content-diff-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 161818,
+      "retry": 2
+    },
+    {
+      "key": "desktop::[VR-01][fusetwo] Full-page screenshot, desktop",
+      "project": "desktop",
+      "scenario": "VR-01",
+      "site": "fusetwo",
+      "name": "Full-page screenshot, desktop",
+      "title": "[VR-01][fusetwo] Full-page screenshot, desktop",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 1440px by 5412px, received 1440px by 6105px. 4325454 pixels (ratio 0.50 of all image pixels) are different.\n\n  Snapshot: fusetwo\\about.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\about.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 1440px by 5412px, received 1440px by 6105px. 4325454 pixels (ratio 0.50 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 1440px by 5412px, received 1440px by 6105px. 4325454 pixels (ratio 0.50 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 1,
+        "outcome": {
+          "home": "pass",
+          "platform": "pass",
+          "brands": "pass",
+          "brand-services": "pass",
+          "industries": "pass",
+          "publishers": "pass",
+          "about": "fail",
+          "support": "pass",
+          "help": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\about-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\desktop\\fusetwo\\about.png"
+        },
+        {
+          "name": "fusetwo\\about-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\about-actual.png"
+        },
+        {
+          "name": "fusetwo\\about-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\fusetwo\\about-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-01-fusetwo-Full-page-screenshot-desktop-desktop\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 304894,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-05][fusetwo] Layout shift",
+      "project": "mobile",
+      "scenario": "VR-05",
+      "site": "fusetwo",
+      "name": "Layout shift",
+      "title": "[VR-05][fusetwo] Layout shift",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: about: footer: moved 0px horizontally, 674px vertically (was 0,6160 now 0,6834)\n\nexpect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 3\n\n- Array []\n+ Array [\n+   \"about: footer: moved 0px horizontally, 674px vertically (was 0,6160 now 0,6834)\",\n+ ]",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pagesShifted": 1
+      },
+      "attachments": [
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-05-fusetwo-Layout-shift-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 174096,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-04][fusetwo] Header and footer components",
+      "project": "mobile",
+      "scenario": "VR-04",
+      "site": "fusetwo",
+      "name": "Header and footer components",
+      "title": "[VR-04][fusetwo] Header and footer components",
+      "status": "failed",
+      "severity": "high",
+      "error": "Error: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  16 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: fusetwo\\brand-services-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\brand-services-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 16 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 16 pixels (ratio 0.01 of all image pixels) are different.\n\n---\nError: expect(locator).toHaveScreenshot(expected) failed\n\nLocator: locator('footer, .elementor-location-footer').first()\n  16 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: fusetwo\\support-footer.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\support-footer.png)\" locator('footer, .elementor-location-footer').first() with timeout 30000ms\n    - verifying given screenshot expectation\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - 16 pixels (ratio 0.01 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - waiting for locator('footer, .elementor-location-footer').first()\n    - locator resolved to <footer id=\"colophon\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\">…</footer>\n  - taking element screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - attempting scroll into view action\n    - waiting for element to be stable\n  - captured a stable screenshot\n  - 16 pixels (ratio 0.01 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "regions": 18,
+        "diffs": 2,
+        "missing": 0
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\brand-services-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\brand-services-footer.png"
+        },
+        {
+          "name": "fusetwo\\brand-services-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-mobile\\fusetwo\\brand-services-footer-actual.png"
+        },
+        {
+          "name": "fusetwo\\brand-services-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-mobile\\fusetwo\\brand-services-footer-diff.png"
+        },
+        {
+          "name": "fusetwo\\support-footer-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\support-footer.png"
+        },
+        {
+          "name": "fusetwo\\support-footer-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-mobile\\fusetwo\\support-footer-actual.png"
+        },
+        {
+          "name": "fusetwo\\support-footer-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-mobile\\fusetwo\\support-footer-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-04-fusetwo-Header-and-footer-components-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 164303,
+      "retry": 2
+    },
+    {
+      "key": "mobile::[VR-02][fusetwo] Full-page screenshot, mobile",
+      "project": "mobile",
+      "scenario": "VR-02",
+      "site": "fusetwo",
+      "name": "Full-page screenshot, mobile",
+      "title": "[VR-02][fusetwo] Full-page screenshot, mobile",
+      "status": "failed",
+      "severity": "medium",
+      "error": "Error: expect(page).toHaveScreenshot(expected) failed\n\nTimeout: 30000ms\n  Failed to take two consecutive stable screenshots.\n\n  Snapshot: fusetwo\\platform.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\platform.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 372989 pixels (ratio 0.08 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 372989 pixels (ratio 0.08 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Timeout 30000ms exceeded.\n\n---\nError: expect(page).toHaveScreenshot(expected) failed\n\n  Expected an image 395px by 6777px, received 395px by 6921px. 922637 pixels (ratio 0.34 of all image pixels) are different.\n\n  Snapshot: fusetwo\\about.png\n\nCall log:\n  - Expect \"soft toHaveScreenshot(fusetwo\\\\about.png)\" with timeout 30000ms\n    - verifying given screenshot expectation\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - Expected an image 395px by 6777px, received 395px by 6921px. 905858 pixels (ratio 0.34 of all image pixels) are different.\n  - waiting 100ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - 128025 pixels (ratio 0.05 of all image pixels) are different.\n  - waiting 250ms before taking screenshot\n  - taking page screenshot\n    - disabled all CSS animations\n  - waiting for fonts to load...\n  - fonts loaded\n  - captured a stable screenshot\n  - Expected an image 395px by 6777px, received 395px by 6921px. 922637 pixels (ratio 0.34 of all image pixels) are different.\n",
+      "url": null,
+      "notes": [],
+      "metrics": {
+        "pages": 9,
+        "diffs": 2,
+        "outcome": {
+          "home": "pass",
+          "platform": "fail",
+          "brands": "pass",
+          "brand-services": "pass",
+          "industries": "pass",
+          "publishers": "pass",
+          "about": "fail",
+          "support": "pass",
+          "help": "pass"
+        }
+      },
+      "attachments": [
+        {
+          "name": "fusetwo\\platform-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\platform.png"
+        },
+        {
+          "name": "fusetwo\\platform-previous.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\platform-previous.png"
+        },
+        {
+          "name": "fusetwo\\platform-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\platform-actual.png"
+        },
+        {
+          "name": "fusetwo\\platform-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\platform-diff.png"
+        },
+        {
+          "name": "fusetwo\\about-expected.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\baselines\\mobile\\fusetwo\\about.png"
+        },
+        {
+          "name": "fusetwo\\about-actual.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\about-actual.png"
+        },
+        {
+          "name": "fusetwo\\about-diff.png",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\fusetwo\\about-diff.png"
+        },
+        {
+          "name": "screenshot",
+          "path": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\fusetwo\\artifacts\\visual-fusetwo-VR-02-fusetwo-Full-page-screenshot-mobile-mobile\\test-failed-1.png"
+        }
+      ],
+      "durationMs": 241372,
+      "retry": 2
+    }
+  ]
+}

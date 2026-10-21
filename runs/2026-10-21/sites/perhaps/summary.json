@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-21",
+  "overall": "red",
+  "passed": 30,
+  "total": 38,
+  "skipped": 0,
+  "attempts": 3,
+  "rows": [
+    {
+      "site": "perhaps.com",
+      "key": "perhaps",
+      "status": "high",
+      "failedIds": [
+        "ER-06",
+        "VR-03",
+        "VR-04",
+        "VR-01",
+        "VR-06",
+        "VR-02 (m)",
+        "VR-04 (m)",
+        "VR-05 (m)"
+      ],
+      "responseMs": 717,
+      "avgMs": 763.6,
+      "diffs": 7,
+      "thumbnails": [],
+      "failures": [
+        {
+          "scenario": "ER-06",
+          "name": "Security headers",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "missing security headers: Strict-Transport-Security, X-Content-Type-Options: nosniff"
+        },
+        {
+          "scenario": "VR-03",
+          "name": "Above-the-fold hero",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "1 screenshot(s) differ from baseline: perhaps/hero.png"
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "3 screenshot(s) differ from baseline: perhaps/home-header.png, perhaps/home-footer.png, perhaps/services-header.png"
+        },
+        {
+          "scenario": "VR-01",
+          "name": "Full-page screenshot, desktop",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "5 screenshot(s) differ from baseline: perhaps/home.png, perhaps/services.png, perhaps/about.png, perhaps/careers.png, perhaps/news.png"
+        },
+        {
+          "scenario": "VR-06",
+          "name": "Text content diff",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "text changed: | \"services\": [ | \"- Exclusive Promotion\","
+        },
+        {
+          "scenario": "VR-02",
+          "name": "Full-page screenshot, mobile",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "3 screenshot(s) differ from baseline: perhaps/services.png, perhaps/careers.png, perhaps/blog.png"
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "mobile",
+          "summary": "3 screenshot(s) differ from baseline: perhaps/home-footer.png, perhaps/services-footer.png, perhaps/news-footer.png"
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "services: footer: moved 0px horizontally, 22px vertically (was 0,7675 now 0,7697)"
+        }
+      ],
+      "passed": 30,
+      "total": 38
+    }
+  ],
+  "notes": [],
+  "changeLog": [],
+  "reportUrl": null,
+  "reportPath": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\perhaps\\html\\index.html",
+  "narrative": null
+}

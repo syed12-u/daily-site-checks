@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-21",
+  "overall": "red",
+  "passed": 34,
+  "total": 45,
+  "skipped": 0,
+  "attempts": 3,
+  "rows": [
+    {
+      "site": "flexoffers.com",
+      "key": "flexoffers",
+      "status": "high",
+      "failedIds": [
+        "ER-01",
+        "ER-06",
+        "ER-05",
+        "VR-04",
+        "VR-01",
+        "VR-05",
+        "VR-06",
+        "VR-04 (m)",
+        "VR-02 (m)",
+        "VR-05 (m)",
+        "AV-08"
+      ],
+      "responseMs": 572,
+      "avgMs": 473.2,
+      "diffs": 7,
+      "thumbnails": [],
+      "failures": [
+        {
+          "scenario": "ER-01",
+          "name": "Console errors",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "10 page(s) affected: home, publishers, advertisers, signup, directory, ranking, about, contact, support, blog | \"home\": [ | \"wp is not defined\""
+        },
+        {
+          "scenario": "ER-06",
+          "name": "Security headers",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "missing security headers: Strict-Transport-Security"
+        },
+        {
+          "scenario": "ER-05",
+          "name": "Expected content present",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "advertisers: no <h1>"
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "desktop",
+          "summary": "3 screenshot(s) differ from baseline: flexoffers/home-footer.png, flexoffers/advertisers-header.png, flexoffers/advertisers-footer.png"
+        },
+        {
+          "scenario": "VR-01",
+          "name": "Full-page screenshot, desktop",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "4 screenshot(s) differ from baseline: flexoffers/home.png, flexoffers/advertisers.png, flexoffers/signup.png, flexoffers/directory.png"
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "home: footer: moved 0px horizontally, 31px vertically (was 0,5403 now 0,5434) | advertisers: footer: moved 0px horizontally, 83px vertically (was 0,7285 now 0,7202) | signup: h1: moved 20px horizontally, 86px vertically "
+        },
+        {
+          "scenario": "VR-06",
+          "name": "Text content diff",
+          "severity": "low",
+          "project": "desktop",
+          "summary": "text changed: | \"home\": [ | \"- Get Holiday-Ready in October with 9 Profitable Affiliate Partnerships\","
+        },
+        {
+          "scenario": "VR-04",
+          "name": "Header and footer components",
+          "severity": "high",
+          "project": "mobile",
+          "summary": "2 screenshot(s) differ from baseline: flexoffers/home-footer.png, flexoffers/signup-footer.png"
+        },
+        {
+          "scenario": "VR-02",
+          "name": "Full-page screenshot, mobile",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "4 screenshot(s) differ from baseline: flexoffers/home.png, flexoffers/advertisers.png, flexoffers/signup.png, flexoffers/directory.png"
+        },
+        {
+          "scenario": "VR-05",
+          "name": "Layout shift",
+          "severity": "medium",
+          "project": "mobile",
+          "summary": "home: footer: moved 0px horizontally, 52px vertically (was 0,7528 now 0,7580) | advertisers: footer: moved 0px horizontally, 75px vertically (was 0,8952 now 0,8877) | signup: h1: moved 15px horizontally, 4px vertically ("
+        },
+        {
+          "scenario": "AV-08",
+          "name": "Sitemap URLs respond",
+          "severity": "medium",
+          "project": "desktop",
+          "summary": "3 of 6000 sitemap URLs broken (0.05%): 400 https://www.flexoffers.com/affiliate-programs/100%-pure-affiliate-program/; 404 https://www.flexoffers.com/affiliate-programs/linksys-affiliate-program/; fetch failed https://ww"
+        }
+      ],
+      "passed": 34,
+      "total": 45
+    }
+  ],
+  "notes": [],
+  "changeLog": [],
+  "reportUrl": null,
+  "reportPath": "C:\\Users\\Syed.Shah\\OneDrive - Flexoffers.com\\Documents\\Website Monitoring  automation\\runs\\2026-10-21\\sites\\flexoffers\\html\\index.html",
+  "narrative": null
+}
