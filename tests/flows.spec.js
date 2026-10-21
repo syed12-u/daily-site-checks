@@ -8,6 +8,9 @@ const { tag, metric, note, url: setUrl } = require('../src/lib/results');
 
 const FORM_SUBMIT = /^true$/i.test(process.env.ENABLE_FORM_SUBMIT || '');
 
+// Register a test only where it applies, so reports list no 'not configured' skips.
+const onlyIf = (cond) => (cond ? test : () => {});
+
 /** Click the first visible nav link whose text matches `re`, falling back to `fallbackUrl`. */
 async function clickNav(page, site, re, fallbackUrl, testInfo) {
   const link = page.locator(`${site.nav.links}`).filter({ hasText: re }).first();
@@ -36,7 +39,7 @@ async function expectValidation(page, submitSel) {
 
 for (const site of activeSites()) {
   test.describe(site.key, () => {
-    test(tag('UF-01', site), async ({ page }, testInfo) => {
+    onlyIf(!!site.contact)(tag('UF-01', site), async ({ page }, testInfo) => {
       test.skip(testInfo.project.name !== 'desktop', 'desktop only');
       test.skip(!site.contact, 'no contact form configured');
       const c = site.contact;
@@ -68,7 +71,7 @@ for (const site of activeSites()) {
       await expect(page.locator('body'), 'no success message after submit').toContainText(c.successText, { timeout: 20000 });
     });
 
-    test(tag('UF-02', site), async ({ page }, testInfo) => {
+    onlyIf(!!site.ctas)(tag('UF-02', site), async ({ page }, testInfo) => {
       test.skip(testInfo.project.name !== 'desktop', 'desktop only');
       setUrl(testInfo, site.baseUrl);
       await test.step('Open homepage', async () => {
@@ -120,7 +123,7 @@ for (const site of activeSites()) {
 
     for (const kind of ['publisher', 'advertiser']) {
       const id = kind === 'publisher' ? 'UF-03' : 'UF-04';
-      test(tag(id, site), async ({ page }, testInfo) => {
+      onlyIf(!!(site.signup && site.signup[kind]))(tag(id, site), async ({ page }, testInfo) => {
         test.skip(testInfo.project.name !== 'desktop', 'desktop only');
         test.skip(!site.signup || !site.signup[kind], `${kind} signup not configured for this site`);
         const s = site.signup[kind];
@@ -144,7 +147,7 @@ for (const site of activeSites()) {
       });
     }
 
-    test(tag('UF-05', site), async ({ page }, testInfo) => {
+    onlyIf(!!site.login)(tag('UF-05', site), async ({ page }, testInfo) => {
       test.skip(testInfo.project.name !== 'desktop', 'desktop only');
       test.skip(!site.login, 'login not configured for this site');
       const l = site.login;
@@ -171,7 +174,7 @@ for (const site of activeSites()) {
       });
     });
 
-    test(tag('UF-06', site), async ({ page }, testInfo) => {
+    onlyIf(!!(site.search && site.search.resultLink))(tag('UF-06', site), async ({ page }, testInfo) => {
       test.skip(testInfo.project.name !== 'desktop', 'desktop only');
       test.skip(!site.search || !site.search.resultLink, 'browse/search flow not configured for this site');
       const s = site.search;

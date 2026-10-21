@@ -54,6 +54,8 @@ module.exports = defineConfig({
     {
       name: 'desktop',
       use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 }, userAgent: UA },
+      // Mobile-only checks run in the mobile project.
+      grepInvert: /\[(UF-07|VR-02)\]/,
     },
     {
       name: 'mobile',
@@ -62,6 +64,8 @@ module.exports = defineConfig({
       // Mobile only runs the scenarios that define a mobile variant
       // (VR-02, PF-02 mobile LCP, UF-07). Tests skip themselves otherwise.
       testMatch: /(visual|flows|performance)\.spec\.js/,
+      // Only checks with a mobile variant: LCP, mobile menu, screenshots, header/footer, layout.
+      grep: /\[(PF-02|UF-07|VR-02|VR-04|VR-05)\]/,
     },
   ],
 });

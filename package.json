@@ -16,6 +16,7 @@
     "test:uf": "playwright test --grep \"\\[UF-\"",
     "test:vr": "playwright test --grep \"\\[VR-\"",
     "run:daily": "node src/run.js",
+    "run:per-site": "node src/run-per-site.js",
     "run:uptime": "node src/uptime.js",
     "run:weekly": "node src/weekly.js",
     "approve": "node src/approve.js",

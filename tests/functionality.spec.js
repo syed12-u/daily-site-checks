@@ -7,6 +7,9 @@ const { tag, metric, note, url: setUrl } = require('../src/lib/results');
 
 const pageUrl = (site, p) => new URL(p.path, site.baseUrl).toString();
 const FORM_SUBMIT = /^true$/i.test(process.env.ENABLE_FORM_SUBMIT || '');
+
+// Register a test only where it applies, so reports list no 'not configured' skips.
+const onlyIf = (cond) => (cond ? test : () => {});
 // Bot walls (LinkedIn 999, Facebook 400, Cloudflare 403) still mean the site is reachable.
 const REACHABLE_EXTERNAL = new Set([400, 401, 403, 405, 429, 999]);
 
@@ -102,7 +105,7 @@ for (const site of activeSites()) {
       expect(Object.keys(perPage), `broken images on ${Object.keys(perPage).join(', ')}\n${JSON.stringify(perPage, null, 2)}`).toEqual([]);
     });
 
-    test(tag('FN-03', site), async ({ page }, testInfo) => {
+    onlyIf(!!site.contact)(tag('FN-03', site), async ({ page }, testInfo) => {
       test.skip(!site.contact, 'no contact form configured');
       const u = new URL(site.contact.path, site.baseUrl).toString();
       setUrl(testInfo, u);
@@ -124,7 +127,7 @@ for (const site of activeSites()) {
       });
     });
 
-    test(tag('FN-04', site), async ({ page }, testInfo) => {
+    onlyIf(!!site.contact && FORM_SUBMIT)(tag('FN-04', site), async ({ page }, testInfo) => {
       test.skip(!site.contact, 'no contact form configured');
       test.skip(!FORM_SUBMIT, 'ENABLE_FORM_SUBMIT is not true (waiting for a safe test-mode submit per site)');
       const u = new URL(site.contact.path, site.baseUrl).toString();
@@ -145,7 +148,7 @@ for (const site of activeSites()) {
       expect(serverErrors, `server errors during submit: ${serverErrors.join(', ')}`).toEqual([]);
     });
 
-    test(tag('FN-05', site), async ({ page }, testInfo) => {
+    onlyIf(!!site.search)(tag('FN-05', site), async ({ page }, testInfo) => {
       test.skip(!site.search, 'search not configured for this site');
       const s = site.search;
       const u = new URL(s.path, site.baseUrl).toString();
@@ -179,7 +182,7 @@ for (const site of activeSites()) {
       metric(testInfo, { results: await results.count(), resultsUrl: page.url() });
     });
 
-    test(tag('FN-06', site), async ({ page }, testInfo) => {
+    onlyIf(!!site.login)(tag('FN-06', site), async ({ page }, testInfo) => {
       test.skip(!site.login, 'login not configured for this site');
       const l = site.login;
       setUrl(testInfo, l.url);
@@ -209,7 +212,7 @@ for (const site of activeSites()) {
       });
     });
 
-    test(tag('FN-07', site), async ({ page }, testInfo) => {
+    onlyIf(!!site.signup)(tag('FN-07', site), async ({ page }, testInfo) => {
       test.skip(!site.signup, 'signup not configured for this site');
       const problems = [];
       for (const [kind, s] of Object.entries(site.signup)) {
@@ -227,7 +230,7 @@ for (const site of activeSites()) {
       expect(problems, problems.join('\n')).toEqual([]);
     });
 
-    test(tag('FN-08', site), async ({ page }, testInfo) => {
+    onlyIf(!!(site.embeds && site.embeds.length))(tag('FN-08', site), async ({ page }, testInfo) => {
       test.skip(!site.embeds || !site.embeds.length, 'no embeds configured');
       setUrl(testInfo, site.baseUrl);
       const failed = [];
@@ -249,7 +252,7 @@ for (const site of activeSites()) {
       expect(problems, problems.join('\n')).toEqual([]);
     });
 
-    test(tag('FN-09', site), async ({ page }, testInfo) => {
+    onlyIf(!!site.ctas)(tag('FN-09', site), async ({ page }, testInfo) => {
       test.skip(!site.ctas, 'site has no button-style CTAs');
       setUrl(testInfo, site.baseUrl);
       await gotoStable(page, site.baseUrl);

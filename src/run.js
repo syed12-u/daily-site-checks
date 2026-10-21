@@ -210,7 +210,7 @@ async function main() {
   } catch (e) {
     log(`daily summary: failed to post (${e.message})`);
   }
-  if (new Date().getDay() === 1 || flag('--weekly')) {
+  if (!flag('--no-weekly') && (new Date().getDay() === 1 || flag('--weekly'))) {
     try {
       await require('./weekly').run({ dryRunDir: cardsDir, log });
     } catch (e) {

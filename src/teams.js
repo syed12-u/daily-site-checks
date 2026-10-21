@@ -103,7 +103,10 @@ function summaryCard(s) {
       type: 'Container',
       style: s.overall === 'red' ? 'attention' : s.overall === 'amber' ? 'warning' : 'good',
       bleed: true,
-      items: [text(`${OVERALL[s.overall]} Daily site check - ${s.date}`, { size: 'Large', weight: 'Bolder' }), text(`${s.passed} of ${s.total} checks passed across ${s.rows.length} sites${s.attempts > 1 ? ` (after ${s.attempts - 1} retry round${s.attempts > 2 ? 's' : ''})` : ''}`)],
+      items: [
+        text(s.rows.length === 1 ? `${OVERALL[s.overall]} ${s.rows[0].site} - daily check - ${s.date}` : `${OVERALL[s.overall]} Daily site check - ${s.date}`, { size: 'Large', weight: 'Bolder' }),
+        text(`${s.passed} of ${s.total} checks passed${s.rows.length === 1 ? '' : ` across ${s.rows.length} sites`}${s.attempts > 1 ? ` (after ${s.attempts - 1} retry round${s.attempts > 2 ? 's' : ''})` : ''}`),
+      ],
     },
   ];
   if (s.narrative) body.push(text(s.narrative));
