@@ -48,7 +48,7 @@ $principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType S4U -Ru
 
 # Daily full run
 $dailyTrigger = New-ScheduledTaskTrigger -Daily -At $DailyTime
-Register-ScheduledTask -TaskName $names[0] -Action (New-Action 'src\run.js' (Join-Path $logs 'daily.log')) `
+Register-ScheduledTask -TaskName $names[0] -Action (New-Action 'src\run-per-site.js' (Join-Path $logs 'daily.log')) `
   -Trigger $dailyTrigger -Settings $settings -Principal $principal -Force | Out-Null
 Write-Host "Registered '$($names[0])' at $DailyTime daily"
 
